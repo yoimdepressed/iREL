@@ -1,0 +1,14 @@
+openai-whisper
+yt-dlp
+groq
+networkx
+pyvis
+pyyaml
+python-dotenv
+keybert
+sentence-transformers
+spacy
+transformers
+scikit-learn
+mutagen
+numpy
