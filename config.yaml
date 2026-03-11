@@ -2,15 +2,15 @@
 
 videos:
   # Start with video 1. Uncomment the rest once pipeline works.
-  - id: "video_1"
-    url: "https://www.youtube.com/watch?v=DM0RUrheUQ0"
-    language_mix: "Hindi-English"
-    source: "Rotational Motion JEE Wallah"
-
-  # - id: "video_2"
-  #   url: "https://www.youtube.com/watch?v=nzaHG0dme4g"
+  # - id: "video_1"
+  #   url: "https://www.youtube.com/watch?v=DM0RUrheUQ0"
   #   language_mix: "Hindi-English"
-  #   source: "Hinglish Video 2"
+  #   source: "Rotational Motion JEE Wallah"
+
+  - id: "video_2"
+    url: "https://www.youtube.com/watch?v=nzaHG0dme4g"
+    language_mix: "Hindi-English"
+    source: "Hinglish Video 2"
 
   # - id: "video_3"
   #   url: "https://www.youtube.com/watch?v=tWPa-rZiGM8"
@@ -48,5 +48,5 @@ extraction:
 prerequisites:
   nli_weight: 0.7 # weight for NLI score in final confidence
   positional_weight: 0.3 # weight for positional score
-  min_confidence: 0.5 # edges below this get filtered out
-  positional_gap: 120 # seconds gap needed for positional signal
+  min_confidence: 0.4 # edges below this get filtered out
+  positional_gap: 60 # seconds gap needed for positional signal

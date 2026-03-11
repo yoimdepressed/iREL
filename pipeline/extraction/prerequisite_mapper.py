@@ -53,8 +53,8 @@ def find_co_occurring_pairs(segments: list, concepts: list) -> list:
         text_lower = seg["translated"].lower() if "translated" in seg else seg.get("text", "").lower()
         window_text = text_lower
 
-        # also include next 2 segments for context
-        for j in range(1, 3):
+        # also include next 4 segments for context (wider window for educational content)
+        for j in range(1, 5):
             if i + j < len(segments):
                 next_seg = segments[i + j]
                 next_text = next_seg["translated"].lower() if "translated" in next_seg else next_seg.get("text", "").lower()
@@ -83,25 +83,30 @@ def compute_nli_score(concept_a: str, concept_b: str, context: str, model) -> fl
     if the context entails this.
     """
     hypothesis = f"To understand {concept_b}, one must first understand {concept_a}."
-    # NLI model returns [contradiction, entailment, neutral] scores
+    # NLI model returns [contradiction, entailment, neutral] logits
     scores = model.predict([(context, hypothesis)])[0]
-    entailment_score = scores[1]  # index 1 = entailment
-    return float(entailment_score)
+    # Convert raw logits to probabilities via softmax
+    import numpy as np
+    exp_scores = np.exp(scores - np.max(scores))  # subtract max for numerical stability
+    probs = exp_scores / exp_scores.sum()
+    entailment_prob = float(probs[1])  # index 1 = entailment
+    return entailment_prob
 
 
-def compute_positional_score(time_a: float, time_b: float, gap_threshold: float = 120) -> float:
+def compute_positional_score(time_a: float, time_b: float, gap_threshold: float = 60) -> float:
     """
-    If concept_a appears significantly before concept_b (gap > threshold),
+    If concept_a appears significantly before concept_b,
     gives a signal that A might be prerequisite to B.
-    Returns 0-1 score. Only meaningful for large gaps.
+    Teachers typically introduce prerequisites before dependent concepts.
+    Returns 0-1 score.
     """
     gap = time_b - time_a
     if gap <= 0:
         return 0.0
     if gap < gap_threshold:
-        return 0.2  # small gap — weak signal
-    # scale: 120s gap = 0.5, 300s+ gap = 1.0
-    score = min(1.0, 0.5 + (gap - gap_threshold) / 360)
+        return 0.3  # small gap — moderate signal (still meaningful in educational context)
+    # scale: 60s gap = 0.5, 300s+ gap = 1.0
+    score = min(1.0, 0.5 + (gap - gap_threshold) / 480)
     return round(score, 3)
 
 

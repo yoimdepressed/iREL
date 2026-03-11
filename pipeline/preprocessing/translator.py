@@ -20,21 +20,47 @@ def get_groq_client():
     return Groq(api_key=api_key)
 
 
+SYSTEM_PROMPT = (
+    "You are a strict translation assistant. Your ONLY job is to translate non-English words "
+    "in the given text to English. This includes BOTH:\n"
+    "- Words in non-Latin scripts (Devanagari, Telugu, Tamil, etc.)\n"
+    "- Romanized/transliterated non-English words written in Latin script\n"
+    "Rules you MUST follow:\n"
+    "1. Output ONLY the translated text — nothing else, no explanations, no notes.\n"
+    "2. Do NOT add any words, sentences, or content that was not in the input.\n"
+    "3. Do NOT repeat sentences or phrases.\n"
+    "4. Keep ALL technical terms exactly as-is in English.\n"
+    "5. If the entire input is already in English with no foreign words, return it EXACTLY unchanged.\n"
+    "6. Translate non-English words to their English equivalents. Do not invent new content.\n"
+    "7. The output must be roughly the same length as the input."
+)
+
+
 def translate_segment(text: str, client, model: str, temperature: float) -> str:
     """Translate a single transcript segment to English using Groq."""
-    prompt = f"""Translate the following educational lecture text to English. 
-The text is code-mixed (may contain Hindi, Telugu, Tamil mixed with English).
-Keep all technical terms in English. Only translate the non-English parts.
-Return ONLY the translated text, nothing else.
-
-Text: {text}"""
+    prompt = (
+        f"Translate any non-English words in the text below to English. "
+        f"This includes words from any language written in any script or transliterated into Latin letters. "
+        f"Do NOT add anything. Do NOT repeat anything. Output ONLY the translated text.\n\n"
+        f"Text: {text}"
+    )
 
     response = client.chat.completions.create(
         model=model,
-        messages=[{"role": "user", "content": prompt}],
+        messages=[
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": prompt},
+        ],
         temperature=temperature,
+        max_tokens=500,
     )
-    return response.choices[0].message.content.strip()
+    result = response.choices[0].message.content.strip()
+
+    # Safety check: if LLM returned something way longer than input, it hallucinated — use original
+    if len(result) > len(text) * 2.5:
+        return text
+
+    return result
 
 
 def translate_transcript(transcript_data: dict, config: dict) -> dict:
