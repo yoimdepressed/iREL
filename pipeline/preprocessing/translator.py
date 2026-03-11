@@ -1,5 +1,7 @@
 import os
 import json
+import re
+import unicodedata
 import yaml
 import time
 from dotenv import load_dotenv
@@ -18,6 +20,46 @@ def get_groq_client():
     if not api_key:
         raise ValueError("GROQ_API_KEY not found in .env")
     return Groq(api_key=api_key)
+
+
+# Unicode block ranges for script detection
+_SCRIPT_RANGES = [
+    ("Devanagari", 0x0900, 0x097F),
+    ("Latin", 0x0041, 0x024F),
+    ("Cyrillic", 0x0400, 0x04FF),
+    ("CJK", 0x4E00, 0x9FFF),
+    ("Arabic", 0x0600, 0x06FF),
+    ("Tamil", 0x0B80, 0x0BFF),
+    ("Telugu", 0x0C00, 0x0C7F),
+    ("Bengali", 0x0980, 0x09FF),
+    ("Gujarati", 0x0A80, 0x0AFF),
+    ("Greek", 0x0370, 0x03FF),
+    ("Hebrew", 0x0590, 0x05FF),
+]
+
+
+def detect_scripts(text: str) -> set:
+    """Return the set of Unicode script names present in the text."""
+    found = set()
+    for ch in text:
+        cp = ord(ch)
+        for name, start, end in _SCRIPT_RANGES:
+            if start <= cp <= end:
+                found.add(name)
+                break
+    return found
+
+
+def is_garbled(text: str) -> bool:
+    """
+    Return True if the text looks like garbled Whisper output —
+    i.e., it mixes 3+ different Unicode scripts (Devanagari + Cyrillic + CJK etc.)
+    This is a strong signal of hallucinated/corrupted transcription.
+    """
+    scripts = detect_scripts(text)
+    # Latin alone or Latin+one other script is fine (code-mixed text)
+    # 3+ scripts is almost certainly garbage
+    return len(scripts) >= 3
 
 
 SYSTEM_PROMPT = (
@@ -86,6 +128,18 @@ def translate_transcript(transcript_data: dict, config: dict) -> dict:
                 "end": seg["end"],
                 "original": original,
                 "translated": "",
+            })
+            continue
+
+        # skip garbled segments (Whisper mixing 3+ Unicode scripts = corrupted output)
+        # Sending these to Groq produces hallucinated nonsense
+        if is_garbled(original):
+            print(f"  [WARN] Segment {i} is garbled (mixed scripts), keeping original")
+            translated_segments.append({
+                "start": seg["start"],
+                "end": seg["end"],
+                "original": original,
+                "translated": original,  # keep as-is; concept extractor will handle non-ASCII
             })
             continue
 

@@ -199,8 +199,8 @@ def extract_concepts(text: str, top_n: int = 20, min_score: float = 0.15) -> lis
         pattern = r'\b' + re.escape(c) + r'\b'
         multi_freq[c] = len(re.findall(pattern, text_lower))
 
-    # Filter: must appear at least 2 times (avoid one-off phrases)
-    multi_word_cands = [c for c in multi_word_cands if multi_freq[c] >= 2]
+    # Filter: must appear at least once (keeps unique but real compound concepts)
+    multi_word_cands = [c for c in multi_word_cands if multi_freq[c] >= 1]
 
     # Normalize TF scores to 0-1
     if multi_word_cands:

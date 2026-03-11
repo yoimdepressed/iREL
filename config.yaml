@@ -7,15 +7,15 @@ videos:
   #   language_mix: "Hindi-English"
   #   source: "Rotational Motion JEE Wallah"
 
-  - id: "video_2"
-    url: "https://www.youtube.com/watch?v=nzaHG0dme4g"
-    language_mix: "Hindi-English"
-    source: "Hinglish Video 2"
-
-  # - id: "video_3"
-  #   url: "https://www.youtube.com/watch?v=tWPa-rZiGM8"
+  # - id: "video_2"
+  #   url: "https://www.youtube.com/watch?v=nzaHG0dme4g"
   #   language_mix: "Hindi-English"
-  #   source: "Hinglish Video 3"
+  #   source: "Hinglish Video 2"
+
+  - id: "video_3"
+    url: "https://www.youtube.com/watch?v=tWPa-rZiGM8"
+    language_mix: "Hindi-English"
+    source: "Hinglish Video 3"
 
   # - id: "video_4"
   #   url: "https://www.youtube.com/watch?v=VJs99aeqUe4"
@@ -48,5 +48,5 @@ extraction:
 prerequisites:
   nli_weight: 0.7 # weight for NLI score in final confidence
   positional_weight: 0.3 # weight for positional score
-  min_confidence: 0.4 # edges below this get filtered out
+  min_confidence: 0.35 # edges below this get filtered out
   positional_gap: 60 # seconds gap needed for positional signal
