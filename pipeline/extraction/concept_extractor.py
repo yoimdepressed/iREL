@@ -21,7 +21,14 @@ kw_model = KeyBERT(model="all-MiniLM-L6-v2")
 def is_valid_candidate(phrase: str) -> bool:
     """
     Generic validity check — works for ANY domain, no hardcoding.
-    Uses spaCy's built-in stop word vocabulary to reject generic words.
+    Uses spaCy's built-in stop word vocabulary and OOV detection to reject:
+    - Non-ASCII garbage (hallucinated script)
+    - Purely numeric tokens
+    - All-stopword phrases
+    - Romanized non-English words (e.g. leaked Hindi: 'karte hain', 'yaha', 'hum')
+      detected by checking if the majority of tokens are out-of-vocabulary in spaCy's
+      English lexicon AND are not stop words (real English OOV terms like proper nouns
+      are fine; romanized Hindi words are OOV AND not stops AND not recognizable).
     """
     # Reject anything containing non-ASCII (hallucinated script leaked from LLM)
     if re.search(r'[^\x00-\x7F]', phrase):
@@ -32,10 +39,26 @@ def is_valid_candidate(phrase: str) -> bool:
     # Reject single characters
     if len(phrase.strip()) <= 1:
         return False
-    # Reject phrases where EVERY token is a spaCy stop word
+
     tokens = phrase.lower().split()
+
+    # Reject phrases where EVERY token is a spaCy stop word
     if all(nlp.vocab[t].is_stop for t in tokens):
         return False
+
+    # Reject phrases where the majority of NON-stop tokens are out-of-vocabulary
+    # in spaCy's English lexicon. OOV means the token has no word vector AND is not
+    # a known English word. Romanized Hindi (karte, hain, yaha, karna) triggers this.
+    # Exception: single-token phrases (proper nouns, abbreviations like 'api', 'dsa' are fine)
+    if len(tokens) > 1:
+        non_stop_tokens = [t for t in tokens if not nlp.vocab[t].is_stop]
+        if non_stop_tokens:
+            oov_count = sum(1 for t in non_stop_tokens if nlp.vocab[t].is_oov)
+            oov_ratio = oov_count / len(non_stop_tokens)
+            # If more than half the non-stop tokens are OOV, likely non-English garbage
+            if oov_ratio > 0.5:
+                return False
+
     return True
 
 

@@ -80,6 +80,12 @@ SYSTEM_PROMPT = (
 
 def translate_segment(text: str, client, model: str, temperature: float) -> str:
     """Translate a single transcript segment to English using Groq."""
+    # Skip API call if text is already almost entirely ASCII (>90% Latin script)
+    # This avoids wasting API calls on English-only segments
+    non_ascii_chars = len(re.findall(r'[^\x00-\x7F]', text))
+    if non_ascii_chars / max(len(text), 1) < 0.1:
+        return text
+
     prompt = (
         f"Translate any non-English words in the text below to English. "
         f"This includes words from any language written in any script or transliterated into Latin letters. "
@@ -100,6 +106,11 @@ def translate_segment(text: str, client, model: str, temperature: float) -> str:
 
     # Safety check: if LLM returned something way longer than input, it hallucinated — use original
     if len(result) > len(text) * 2.5:
+        return text
+
+    # Safety check: if LLM output still has more non-ASCII than the input, it hallucinated
+    result_non_ascii = len(re.findall(r'[^\x00-\x7F]', result))
+    if result_non_ascii > non_ascii_chars:
         return text
 
     return result

@@ -1,26 +1,25 @@
 # Central config — all settings live here
 
 videos:
-  # Start with video 1. Uncomment the rest once pipeline works.
-  # - id: "video_1"
-  #   url: "https://www.youtube.com/watch?v=DM0RUrheUQ0"
-  #   language_mix: "Hindi-English"
-  #   source: "Rotational Motion JEE Wallah"
+  - id: "video_1"
+    url: "https://www.youtube.com/watch?v=6xeENYd-aLw"
+    language_mix: "Hindi-English"
+    source: "Fluid mechanics by fundamenthol"
 
   # - id: "video_2"
   #   url: "https://www.youtube.com/watch?v=nzaHG0dme4g"
   #   language_mix: "Hindi-English"
-  #   source: "Hinglish Video 2"
+  #   source: "Middle of Linked list by Shradha Kapra"
 
-  - id: "video_3"
-    url: "https://www.youtube.com/watch?v=tWPa-rZiGM8"
-    language_mix: "Hindi-English"
-    source: "Hinglish Video 3"
+  # - id: "video_3"
+  #   url: "https://www.youtube.com/watch?v=tWPa-rZiGM8"
+  #   language_mix: "Hindi-English"
+  #   source: "System calls by Gate smashers"
 
   # - id: "video_4"
-  #   url: "https://www.youtube.com/watch?v=VJs99aeqUe4"
-  #   language_mix: "Telugu-English"
-  #   source: "Python Strings in Telugu"
+  #   url: "https://www.youtube.com/watch?v=ec-Cd4jKFWc"
+  #   language_mix: "Hindi-English"
+  #   source: "C basics in Hindi"
 
   # - id: "video_5"
   #   url: "https://www.youtube.com/watch?v=_99lZBc-lFY"
@@ -48,5 +47,5 @@ extraction:
 prerequisites:
   nli_weight: 0.7 # weight for NLI score in final confidence
   positional_weight: 0.3 # weight for positional score
-  min_confidence: 0.35 # edges below this get filtered out
+  min_confidence: 0.4 # edges below this get filtered out
   positional_gap: 60 # seconds gap needed for positional signal
