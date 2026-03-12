@@ -19,17 +19,7 @@ kw_model = KeyBERT(model="all-MiniLM-L6-v2")
 
 
 def is_valid_candidate(phrase: str) -> bool:
-    """
-    Generic validity check — works for ANY domain, no hardcoding.
-    Uses spaCy's built-in stop word vocabulary and OOV detection to reject:
-    - Non-ASCII garbage (hallucinated script)
-    - Purely numeric tokens
-    - All-stopword phrases
-    - Romanized non-English words (e.g. leaked Hindi: 'karte hain', 'yaha', 'hum')
-      detected by checking if the majority of tokens are out-of-vocabulary in spaCy's
-      English lexicon AND are not stop words (real English OOV terms like proper nouns
-      are fine; romanized Hindi words are OOV AND not stops AND not recognizable).
-    """
+
     # Reject anything containing non-ASCII (hallucinated script leaked from LLM)
     if re.search(r'[^\x00-\x7F]', phrase):
         return False
@@ -46,10 +36,7 @@ def is_valid_candidate(phrase: str) -> bool:
     if all(nlp.vocab[t].is_stop for t in tokens):
         return False
 
-    # Reject phrases where the majority of NON-stop tokens are out-of-vocabulary
-    # in spaCy's English lexicon. OOV means the token has no word vector AND is not
-    # a known English word. Romanized Hindi (karte, hain, yaha, karna) triggers this.
-    # Exception: single-token phrases (proper nouns, abbreviations like 'api', 'dsa' are fine)
+    # Reject phrases where the majority of NON-stop tokens are out-of-vocabulary in spaCy's English lexicon.
     if len(tokens) > 1:
         non_stop_tokens = [t for t in tokens if not nlp.vocab[t].is_stop]
         if non_stop_tokens:
@@ -63,16 +50,7 @@ def is_valid_candidate(phrase: str) -> bool:
 
 
 def get_noun_phrase_candidates(text: str) -> list:
-    """
-    Extract candidate phrases generically using spaCy POS tags and NER.
-    - Noun chunks that contain at least one non-stop-word noun/proper noun
-    - Named entities (PERSON, ORG, etc. are filtered; keep only useful ones)
-    - Multi-word expressions: consecutive ADJ/NOUN sequences (catches "linked list",
-      "slow pointer", "binary search" etc. that spaCy may split into separate chunks)
-    - VERB+NOUN compounds: catches past-participle modifiers like "linked list",
-      "sorted array" where the modifier is tagged as VERB by spaCy
-    No hardcoded word lists — works for any subject domain.
-    """
+
     doc = nlp(text)
     candidates = set()
 
@@ -96,8 +74,6 @@ def get_noun_phrase_candidates(text: str) -> list:
             candidates.add(phrase)
 
     # 3. Consecutive ADJ/NOUN/PROPN/VERB(participle) sequences — catches compound terms
-    #    Including VERB covers past participles like "linked" in "linked list",
-    #    "sorted" in "sorted array" — spaCy tags these as VBN (VERB)
     i = 0
     tokens_list = [t for t in doc if not t.is_punct]
     compound_pos = {"ADJ", "NOUN", "PROPN"}
@@ -158,10 +134,8 @@ def lemmatize_phrase(phrase: str) -> str:
 def subsumption_filter(scored_concepts: list) -> list:
     """
     Remove single-word concepts that are subsumed by multi-word concepts.
-    E.g., if "linked list" is present, drop "list". If "fast pointer" is present, drop "pointer".
     Uses both raw tokens and lemmatized forms for matching.
     Also removes shorter multi-word phrases fully contained in longer ones
-    (e.g., drop "link list" if "linked list" exists).
     """
     # collect all multi-word concepts and their tokens + lemmas
     multi_word = {c["concept"] for c in scored_concepts if len(c["concept"].split()) >= 2}
@@ -191,10 +165,10 @@ def extract_concepts(text: str, top_n: int = 20, min_score: float = 0.15) -> lis
     """
     Extract key concepts from translated transcript text.
     1. Strip non-ASCII garbage
-    2. spaCy extracts noun phrase candidates (POS tags + NER, no hardcoding)
+    2. spaCy extracts noun phrase candidates (POS tags + NER)
     3. Split into multi-word and single-word pools
-    4. Multi-word: scored by TF (frequency) — KeyBERT doesn't work well for phrases
-    5. Single-word: scored by KeyBERT semantic relevance — captures document theme
+    4. Multi-word: scored by TF (frequency)
+    5. Single-word: scored by KeyBERT semantic relevance
     6. Subsumption: remove single words already in multi-word concepts
     7. Lemma dedup, interleave with multi-word priority
     """
@@ -210,11 +184,11 @@ def extract_concepts(text: str, top_n: int = 20, min_score: float = 0.15) -> lis
 
     print(f"  Candidates from spaCy: {len(candidates)}")
 
-    # --- STEP 1: Split into multi-word and single-word pools ---
+    # STEP 1: Split into multi-word and single-word pools
     multi_word_cands = [c for c in candidates if len(c.split()) >= 2]
     single_word_cands = [c for c in candidates if len(c.split()) == 1]
 
-    # --- STEP 2: Score multi-word candidates by TF ---
+    # STEP 2: Score multi-word candidates by TF
     # Count exact phrase occurrences (word-boundary match)
     multi_freq = {}
     text_lower = clean_text.lower()
@@ -235,7 +209,7 @@ def extract_concepts(text: str, top_n: int = 20, min_score: float = 0.15) -> lis
     else:
         multi_scored = []
 
-    # --- STEP 3: Score single-word candidates by KeyBERT ---
+    # STEP 3: Score single-word candidates by KeyBERT
     if single_word_cands:
         kws = kw_model.extract_keywords(
             clean_text,
@@ -248,9 +222,7 @@ def extract_concepts(text: str, top_n: int = 20, min_score: float = 0.15) -> lis
     else:
         single_scored = []
 
-    # --- STEP 4: Deduplicate multi-word results ---
-    # Enhanced dedup: if two phrases share the same core content words
-    # (e.g., "slow pointing" vs "slow pointer"), keep only the higher-scored one
+    # STEP 4: Deduplicate multi-word results
     seen_lemmas = set()
     seen_root_keys = set()  # root keys = sorted set of word roots (first 4 chars)
     multi_concepts = []
@@ -269,11 +241,8 @@ def extract_concepts(text: str, top_n: int = 20, min_score: float = 0.15) -> lis
         seen_root_keys.add(root_key)
         multi_concepts.append({"concept": kw, "score": round(score, 4)})
 
-    # --- STEP 4b: Redundancy filter for multi-word concepts ---
+    # STEP 4b: Redundancy filter for multi-word concepts
     # Remove longer phrases that are just modifiers of a shorter concept already captured.
-    # E.g., "entire linked list" is redundant if "linked list" exists,
-    # "odd sized linked list" is redundant if "linked list" or "sized linked list" exists.
-    # Generic: if concept A is a contiguous substring of concept B, drop B (keep shorter).
     concept_strings = [c["concept"] for c in multi_concepts]
     redundant = set()
     for i, longer in enumerate(concept_strings):
@@ -286,7 +255,7 @@ def extract_concepts(text: str, top_n: int = 20, min_score: float = 0.15) -> lis
                 break
     multi_concepts = [c for i, c in enumerate(multi_concepts) if i not in redundant]
 
-    # --- STEP 5: Subsumption — remove single words present in multi-word concepts ---
+    # STEP 5: Subsumption — remove single words present in multi-word concepts
     subsumed_tokens = set()
     subsumed_lemmas = set()
     for mc in multi_concepts:
@@ -317,7 +286,7 @@ def extract_concepts(text: str, top_n: int = 20, min_score: float = 0.15) -> lis
         seen_lemmas.add(lemma)
         single_concepts.append({"concept": kw, "score": round(score, 4)})
 
-    # --- STEP 6: Interleave — prioritize multi-word concepts ---
+    # STEP 6: Interleave — prioritize multi-word concepts
     # Take up to 70% from multi-word pool, rest from single-word pool
     multi_limit = max(1, int(top_n * 0.7))
     single_limit = top_n - min(len(multi_concepts), multi_limit)

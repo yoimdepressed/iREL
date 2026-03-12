@@ -51,46 +51,34 @@ def detect_scripts(text: str) -> set:
 
 
 def is_garbled(text: str) -> bool:
-    """
-    Return True if the text looks like garbled Whisper output —
-    i.e., it mixes 3+ different Unicode scripts (Devanagari + Cyrillic + CJK etc.)
-    This is a strong signal of hallucinated/corrupted transcription.
-    """
     scripts = detect_scripts(text)
-    # Latin alone or Latin+one other script is fine (code-mixed text)
-    # 3+ scripts is almost certainly garbage
     return len(scripts) >= 3
 
 
 SYSTEM_PROMPT = (
-    "You are a strict translation assistant. Your ONLY job is to translate non-English words "
-    "in the given text to English. This includes BOTH:\n"
-    "- Words in non-Latin scripts (Devanagari, Telugu, Tamil, etc.)\n"
-    "- Romanized/transliterated non-English words written in Latin script\n"
-    "Rules you MUST follow:\n"
-    "1. Output ONLY the translated text — nothing else, no explanations, no notes.\n"
-    "2. Do NOT add any words, sentences, or content that was not in the input.\n"
-    "3. Do NOT repeat sentences or phrases.\n"
-    "4. Keep ALL technical terms exactly as-is in English.\n"
-    "5. If the entire input is already in English with no foreign words, return it EXACTLY unchanged.\n"
-    "6. Translate non-English words to their English equivalents. Do not invent new content.\n"
-    "7. The output must be roughly the same length as the input."
+    "You are a translation assistant for code-mixed Indian educational videos. "
+    "The input is a single sentence that may contain Hindi, Telugu, Tamil, or other Indian language words "
+    "(either in their native script or romanized in Latin letters) mixed with English.\n\n"
+    "Your job: produce a single, natural, fluent English sentence that conveys the full meaning of the input.\n\n"
+    "Rules:\n"
+    "1. Output ONLY the translated sentence — no explanations, no notes, no labels.\n"
+    "2. Keep all technical/programming terms exactly as they are.\n"
+    "3. Do NOT add new information. Do NOT repeat phrases.\n"
+    "4. If the input is already fully in English, return it unchanged.\n"
+    "5. Prioritize meaning and natural English flow over word-for-word literalness."
 )
 
 
 def translate_segment(text: str, client, model: str, temperature: float) -> str:
     """Translate a single transcript segment to English using Groq."""
-    # Skip API call if text is already almost entirely ASCII (>90% Latin script)
-    # This avoids wasting API calls on English-only segments
     non_ascii_chars = len(re.findall(r'[^\x00-\x7F]', text))
     if non_ascii_chars / max(len(text), 1) < 0.1:
         return text
 
     prompt = (
-        f"Translate any non-English words in the text below to English. "
-        f"This includes words from any language written in any script or transliterated into Latin letters. "
-        f"Do NOT add anything. Do NOT repeat anything. Output ONLY the translated text.\n\n"
-        f"Text: {text}"
+        f"Translate the following sentence to natural, fluent English. "
+        f"Preserve all technical/programming terms. Output only the translated sentence.\n\n"
+        f"Sentence: {text}"
     )
 
     response = client.chat.completions.create(

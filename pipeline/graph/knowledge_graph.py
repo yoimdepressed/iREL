@@ -29,12 +29,33 @@ def build_graph(prerequisite_edges: list) -> nx.DiGraph:
 
 
 def compute_learning_order(G: nx.DiGraph) -> list:
-    """Topological sort = recommended learning order. Prereqs first."""
+    """Topological sort = recommended learning order. Prereqs first.
+    If cycles exist, iteratively remove the weakest edge in each cycle."""
     try:
         return list(nx.topological_sort(G))
     except nx.NetworkXUnfeasible:
-        print("Warning: cycle detected — skipping topological sort")
-        return []
+        print("Warning: cycle detected — removing weakest edges to break cycles")
+        # Iteratively find cycles and remove the lowest-confidence edge
+        max_iterations = G.number_of_edges()  # safety cap
+        for _ in range(max_iterations):
+            try:
+                cycle = nx.find_cycle(G)
+            except nx.NetworkXNoCycle:
+                break
+            # find weakest edge in the cycle
+            weakest_edge = min(
+                cycle,
+                key=lambda e: G.edges[e[0], e[1]].get("confidence", 1.0)
+            )
+            conf = G.edges[weakest_edge[0], weakest_edge[1]].get("confidence", 0)
+            print(f"  Removing cycle edge: {weakest_edge[0]} → {weakest_edge[1]} (confidence={conf:.3f})")
+            G.remove_edge(weakest_edge[0], weakest_edge[1])
+
+        try:
+            return list(nx.topological_sort(G))
+        except nx.NetworkXUnfeasible:
+            print("Warning: could not break all cycles")
+            return []
 
 
 def save_interactive_graph(G: nx.DiGraph, video_id: str, output_dir: str):

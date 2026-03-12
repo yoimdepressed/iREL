@@ -133,10 +133,12 @@ def map_prerequisites(translated_data: dict, concepts: list, config: dict) -> li
     edges = []
     for concept_a, concept_b, context, time_a, time_b in pairs:
         # step 2: NLI — check both directions
+        # score_a_to_b tests hypothesis: "To understand B, one must first understand A" (A is prereq of B)
+        # score_b_to_a tests hypothesis: "To understand A, one must first understand B" (B is prereq of A)
         score_a_to_b = compute_nli_score(concept_a, concept_b, context, model)
         score_b_to_a = compute_nli_score(concept_b, concept_a, context, model)
 
-        # pick the direction with higher entailment
+        # pick the direction with higher entailment — the winner becomes the edge "prereq → dependent"
         if score_a_to_b > score_b_to_a:
             prereq, dependent = concept_a, concept_b
             nli_score = score_a_to_b
