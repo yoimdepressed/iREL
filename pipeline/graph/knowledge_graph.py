@@ -62,7 +62,8 @@ def save_interactive_graph(G: nx.DiGraph, video_id: str, output_dir: str):
     """Generate an interactive HTML graph with Pyvis. Open in any browser."""
     os.makedirs(output_dir, exist_ok=True)
 
-    net = Network(height="700px", width="100%", directed=True, bgcolor="#1a1a2e", font_color="white")
+    net = Network(height="700px", width="100%", directed=True, bgcolor="#1a1a2e", font_color="white",
+                  cdn_resources="in_line")  # embed all JS inline — no local lib/ files needed
     net.set_options("""
     {
       "nodes": {
