@@ -47,5 +47,5 @@ extraction:
 prerequisites:
   nli_weight: 0.7 # weight for NLI score in final confidence
   positional_weight: 0.3 # weight for positional score
-  min_confidence: 0.4 # edges below this get filtered out
+  min_confidence: 0.35 # edges below this get filtered out (lowered: positional_score=0 means NLI alone needs 0.57 at 0.4)
   positional_gap: 60 # seconds gap needed for positional signal

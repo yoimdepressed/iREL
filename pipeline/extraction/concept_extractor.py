@@ -32,6 +32,11 @@ def is_valid_candidate(phrase: str) -> bool:
 
     tokens = phrase.lower().split()
 
+    # Reject equation variable tokens: single letter + digit(s), e.g. "a2", "p1", "v2", "f2", "l1"
+    # These are math notation that slips through from equation-heavy educational content
+    if len(tokens) == 1 and re.fullmatch(r'[a-z]\d+', tokens[0]):
+        return False
+
     # Reject phrases where EVERY token is a spaCy stop word
     if all(nlp.vocab[t].is_stop for t in tokens):
         return False
