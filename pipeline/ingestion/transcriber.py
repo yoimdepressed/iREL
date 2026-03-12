@@ -1,6 +1,7 @@
 import os
 import json
 import yaml
+import torch
 import whisper
 
 
@@ -9,18 +10,19 @@ def load_config():
         return yaml.safe_load(f)
 
 
-def transcribe_audio(audio_path: str, model_size: str = "medium") -> dict:
+def transcribe_audio(audio_path: str, model_size: str = "large") -> dict:
     """Transcribe audio using local Whisper. Returns segments with timestamps."""
-    print(f"Loading Whisper {model_size} model...")
+    use_fp16 = torch.cuda.is_available()  # fp16 only on GPU (Colab T4); CPU needs fp16=False
+    print(f"Loading Whisper {model_size} model... (GPU: {use_fp16})")
     model = whisper.load_model(model_size)
 
     print(f"Transcribing: {audio_path}")
     result = model.transcribe(
         audio_path,
-        task="transcribe",                   # preserve original language — don't auto-translate
-        language=None,                       # auto-detect — needed for code-mixed
-        condition_on_previous_text=False,     # prevents hallucination loops on CPU
-        fp16=False,                           # CPU doesn't support fp16
+        task="transcribe",                    # preserve original language — don't auto-translate
+        language=None,                        # auto-detect — needed for code-mixed
+        condition_on_previous_text=False,     # prevents hallucination loops
+        fp16=use_fp16,                        # True on GPU (faster), False on CPU (not supported)
         verbose=True,
     )
 
