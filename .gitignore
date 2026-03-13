@@ -1,9 +1,6 @@
 .env
 __pycache__/
 *.pyc
-data/audio/
-data/transcripts/
-data/outputs/
 *.egg-info/
 .venv/
 venv/

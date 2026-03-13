@@ -1,0 +1,86 @@
+{
+  "video_id": "video_3",
+  "language_mix": "Hindi-English",
+  "concepts": [
+    {
+      "concept": "kernel",
+      "score": 0.4352
+    },
+    {
+      "concept": "mode",
+      "score": 0.3353
+    },
+    {
+      "concept": "linux",
+      "score": 0.3254
+    },
+    {
+      "concept": "apis",
+      "score": 0.3117
+    },
+    {
+      "concept": "privileges",
+      "score": 0.2924
+    },
+    {
+      "concept": "api",
+      "score": 0.2908
+    },
+    {
+      "concept": "security",
+      "score": 0.258
+    },
+    {
+      "concept": "processes",
+      "score": 0.2544
+    },
+    {
+      "concept": "functionality",
+      "score": 0.2531
+    },
+    {
+      "concept": "processor",
+      "score": 0.2442
+    },
+    {
+      "concept": "access",
+      "score": 0.2433
+    },
+    {
+      "concept": "application",
+      "score": 0.2432
+    },
+    {
+      "concept": "program",
+      "score": 0.2406
+    },
+    {
+      "concept": "chmod",
+      "score": 0.2195
+    },
+    {
+      "concept": "windows",
+      "score": 0.2189
+    },
+    {
+      "concept": "hardware",
+      "score": 0.2173
+    },
+    {
+      "concept": "devices",
+      "score": 0.2035
+    },
+    {
+      "concept": "umask",
+      "score": 0.1739
+    },
+    {
+      "concept": "protection",
+      "score": 0.173
+    },
+    {
+      "concept": "code",
+      "score": 0.1712
+    }
+  ]
+}

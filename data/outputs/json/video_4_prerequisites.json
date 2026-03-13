@@ -1,0 +1,70 @@
+{
+  "video_id": "video_4",
+  "language_mix": "Hindi-English",
+  "prerequisite_edges": [
+    {
+      "from": "exams",
+      "to": "structure",
+      "confidence": 0.711,
+      "nli_score": 0.6475,
+      "positional_score": 0.859,
+      "evidence": "you should first know inside this, what are your keywords, identifiers. the input, output functions, and operator that are available include several types. this is the story when you have done it. after that, we then move on to control statements. when it comes to control statements, we encounter loops. if else for y loop, do y loop, switch, break and continue this also brings in the nested concept. nested if else, nested for loop, nested y loop ठीक है so this concept also includes the nested concept within it. and these things, if i talk about competitive exams like gate or ugc net, you may n"
+    },
+    {
+      "from": "programming",
+      "to": "structure",
+      "confidence": 0.6987,
+      "nli_score": 0.6072,
+      "positional_score": 0.912,
+      "evidence": "you should first know inside this, what are your keywords, identifiers. the input, output functions, and operator that are available include several types. this is the story when you have done it. after that, we then move on to control statements. when it comes to control statements, we encounter loops. if else for y loop, do y loop, switch, break and continue this also brings in the nested concept. nested if else, nested for loop, nested y loop ठीक है so this concept also includes the nested concept within it. and these things, if i talk about competitive exams like gate or ugc net, you may n"
+    },
+    {
+      "from": "statements",
+      "to": "programming",
+      "confidence": 0.5453,
+      "nli_score": 0.7791,
+      "positional_score": 0.0,
+      "evidence": "you hardly need 2-3 days, which is sufficient. that means if you focus on this topic for just 2-3 days. so you can easily cover it. within just 2 to 3 days. alright, so this is one way for you the building block of c programming is the foundation. you should first know inside this, what are your keywords, identifiers. the input, output functions, and operator that are available include several types. this is the story when you have done it. after that, we then move on to control statements."
+    },
+    {
+      "from": "statements",
+      "to": "topics",
+      "confidence": 0.5434,
+      "nli_score": 0.7763,
+      "positional_score": 0.0,
+      "evidence": "you should first know inside this, what are your keywords, identifiers. the input, output functions, and operator that are available include several types. this is the story when you have done it. after that, we then move on to control statements. when it comes to control statements, we encounter loops. if else for y loop, do y loop, switch, break and continue this also brings in the nested concept. nested if else, nested for loop, nested y loop ठीक है so this concept also includes the nested concept within it. and these things, if i talk about competitive exams like gate or ugc net, you may n"
+    },
+    {
+      "from": "statements",
+      "to": "exams",
+      "confidence": 0.533,
+      "nli_score": 0.7615,
+      "positional_score": 0.0,
+      "evidence": "you should first know inside this, what are your keywords, identifiers. the input, output functions, and operator that are available include several types. this is the story when you have done it. after that, we then move on to control statements. when it comes to control statements, we encounter loops. if else for y loop, do y loop, switch, break and continue this also brings in the nested concept. nested if else, nested for loop, nested y loop ठीक है so this concept also includes the nested concept within it. and these things, if i talk about competitive exams like gate or ugc net, you may n"
+    },
+    {
+      "from": "structure",
+      "to": "statements",
+      "confidence": 0.5243,
+      "nli_score": 0.7489,
+      "positional_score": 0.0,
+      "evidence": "you should first know inside this, what are your keywords, identifiers. the input, output functions, and operator that are available include several types. this is the story when you have done it. after that, we then move on to control statements. when it comes to control statements, we encounter loops. if else for y loop, do y loop, switch, break and continue this also brings in the nested concept. nested if else, nested for loop, nested y loop ठीक है so this concept also includes the nested concept within it. and these things, if i talk about competitive exams like gate or ugc net, you may n"
+    },
+    {
+      "from": "syllabus",
+      "to": "concepts",
+      "confidence": 0.5165,
+      "nli_score": 0.3333,
+      "positional_score": 0.944,
+      "evidence": "so your c program has been made very well, that's fine. now afterwards, you will implement the oops concepts in it. start running what's on the c++ side. alright, so that will be more than sufficient. your preparation for the competitive exam. even the competitive ones are present. the coding and other things that you get. that's okay, we do a bit more in c++ or java. but this is about building your logic. this designs your logic in c programming. so this is all about the syllabus of c programming"
+    },
+    {
+      "from": "structure",
+      "to": "topics",
+      "confidence": 0.4831,
+      "nli_score": 0.6901,
+      "positional_score": 0.0,
+      "evidence": "you should first know inside this, what are your keywords, identifiers. the input, output functions, and operator that are available include several types. this is the story when you have done it. after that, we then move on to control statements. when it comes to control statements, we encounter loops. if else for y loop, do y loop, switch, break and continue this also brings in the nested concept. nested if else, nested for loop, nested y loop ठीक है so this concept also includes the nested concept within it. and these things, if i talk about competitive exams like gate or ugc net, you may n"
+    }
+  ]
+}

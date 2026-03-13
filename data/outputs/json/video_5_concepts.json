@@ -1,0 +1,74 @@
+{
+  "video_id": "video_5",
+  "language_mix": "Telugu-English",
+  "concepts": [
+    {
+      "concept": "decoder",
+      "score": 0.4615
+    },
+    {
+      "concept": "byte",
+      "score": 0.4273
+    },
+    {
+      "concept": "strings",
+      "score": 0.4128
+    },
+    {
+      "concept": "characters",
+      "score": 0.3759
+    },
+    {
+      "concept": "data",
+      "score": 0.3231
+    },
+    {
+      "concept": "nandik",
+      "score": 0.2824
+    },
+    {
+      "concept": "str",
+      "score": 0.2435
+    },
+    {
+      "concept": "format",
+      "score": 0.2422
+    },
+    {
+      "concept": "spaces",
+      "score": 0.2297
+    },
+    {
+      "concept": "program",
+      "score": 0.2026
+    },
+    {
+      "concept": "information",
+      "score": 0.1931
+    },
+    {
+      "concept": "reena",
+      "score": 0.1846
+    },
+    {
+      "concept": "output",
+      "score": 0.1785
+    },
+    {
+      "concept": "matrim",
+      "score": 0.1689
+    },
+    {
+      "concept": "example",
+      "score": 0.1631
+    },
+    {
+      "concept": "applications",
+      "score": 0.1616
+    },
+    {
+      "concept": "iprogram",
+      "score": 0.1537
+    }
+  ]
+}

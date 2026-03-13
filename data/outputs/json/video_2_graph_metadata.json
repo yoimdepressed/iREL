@@ -1,0 +1,324 @@
+{
+  "video_id": "video_2",
+  "total_concepts": 20,
+  "total_edges": 39,
+  "recommended_learning_order": [
+    "equilibrium",
+    "acid",
+    "ion",
+    "base",
+    "chemistry",
+    "reactions",
+    "concentration",
+    "theory",
+    "crystallization",
+    "ph",
+    "reactant",
+    "catalyst",
+    "solutes",
+    "bases",
+    "titrant",
+    "stoichiometric",
+    "solubility",
+    "substance",
+    "basic",
+    "behavior"
+  ],
+  "nodes": [
+    "equilibrium",
+    "concentration",
+    "stoichiometric",
+    "solubility",
+    "substance",
+    "titrant",
+    "ph",
+    "behavior",
+    "basic",
+    "acid",
+    "reactant",
+    "ion",
+    "catalyst",
+    "solutes",
+    "base",
+    "bases",
+    "theory",
+    "crystallization",
+    "reactions",
+    "chemistry"
+  ],
+  "edges": [
+    {
+      "from": "equilibrium",
+      "to": "concentration",
+      "confidence": 0.6112,
+      "nli_score": 0.4966,
+      "evidence": "if it's not available, you need to take a screenshot. we move forward together, progressing with some algorithms. let's take a look at the graph, see, if i have he said i am getting a plus b. we assume c plus d, or suppose we take. i said that when i did a plus b so i got c plus from him. i said, and this is one when it is happening in the equilibrium condition, at that time, if i said that the graph initially, the concentration of the reactant will be higher when it is formed."
+    },
+    {
+      "from": "equilibrium",
+      "to": "titrant",
+      "confidence": 0.5003,
+      "nli_score": 0.1672,
+      "evidence": "when n2 and h2 are added, nh3 is formed, which is ammonia, and this process is called the haber's process, where ammonia is manufactured in very large amounts, okay, so we are combining n2 and h2, combining them as the first reactant. grandfather says that in exciting product development, the problem will gradually increase as we remove the shaft, which is discussed in our post. as it builds up, initially we have this reaction decreasing, the problem is increasing. it is increasing, at one stage both will reach equilibrium, for example, h2 and i2, when you add h2 and i2, two times hi is formed"
+    },
+    {
+      "from": "equilibrium",
+      "to": "stoichiometric",
+      "confidence": 0.4755,
+      "nli_score": 0.1259,
+      "evidence": "ammonia is manufactured in very large amounts, okay, so we are combining n2 and h2, combining them as the first reactant. grandfather says that in exciting product development, the problem will gradually increase as we remove the shaft, which is discussed in our post. as it builds up, initially we have this reaction decreasing, the problem is increasing. it is increasing, at one stage both will reach equilibrium, for example, h2 and i2, when you add h2 and i2, two times hi is formed, an equilibrium is also maintained here, next we come to the equilibrium constant, from which questions also ari"
+    },
+    {
+      "from": "equilibrium",
+      "to": "catalyst",
+      "confidence": 0.4331,
+      "nli_score": 0.0551,
+      "evidence": "when we change any factor. it's possible that we increased the side temperature in the reaction. sometimes it's concentration, sometimes pressure, sometimes the number of moles, sometimes something else. so the difference that arises, due to this and because of different conditions, a change occurs in this manner. the reaction always tries to bring itself back to equilibrium. so if i increase the pressure on one side, what will happen on the other side? the reaction will proceed in a direction where it can maintain equilibrium in the system. if the pointer ishwarn increases on one side, the re"
+    },
+    {
+      "from": "equilibrium",
+      "to": "basic",
+      "confidence": 0.4255,
+      "nli_score": 0.0425,
+      "evidence": "triangle light electrolite refers to the degree of dissociation that you define as the fraction of whatever solutes are present. in dissociate, the temperature at which you move forward with some of our b is associated. the chart with images has some of our strand lector testry one to remember in yemeni. moving forward, we have three types of theories, the first theory is the ionic equilibrium theory, also known as the arrhenius theory, all these theories are being discussed because they tell us about acids and bases, specifically the arrhenius theory states that an acid is a substance that re"
+    },
+    {
+      "from": "equilibrium",
+      "to": "substance",
+      "confidence": 0.4203,
+      "nli_score": 0.0338,
+      "evidence": "we will discuss electrolyte, specifically the scrolltype and scrollview questions related to the electrolyte framework in the context of android app development, focusing on the scrollview and scrolltype queries. in the ion, we go on a tour, which is the place form, so you say it's a mandatory electrolyte, a double layer electrolyte. subscribe to its degree of dissociation which is equal to the van't hoff factor if ever. dissociation occurred but it became partial, just like cs3, cs point, an estic estic that we break. in the ps tree, c-o is negative and h is positive, resulting in partial dis"
+    },
+    {
+      "from": "equilibrium",
+      "to": "bases",
+      "confidence": 0.4098,
+      "nli_score": 0.0164,
+      "evidence": "we will discuss electrolyte, specifically the scrolltype and scrollview questions related to the electrolyte framework in the context of android app development, focusing on the scrollview and scrolltype queries. in the ion, we go on a tour, which is the place form, so you say it's a mandatory electrolyte, a double layer electrolyte. subscribe to its degree of dissociation which is equal to the van't hoff factor if ever. dissociation occurred but it became partial, just like cs3, cs point, an estic estic that we break. in the ps tree, c-o is negative and h is positive, resulting in partial dis"
+    },
+    {
+      "from": "equilibrium",
+      "to": "theory",
+      "confidence": 0.4087,
+      "nli_score": 0.0145,
+      "evidence": "we will discuss electrolyte, specifically the scrolltype and scrollview questions related to the electrolyte framework in the context of android app development, focusing on the scrollview and scrolltype queries. in the ion, we go on a tour, which is the place form, so you say it's a mandatory electrolyte, a double layer electrolyte. subscribe to its degree of dissociation which is equal to the van't hoff factor if ever. dissociation occurred but it became partial, just like cs3, cs point, an estic estic that we break. in the ps tree, c-o is negative and h is positive, resulting in partial dis"
+    },
+    {
+      "from": "equilibrium",
+      "to": "crystallization",
+      "confidence": 0.3132,
+      "nli_score": 0.0953,
+      "evidence": "we went to actebilibrum and did it with friends. if the titration equilibrium is correct, then what if we consider equilibrium in the context of chemistry. there is a condition where the amount of reactant is equal to the amount of product, meaning the reaction is complete. as the forward reaction proceeds, a reverse reaction also occurs, and if the forward reaction and backward reaction are in equilibrium. when it reaches equilibrium time, you call that state an equilibrium state, right, and what we need to study is equilibrium is of two types, a physical equilibrium and a chemical equilibriu"
+    },
+    {
+      "from": "equilibrium",
+      "to": "reactions",
+      "confidence": 0.3116,
+      "nli_score": 0.0354,
+      "evidence": "equilibrium is of two types, a physical equilibrium and a chemical equilibrium. the name itself suggests a physical equilibrium where there are differences in physical properties. the solid-liquid equilibrium is equal to the resin's liquid equilibrium, which is equivalent to the evaporation. equilibrium is a condition in a closed system where the rate of sublimation matches the rate of condensation. the next sold solution equilibrium is what kind of condition, a condition where the rate of discount the rate of crystallization becomes equal to the solution rate, for example, when sugar is disso"
+    },
+    {
+      "from": "equilibrium",
+      "to": "reactant",
+      "confidence": 0.2991,
+      "nli_score": 0.1471,
+      "evidence": "and today we have completed a rapid revision of equilibrium. so both acid and base will cover the equilibrium in chemistry. if you want to read this chapter in detail, you will find the link in the video's description. you can go there and see its detailed overview at once. and if you need a quick revision, then you can continue with this video. most of the time, discussion takes place when you are on provest or provest. we are talking about the properties channel in these contexts when we discuss the things that were in the system then. subscribe we went to actebilibrum and did it with friend"
+    },
+    {
+      "from": "equilibrium",
+      "to": "ph",
+      "confidence": 0.2606,
+      "nli_score": 0.0603,
+      "evidence": "you can go there and see its detailed overview at once. and if you need a quick revision, then you can continue with this video. most of the time, discussion takes place when you are on provest or provest. we are talking about the properties channel in these contexts when we discuss the things that were in the system then. subscribe we went to actebilibrum and did it with friends. if the titration equilibrium is correct, then what if we consider equilibrium in the context of chemistry. there is a condition where the amount of reactant is equal to the amount of product, meaning the reaction is "
+    },
+    {
+      "from": "concentration",
+      "to": "behavior",
+      "confidence": 0.475,
+      "nli_score": 0.1251,
+      "evidence": "and if oh is negative 10 to the power of minus 7 or more, so you tell it that it is a basic solution. if it's equal, what will you say, it's a neutral solution, that's right. moving forward, ph stands for potential of hydrogen. this is what we refer to as the power of hydrogen. this tells us how acidic and how basic something is. so, the formula for ph is the negative log of the concentration of h+ ions. in the same way, you can also calculate poh, which is the negative log of the concentration of oh negative. ph is a scale ranging from 0 to 14. the center has 7. the lower the value from 7, th"
+    },
+    {
+      "from": "concentration",
+      "to": "catalyst",
+      "confidence": 0.4347,
+      "nli_score": 0.0578,
+      "evidence": "when we change any factor. it's possible that we increased the side temperature in the reaction. sometimes it's concentration, sometimes pressure, sometimes the number of moles, sometimes something else. so the difference that arises, due to this and because of different conditions, a change occurs in this manner. the reaction always tries to bring itself back to equilibrium. so if i increase the pressure on one side, what will happen on the other side? the reaction will proceed in a direction where it can maintain equilibrium in the system. if the pointer ishwarn increases on one side, the re"
+    },
+    {
+      "from": "concentration",
+      "to": "stoichiometric",
+      "confidence": 0.2746,
+      "nli_score": 0.0549,
+      "evidence": "ammonia is manufactured in very large amounts, okay, so we are combining n2 and h2, combining them as the first reactant. grandfather says that in exciting product development, the problem will gradually increase as we remove the shaft, which is discussed in our post. as it builds up, initially we have this reaction decreasing, the problem is increasing. it is increasing, at one stage both will reach equilibrium, for example, h2 and i2, when you add h2 and i2, two times hi is formed, an equilibrium is also maintained here, next we come to the equilibrium constant, from which questions also ari"
+    },
+    {
+      "from": "stoichiometric",
+      "to": "solubility",
+      "confidence": 0.5388,
+      "nli_score": 0.2314,
+      "evidence": "it is more than mole, but 0.1. if it's less than a mole, then you speak. it is slightly soluble, and if we talk about the solubility that exists, if it's less than 0.01 mole, then you say it's sparingly soluble. for solubility, you need to remember this formula, which is, basically, the normal approach is that if you calculate the solubility constant, k of sp. so it comes out to be equal to whatever its solubility is. as you will see here, s appears once and s appears again. solubility is basically how much something can be dissolved. so substance a is this much mole soluble and substance b is"
+    },
+    {
+      "from": "stoichiometric",
+      "to": "substance",
+      "confidence": 0.5031,
+      "nli_score": 0.1719,
+      "evidence": "it is more than mole, but 0.1. if it's less than a mole, then you speak. it is slightly soluble, and if we talk about the solubility that exists, if it's less than 0.01 mole, then you say it's sparingly soluble. for solubility, you need to remember this formula, which is, basically, the normal approach is that if you calculate the solubility constant, k of sp. so it comes out to be equal to whatever its solubility is. as you will see here, s appears once and s appears again. solubility is basically how much something can be dissolved. so substance a is this much mole soluble and substance b is"
+    },
+    {
+      "from": "stoichiometric",
+      "to": "basic",
+      "confidence": 0.4802,
+      "nli_score": 0.1336,
+      "evidence": "it is more than mole, but 0.1. if it's less than a mole, then you speak. it is slightly soluble, and if we talk about the solubility that exists, if it's less than 0.01 mole, then you say it's sparingly soluble. for solubility, you need to remember this formula, which is, basically, the normal approach is that if you calculate the solubility constant, k of sp. so it comes out to be equal to whatever its solubility is. as you will see here, s appears once and s appears again. solubility is basically how much something can be dissolved. so substance a is this much mole soluble and substance b is"
+    },
+    {
+      "from": "ph",
+      "to": "behavior",
+      "confidence": 0.4964,
+      "nli_score": 0.1607,
+      "evidence": "and if oh is negative 10 to the power of minus 7 or more, so you tell it that it is a basic solution. if it's equal, what will you say, it's a neutral solution, that's right. moving forward, ph stands for potential of hydrogen. this is what we refer to as the power of hydrogen. this tells us how acidic and how basic something is. so, the formula for ph is the negative log of the concentration of h+ ions. in the same way, you can also calculate poh, which is the negative log of the concentration of oh negative. ph is a scale ranging from 0 to 14. the center has 7. the lower the value from 7, th"
+    },
+    {
+      "from": "ph",
+      "to": "solutes",
+      "confidence": 0.4053,
+      "nli_score": 0.0089,
+      "evidence": "the catalyst increases the rate of reaction without being consumed, and it works well on both sides with a change in temperature. it is also seen in the inner case where changes occur, okay, moving forward, if any topic seems like i need to provide a bit more detail. so you can go and watch the lawn video where every single thing is explained in proper detail. we will discuss electrolyte, specifically the scrolltype and scrollview questions related to the electrolyte framework in the context of android app development, focusing on the scrollview and scrolltype queries. in the ion, we go on a t"
+    },
+    {
+      "from": "ph",
+      "to": "bases",
+      "confidence": 0.4025,
+      "nli_score": 0.0042,
+      "evidence": "we will discuss electrolyte, specifically the scrolltype and scrollview questions related to the electrolyte framework in the context of android app development, focusing on the scrollview and scrolltype queries. in the ion, we go on a tour, which is the place form, so you say it's a mandatory electrolyte, a double layer electrolyte. subscribe to its degree of dissociation which is equal to the van't hoff factor if ever. dissociation occurred but it became partial, just like cs3, cs point, an estic estic that we break. in the ps tree, c-o is negative and h is positive, resulting in partial dis"
+    },
+    {
+      "from": "basic",
+      "to": "behavior",
+      "confidence": 0.3837,
+      "nli_score": 0.2095,
+      "evidence": "and if oh is negative 10 to the power of minus 7 or more, so you tell it that it is a basic solution. if it's equal, what will you say, it's a neutral solution, that's right. moving forward, ph stands for potential of hydrogen. this is what we refer to as the power of hydrogen. this tells us how acidic and how basic something is. so, the formula for ph is the negative log of the concentration of h+ ions. in the same way, you can also calculate poh, which is the negative log of the concentration of oh negative. ph is a scale ranging from 0 to 14. the center has 7. the lower the value from 7, th"
+    },
+    {
+      "from": "acid",
+      "to": "behavior",
+      "confidence": 0.475,
+      "nli_score": 0.1249,
+      "evidence": "and if oh is negative 10 to the power of minus 7 or more, so you tell it that it is a basic solution. if it's equal, what will you say, it's a neutral solution, that's right. moving forward, ph stands for potential of hydrogen. this is what we refer to as the power of hydrogen. this tells us how acidic and how basic something is. so, the formula for ph is the negative log of the concentration of h+ ions. in the same way, you can also calculate poh, which is the negative log of the concentration of oh negative. ph is a scale ranging from 0 to 14. the center has 7. the lower the value from 7, th"
+    },
+    {
+      "from": "acid",
+      "to": "basic",
+      "confidence": 0.4159,
+      "nli_score": 0.0265,
+      "evidence": "triangle light electrolite refers to the degree of dissociation that you define as the fraction of whatever solutes are present. in dissociate, the temperature at which you move forward with some of our b is associated. the chart with images has some of our strand lector testry one to remember in yemeni. moving forward, we have three types of theories, the first theory is the ionic equilibrium theory, also known as the arrhenius theory, all these theories are being discussed because they tell us about acids and bases, specifically the arrhenius theory states that an acid is a substance that re"
+    },
+    {
+      "from": "acid",
+      "to": "concentration",
+      "confidence": 0.3258,
+      "nli_score": 0.0257,
+      "evidence": "the value that is often missed is, for instance, ten to the power of minus eighteen, which is a very small value, so to denote it, we will use pka, and what is pka, it is the negative log of ka, as i mentioned, the value of ka is ten. it's okay once it becomes equal, in this way you can extract the previous term which is the base constant. and this will be equal to the minus log of, okay, solution, if ever the power of h plus ten minus the viscosity. you can say its value is coming, or you can call it acidic nature, that's fine. and if oh is negative 10 to the power of minus 7 or more, so you "
+    },
+    {
+      "from": "reactant",
+      "to": "titrant",
+      "confidence": 0.474,
+      "nli_score": 0.2234,
+      "evidence": "when n2 and h2 are added, nh3 is formed, which is ammonia, and this process is called the haber's process, where ammonia is manufactured in very large amounts, okay, so we are combining n2 and h2, combining them as the first reactant. grandfather says that in exciting product development, the problem will gradually increase as we remove the shaft, which is discussed in our post. as it builds up, initially we have this reaction decreasing, the problem is increasing. it is increasing, at one stage both will reach equilibrium, for example, h2 and i2, when you add h2 and i2, two times hi is formed"
+    },
+    {
+      "from": "reactant",
+      "to": "stoichiometric",
+      "confidence": 0.4332,
+      "nli_score": 0.1487,
+      "evidence": "ammonia is manufactured in very large amounts, okay, so we are combining n2 and h2, combining them as the first reactant. grandfather says that in exciting product development, the problem will gradually increase as we remove the shaft, which is discussed in our post. as it builds up, initially we have this reaction decreasing, the problem is increasing. it is increasing, at one stage both will reach equilibrium, for example, h2 and i2, when you add h2 and i2, two times hi is formed, an equilibrium is also maintained here, next we come to the equilibrium constant, from which questions also ari"
+    },
+    {
+      "from": "ion",
+      "to": "stoichiometric",
+      "confidence": 0.468,
+      "nli_score": 0.1134,
+      "evidence": "ammonia is manufactured in very large amounts, okay, so we are combining n2 and h2, combining them as the first reactant. grandfather says that in exciting product development, the problem will gradually increase as we remove the shaft, which is discussed in our post. as it builds up, initially we have this reaction decreasing, the problem is increasing. it is increasing, at one stage both will reach equilibrium, for example, h2 and i2, when you add h2 and i2, two times hi is formed, an equilibrium is also maintained here, next we come to the equilibrium constant, from which questions also ari"
+    },
+    {
+      "from": "ion",
+      "to": "solubility",
+      "confidence": 0.4265,
+      "nli_score": 0.0442,
+      "evidence": "excessive energy is released, okay, permanent defect, we have taken a reaction in which we have we did something in rearm where we gave a gist that resulted in a parameter 9 commit that has some flaws. one side of the reaction increased, i didn't understand at first, so let me explain again, i said that in nh3, when i added h2, it formed nh4 and oh negative, that's right, now i've added nh4cl to it, so how does nh4cl break down into nh4 positive and cl negative, right, so if i've added this reaction to the mixture. according to this, if the product is increasing, then something will shift in t"
+    },
+    {
+      "from": "ion",
+      "to": "solutes",
+      "confidence": 0.4201,
+      "nli_score": 0.0336,
+      "evidence": "the catalyst increases the rate of reaction without being consumed, and it works well on both sides with a change in temperature. it is also seen in the inner case where changes occur, okay, moving forward, if any topic seems like i need to provide a bit more detail. so you can go and watch the lawn video where every single thing is explained in proper detail. we will discuss electrolyte, specifically the scrolltype and scrollview questions related to the electrolyte framework in the context of android app development, focusing on the scrollview and scrolltype queries. in the ion, we go on a t"
+    },
+    {
+      "from": "ion",
+      "to": "basic",
+      "confidence": 0.4167,
+      "nli_score": 0.0278,
+      "evidence": "triangle light electrolite refers to the degree of dissociation that you define as the fraction of whatever solutes are present. in dissociate, the temperature at which you move forward with some of our b is associated. the chart with images has some of our strand lector testry one to remember in yemeni. moving forward, we have three types of theories, the first theory is the ionic equilibrium theory, also known as the arrhenius theory, all these theories are being discussed because they tell us about acids and bases, specifically the arrhenius theory states that an acid is a substance that re"
+    },
+    {
+      "from": "ion",
+      "to": "substance",
+      "confidence": 0.4161,
+      "nli_score": 0.0268,
+      "evidence": "we will discuss electrolyte, specifically the scrolltype and scrollview questions related to the electrolyte framework in the context of android app development, focusing on the scrollview and scrolltype queries. in the ion, we go on a tour, which is the place form, so you say it's a mandatory electrolyte, a double layer electrolyte. subscribe to its degree of dissociation which is equal to the van't hoff factor if ever. dissociation occurred but it became partial, just like cs3, cs point, an estic estic that we break. in the ps tree, c-o is negative and h is positive, resulting in partial dis"
+    },
+    {
+      "from": "ion",
+      "to": "theory",
+      "confidence": 0.4083,
+      "nli_score": 0.0139,
+      "evidence": "we will discuss electrolyte, specifically the scrolltype and scrollview questions related to the electrolyte framework in the context of android app development, focusing on the scrollview and scrolltype queries. in the ion, we go on a tour, which is the place form, so you say it's a mandatory electrolyte, a double layer electrolyte. subscribe to its degree of dissociation which is equal to the van't hoff factor if ever. dissociation occurred but it became partial, just like cs3, cs point, an estic estic that we break. in the ps tree, c-o is negative and h is positive, resulting in partial dis"
+    },
+    {
+      "from": "ion",
+      "to": "bases",
+      "confidence": 0.4073,
+      "nli_score": 0.0121,
+      "evidence": "we will discuss electrolyte, specifically the scrolltype and scrollview questions related to the electrolyte framework in the context of android app development, focusing on the scrollview and scrolltype queries. in the ion, we go on a tour, which is the place form, so you say it's a mandatory electrolyte, a double layer electrolyte. subscribe to its degree of dissociation which is equal to the van't hoff factor if ever. dissociation occurred but it became partial, just like cs3, cs point, an estic estic that we break. in the ps tree, c-o is negative and h is positive, resulting in partial dis"
+    },
+    {
+      "from": "ion",
+      "to": "crystallization",
+      "confidence": 0.2597,
+      "nli_score": 0.0062,
+      "evidence": "we went to actebilibrum and did it with friends. if the titration equilibrium is correct, then what if we consider equilibrium in the context of chemistry. there is a condition where the amount of reactant is equal to the amount of product, meaning the reaction is complete. as the forward reaction proceeds, a reverse reaction also occurs, and if the forward reaction and backward reaction are in equilibrium. when it reaches equilibrium time, you call that state an equilibrium state, right, and what we need to study is equilibrium is of two types, a physical equilibrium and a chemical equilibriu"
+    },
+    {
+      "from": "base",
+      "to": "basic",
+      "confidence": 0.4179,
+      "nli_score": 0.0298,
+      "evidence": "triangle light electrolite refers to the degree of dissociation that you define as the fraction of whatever solutes are present. in dissociate, the temperature at which you move forward with some of our b is associated. the chart with images has some of our strand lector testry one to remember in yemeni. moving forward, we have three types of theories, the first theory is the ionic equilibrium theory, also known as the arrhenius theory, all these theories are being discussed because they tell us about acids and bases, specifically the arrhenius theory states that an acid is a substance that re"
+    },
+    {
+      "from": "chemistry",
+      "to": "crystallization",
+      "confidence": 0.3007,
+      "nli_score": 0.0672,
+      "evidence": "we went to actebilibrum and did it with friends. if the titration equilibrium is correct, then what if we consider equilibrium in the context of chemistry. there is a condition where the amount of reactant is equal to the amount of product, meaning the reaction is complete. as the forward reaction proceeds, a reverse reaction also occurs, and if the forward reaction and backward reaction are in equilibrium. when it reaches equilibrium time, you call that state an equilibrium state, right, and what we need to study is equilibrium is of two types, a physical equilibrium and a chemical equilibriu"
+    },
+    {
+      "from": "chemistry",
+      "to": "ph",
+      "confidence": 0.2563,
+      "nli_score": 0.0459,
+      "evidence": "you can go there and see its detailed overview at once. and if you need a quick revision, then you can continue with this video. most of the time, discussion takes place when you are on provest or provest. we are talking about the properties channel in these contexts when we discuss the things that were in the system then. subscribe we went to actebilibrum and did it with friends. if the titration equilibrium is correct, then what if we consider equilibrium in the context of chemistry. there is a condition where the amount of reactant is equal to the amount of product, meaning the reaction is "
+    },
+    {
+      "from": "chemistry",
+      "to": "reactant",
+      "confidence": 0.2529,
+      "nli_score": 0.0635,
+      "evidence": "and today we have completed a rapid revision of equilibrium. so both acid and base will cover the equilibrium in chemistry. if you want to read this chapter in detail, you will find the link in the video's description. you can go there and see its detailed overview at once. and if you need a quick revision, then you can continue with this video. most of the time, discussion takes place when you are on provest or provest. we are talking about the properties channel in these contexts when we discuss the things that were in the system then. subscribe we went to actebilibrum and did it with friend"
+    }
+  ]
+}

@@ -70,6 +70,10 @@ Rule-based methods (e.g., detecting the word "before" between two concepts) are 
 ### Why D3.js for the graph instead of Pyvis?
 Pyvis generates thousands of lines of bloated HTML by embedding its entire JS runtime inline. Our D3.js implementation produces a clean ~230-line self-contained HTML file (D3 loaded from CDN), with full zoom/pan/drag, hover-to-highlight neighbourhood, confidence-scaled edge thickness, and proper directed arrow rendering -- all in readable, maintainable code.
 
+### Why a Directed Acyclic Graph (DAG) in JSON format?
+
+Pedagogical flows are inherently directional and non-circular (you cannot have Concept A require Concept B, while Concept B requires Concept A). Representing the output as a DAG ensures mathematical soundness. The computational format chosen is a JSON edge list ([{"source": "A", "target": "B", "confidence": 0.8}]). This structure is highly scalable, language-agnostic, easily ingestible by graph databases (like Neo4j), and perfectly structured for the D3.js frontend to render topological sorts.
+
 ### Why this file structure for outputs?
 
 | File | Purpose |
@@ -92,8 +96,8 @@ Each intermediate file is written to disk so any single step can be re-run indep
 | 1 | Fundamenthol | Fluid Mechanics | Hindi-English | [link](https://www.youtube.com/watch?v=6xeENYd-aLw) |
 | 2 | Next Toppers | Chemical Equilibrium | Hindi-English | [link](https://www.youtube.com/watch?v=z3JYqn2cNzg) |
 | 3 | Gate Smashers | System Calls in OS | Hindi-English | [link](https://www.youtube.com/watch?v=tWPa-rZiGM8) |
-| 4 | (Hindi CS) | C Programming Basics | Hindi-English | [link](https://www.youtube.com/watch?v=ec-Cd4jKFWc) |
-| 5 | (Telugu CS) | C Programming | Telugu-English | [link](https://www.youtube.com/watch?v=8qi4wcYhcl8) |
+| 4 | Gate Smashers | C Programming Basics | Hindi-English | [link](https://www.youtube.com/watch?v=ec-Cd4jKFWc) |
+| 5 | Atish Jain | C Programming | Telugu-English | [link](https://www.youtube.com/watch?v=8qi4wcYhcl8) |
 
 Videos were chosen to span different subjects (fluid mechanics, chemistry, OS, programming), different language mixes (Hindi-dominant, Telugu-dominant), and different teaching styles (conceptual explanation vs. rapid revision vs. beginner course intro).
 
@@ -120,7 +124,7 @@ Videos were chosen to span different subjects (fluid mechanics, chemistry, OS, p
 
 ## Known Limitations
 
-- **Whisper on fast colloquial speech**: Whisper sometimes mishears fast Hindi or Telugu as garbled text. Videos with slower, clearer speech (video_2) produce higher-quality transcripts and more prerequisite edges. This is a fundamental ASR limitation.
+- **Whisper on fast colloquial speech**: Whisper sometimes mishears fast Hindi or Telugu as garbled text. Videos with slower, clearer speech produce higher-quality transcripts and more prerequisite edges. This is a fundamental ASR limitation.
 - **Rapid revision / intro videos produce fewer edges**: Videos that only list topics without explaining *why* one concept precedes another give the NLI model little to work with. video_1 (fluid mechanics quick overview) and video_5 (short Telugu intro) reflect this in their low edge counts -- the content itself lacks explicit prerequisite language.
 - **Romanized Hinglish passes the English filter**: Segments where Hindi is written in Latin script (e.g., `"pointer ko samjho pehle"`) have fewer than 10% non-ASCII characters and are not sent for translation. The OOV filter in the concept extractor rejects most leaked romanized tokens, but occasional false survivors are possible.
 - **Long-range concept dependencies**: The NLI model operates over a 10-segment sliding window (~800 chars). Concepts introduced very far apart in a long video may never co-occur in any window, so no edge is created between them even if one is a clear prerequisite of the other.
@@ -218,7 +222,7 @@ python main.py --step graph         # build interactive D3.js knowledge graph
 
 Each step reads its inputs from and writes its outputs to `data/` -- so if translation is already done, you can re-run only `extract` onward without re-translating.
 
-**Tip:** To process a single video without touching the others, temporarily comment out the other entries in the `videos:` list in `config.yaml`.
+**Note:** To process a single video without touching the others, temporarily comment out the other entries in the `videos:` list in `config.yaml`.
 
 ---
 

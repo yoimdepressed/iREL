@@ -1,0 +1,86 @@
+{
+  "video_id": "video_4",
+  "language_mix": "Hindi-English",
+  "concepts": [
+    {
+      "concept": "exams",
+      "score": 0.5046
+    },
+    {
+      "concept": "syllabus",
+      "score": 0.453
+    },
+    {
+      "concept": "programming",
+      "score": 0.3788
+    },
+    {
+      "concept": "interviews",
+      "score": 0.3517
+    },
+    {
+      "concept": "basics",
+      "score": 0.3475
+    },
+    {
+      "concept": "students",
+      "score": 0.333
+    },
+    {
+      "concept": "pointers",
+      "score": 0.3214
+    },
+    {
+      "concept": "topics",
+      "score": 0.2887
+    },
+    {
+      "concept": "coding",
+      "score": 0.2852
+    },
+    {
+      "concept": "university",
+      "score": 0.2771
+    },
+    {
+      "concept": "placement",
+      "score": 0.2661
+    },
+    {
+      "concept": "statements",
+      "score": 0.2644
+    },
+    {
+      "concept": "preparation",
+      "score": 0.2609
+    },
+    {
+      "concept": "college",
+      "score": 0.2535
+    },
+    {
+      "concept": "syntax",
+      "score": 0.239
+    },
+    {
+      "concept": "concepts",
+      "score": 0.2305
+    },
+    {
+      "concept": "structure",
+      "score": 0.2296
+    },
+    {
+      "concept": "introduction",
+      "score": 0.2209
+    },
+    {
+      "concept": "platforms",
+      "score": 0.2089
+    },
+    {
+      "concept": "practicals",
+      "score": 0.2073
+    }
+  ]
+}

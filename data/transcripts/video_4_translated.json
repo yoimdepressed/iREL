@@ -1,0 +1,1291 @@
+{
+  "detected_language": "hi",
+  "original_full_text": " Dear Students, Welcome to Great Smashers आज के इस वीडियो में एक्स्पेइन करने जा रहा हूँ C Programming Slabas और ये Slabas जो है वो हम लोग तीन चीजों के उपर फोकस कर रहे हैं यहाँ पे सबसे पहला है आपके Interviews की अगर हम बात करें तो Interviews मतलब चाहे आप Service Based company की तियारी कर रहे हो या फिर product based company की तियारी कर रहे हो तो C programming में क्या चीज़ें पूछी जा सकती है क्या-क्या topics आपको complete करने है पहला focus हमारा इसके उपर है दूसरा focus है हमारा competitive exam की अगर हम बात करें चाहे आप gate के exam की बात कर लो UG Senate की बात कर लो कोई PSU's Companies की बात कर लो कोई भी Competitive exam की अगर आप त्यारी कर रहे हो और उसमें अगर C Programming का Slabus लिखा हुआ है तो क्या चीजें आपको पूछी जा सकती है और तीसरी चीज आ जाती है आपका College University का exam मतलब अगर आप किसी college में, university में, कहीं पे भी पढ़ रहे हो, तो वहाँ पे अगर आपको C programming syllabus में है, तो उसमें आपको क्या पूछा जा सकता है, क्या चीज़ें आपको cover करनी चाहिए, तो ये पूरा का पूरा syllabus जो है, इसको पहले तो note down कर लेना, इसकी चाहे फोटो क्लिक कर लो या लिख लो ठीक है क्योंकि C programming की अगर हम बात करें one of the most basic programming language है जो की सबसे ज़्यादा पूछी जाती है चाहे आप competitive exam की बात कर लो interviews की बात कर लो क्योंकि होता क्या न आज के टाइम पे students ने एक perception मना रखी है कि छोड़ो यार C, C++ को क्या करनी है जावा हम तो जी data science के बारे में करते हैं ऐसा करते हैं हम लोग big data के बारे में पढ़ते हैं हम लोग machine learning के बारे में virtual reality और ये सारा ठीक है इन चीजों के बारे में आपको knowledge होनी चाहिए आज के लिए सारे trending topics है लेकिन guys जितने भी competitive exams चाहे आप even interviews की भी बात करो ना product based में या service based में वहाँ पे भी कहीं ना कहीं जो है वो अभी भी basic C programming के बारे में ही पूछा जाता है हाँ आप C के साथ साथ अगर आप और कोई करना चाहते हो तो फिर इसमें add कर दो उप्स का concept आप C++ या फिर आप Java जो है वो सबसे ज़्यादा पूछी जाती है तो इसलिए जो आपका programming का जो building block है जो pillar है वो कौन बनाता है वो आपका बनाता है C programming तो इसलिए इसको करना जो है वो mandatory है ठीक है तो आप मान के चलो सबसे पहले अगर हम बात करें syllabus में बहुत ही simple सा syllabus है बहुत ही simple सी चीज़े है कोई ज़्यादा मुश्किर concept नहीं है और मैं आपको एक और चीज़ बता दूं कि almost all the important topics are already covered by me मतलब gate smashers की playlist में almost सारे के सारे जो important topics हैं वो complete हो चुके है, बस जो छोटे-छोटे points बीच में रह गए, fillers, वो मैं बहुत जल्दी और complete कर दूँगा, तो आपको एक बहुत बड़ा advantage यहाँ भी मिल रहा है, तो hardly आप मान के चलो कि 2-3 मीने आपके enough है, ठीक है न, एक पूरे semester में बढ़ते हैं C programming, so आप मान के चलो कि अगर आप अच्छे से बढ़ना जाते हो, daily कुछ लोग इस topic को अगर आप उठाते हो, start करते हो बढ़ना, तो 2-3 मिनें आपके sufficient है, तो इसलिए सबसे पहले अगर हम बात करें, basics of C, तो यहाँ पे आपके कहानी जो है वो start होती है C programming में, Keywords, Identifiers, Different Data Types, Variable, Constraints की बात करते हैं Input, Output, Functions की हम लोग बात करते हैं Operators की बात करते हैं Storage Classes की जिसमें आपके बास Auto, External जाता है Register जाता है, Static जाता है Various Operators, जाएं Logical Operator की बात कर लो Bitwise, Arithmetic ये सारे के सारे Operators उनकी Presidence आ जाती है और साथ ही साथ उनकी associativity आ जाती है then format specifiers जो आपके signed है, unsigned है, character है, integer है, hexadecimal उनको हम कैसे represent करते है बड़े basic से concept है तो आप मालिके चलो इस पूरे को complete करने के लिए hardly आपको 2-3 दिन sufficient है मतलब अगर आप 2-3 दिन सिर्फ इस topic के उपर लगाओगे तो आप easily cover कर सकते हो सिर्फ 2 to 3 days के अंदर ठीक है तो यह आपका एक तरह से C programming का building block है आपको पहले तो पता होना चाहिए इसके अंदर कौन-कौन से आपके keywords, identifiers input, output functions, operator कौन-कौन से आते हैं यह कहानी जब आपने कर ली उसके बाद फिर next हम लोग जाते हैं जी control statements के ऊपर control statements की बात करें तो उसमें हम अरपस आ जाता है if else for y loop, do y loop, switch, break and continue इसके साथ सथ nested concept भी आ जाता है nested if else, nested for loop, nested y loop ठीक है तो ये concept जो है वो nested वाला भी इसके अंदर आ जाता है और ये चीज़े अगर मैं बात करूँ नो competitive exam है जैसे gate के exam देख लो या UGC net के exam देख लो वहाँ पे maybe आपको ये topics directly ना लिखे हो वहाँ पे पता क्या होता है जैसे gate के exam की बात करें तो उसमें क्या होता है programming और data structure को combinedly ही लिखा जाता है अलग से programming नहीं आता आपको programming और data structure combined ह structure, algorithm, ये तीनों जो मिलके, C data structure, algorithm ये तीनों मिलके ही आपकी अच्छी से अच्छी placement जो है वो करवा सकते हैं, और मैं ऐसा नहीं है कि कोई आज से एक दो साल पहले की बात करो आज की, अभी की बात करो और आने वाले टाइम की भी बात करो, ऐसा भी नहीं कि आने वाले एक दो साल में यह खत्म हो जाएगा नहीं C data structure और algorithm यह तीनों अगर आपको concept clear है तो आपको पूरी की पूरी कहानी ही जो है वह clear है उसके बाद तो बस आपको revise करना है आजकल जो different प्लैटफॉर्म्स है उन पर जाके आपको पार्टिसिपेट करना है अप्लाई करना और वहाँ पर जाके आपको सिर्फ प्रैक्टिस करनी है ठीक है सासाथ अगर आप add on करना चाहते हो तो C++ या Java का concept add कर सकते हो भाईया इससे ज़्यादा आपको करने की कोई जिरूरत ही नहीं है वैसे भी इसका कोई parameter ही नहीं है कि placement के लिए बहुत सारी वीडियो जामने देखे होंगे YouTube पे कि अगर आप इतना package जाते हो तो ये करो product based जाते हो तो ये करो ठीक है वो चीज़े सारे से सारे आपको कहीं न कहीं guide करने की कोशिश कर रहे हैं लेकिन आपको मैं बता दू कोई ऐसा parameter नहीं है कि ये हो गया तो placement done है या ये कर लिया तो placement done है हाँ chances बढ़ जाते हैं probability बढ़ जाती है आपकी तो ऐसी C programming अगर आपने अच्छे से कर ली तो enough ये भी अपने आप में enough है आपको कहीं न कहीं अच्छी job दिलवाने में लेकिन वही होता है कि थोड़ा सा हो सकता है कि आपने like किसी company के लिए apply किया और वहाँ पे 100 लोगों ने apply किया तो हो सकता है 100 के 100 C programming पढ़के आये हो उन में से हो सकता है कि 20-30 ऐसे हो जिनको बहुत ही अच्छे से concept clear है अब आपने let's say उसमें number of post 5 है अब आपने 20-30 में top 5 में आने के लिए क्या करना पड़ेगा फिर obviously data structure को concept आपको build करना पड़ेगा उसके इलावा आपको algorithm के concept build करने पड़ेगे तो वही है आपके probability बढ़ा देते हैं बस ये concept है ठीक है न तो इसलिए आपको ये सारी चीज़े बहुत easy है और असानी से कर भी सकते हैं साथ ही साथ आप इनको execute करके भी दे सकते हो वो भी बहुत easy concept है then control statements आ गया उसके बाद हमारे पास आ जाता है यहाँ से main कार्नी जो है वो programming की यहाँ से start होती है that is functions ठीक है न वो होता है न maximum student बस यहाँ तक आके छोड़ देते हैं मतलब 90% student तो यहाँ तक आके hope ही छोड़ देता है कि होगी C programming, नहीं भी यहाँ, असली C programming तो उसके बाद start है, मैं यहाँ पे सिर्फ practical की बार नहीं करना, theoretical logic building भी आपको आनी चाहिए, क्योंकि उसके बाद तो सिर्फ syntax बचते हैं, syntax याद है तो आप लिख सकते हो, लेकिन logic building जो है, वो C programming बहुत अच्छे से बनाती है, logic बनाना, चीजों को solve करने के लिए तो देखो, functions का concept आ जाता है, recursion का concept, very very important recursion का concept, जिसमें हम Fibonacci series के बारे में पढ़ते हैं, Tower of पर नॉइ के बारे में पड़ते हैं, आप हमारे, वहाँ पे जो है, ये सारे के सारे concept जो आ जाते हैं, actual, formal arguments, parameter passing techniques आ जाती हैं, call by value, call by reference, call by name, ये सारी कानी आ जाती है, scoping आ जाती है, static scoping क्या है, dynamic scoping क्या है, और साथ ही साथ इसके parallel concept चलता है, pointers का भी ठीक है ना तो one of the most important जो top का important concept है पूरे C programming में वो है concept of pointers ऐसा नहीं है कि यह करने के बाद pointer आता है यहाँ पे भी आपका बीच में pointer का concept जो है वो start होई जाएगा तो pointers का introduction कैसे हम pointers को use करते हैं फिर pointers को array के साथ pointers को string के साथ pointers को function के साथ, pointers को structure के साथ वो आपका concept जो है वो सास साथ build हो जाता है dynamic memory allocation, static allocation, dynamic memory allocation, malloc, malloc वो आ जाता है concept फिर आ जाता है आपके पास string functions ठीक है तो string का concept आ जाता है various library functions आ जाते है जैसे string length, string concatenation ये सारे already cover करवा चुका हूँ मैं जितने भी functions है with example आपके already cover करवा चुका हूँ concept of pointers and string यह भी cover करवा चुका हूँ, मतलब जितने points आपको दिख रहे हैं ना, उपर उपर के वो सारे के सारे done हो चुके हैं, जो थोड़े बहुत रह गए topic एक आदा, वो भी simple सा वो जल्दी ही आपको cover करवा दिया जाएगा structure and union का concept आ जाता है structure क्या है कैसे हम design करते है उसके अंदर nested structure का concept है unit है type def है वो सारे के सारे बताई हुए है then finally आ जाता है last में file handling in C programming जिसमें हम input output की बात करते है साथ ही सच file को कैसे हम open करते है close करते है modify करते है वो concept जो है वो files का C programming में आ जाता है बस यहाँ पे आके एक तरह से कह सकते हो कि अगर आपने इतने concept कर लिये तो C आपकी बहुत अच्छे से बन गई ठीक है अब इसके बाद आप इसमें OOPS के concept आड़ कर दो मतलब C++ की तरफ जो है वो चलना स्टार्ट कर दो ठीक है तो that will be more than sufficient आपकी competitive exam की त्यारी जो है even competitive जो है आपकी जो आती है coding वगेरा वो ठीक है हम C++ में या Java में थोड़ा ज़्यादा करते हैं लेकिन ये आपके logic building है ये आपके logic को design करती है C programming so this is all about the syllabus of C programming Thank you",
+  "translated_full_text": "Dear Students, Welcome to Great Smashers In today's video, I am going to explain. C Programming Slabas And these Slabas that exist are for us. We are focusing on three things here. The first thing is your interviews. If we talk about interviews मतलब चाहे आप Service Based Are you preparing for a service-based company or a product-based company? So what are the things that can be asked in C programming, what topics should you know. Our first focus is to complete this, and our second focus is on top of that. If we talk about competitive exams, whether it's the GATE exam or any other. Let's talk about the UG Senate regarding some Public Sector Undertakings. Let's talk about any company. If you are preparing for a competitive exam and in that if there is C Programming The syllabus is written, so what are the things included in it. You may be asked The third thing that comes is your college. The university's exam means that if you Whether you are studying in a college, university, or anywhere else, So if you have C programming in your syllabus, So what can be asked to you in that. What things should you cover? So this is the entire syllabus that we have, First, note this down, You can either click a photo or write it down, that's okay. Because if we talk about C programming. one of the most basic programming language है Which is the most frequently asked question. Whether you are talking about competitive exams Let's talk about interviews. Because that's what happens. Today, students have a perception in their minds. Let's leave that, what do we need to do with Java, forget about C, C++. We are talking about data science. We study about big data like this. We are discussing machine learning. Virtual reality and all this. It's okay, you should have knowledge about these things. These are all the trending topics for today. However, guys, all the competitive exams Whether you have an even Let's also discuss interviews related to product-based jobs. In a service-based system, it is also there. Something is still present somewhere. It is only about basic C programming. The question is asked yes you are in C. Additionally, if you want to do something else. Then add the concept of ups in it. You can use C++ or you can use Java. That is the most frequently asked question. So that is why your programming background The building block that serves as the pillar He who creates that creates you. We do C programming for this reason. What is there is mandatory, okay. So, let's assume that first of all, if We are discussing a very simple syllabus, which is quite straightforward. There's no overly difficult concept and I'll tell you one more thing. I mean that almost all the important topics are already covered by me for the GATE exam. The playlist of smashers includes almost all the important topics. The tasks that have been completed, are just the small ones. Some points were left in between, which served as fillers. I will complete it very quickly, so You are getting a huge advantage here as well. So let's assume that hardly anything is going to happen. 2-3 months is enough for you. Alright, the complexity increases over an entire semester. In C programming, let's assume that if you know how to increment properly, Daily, some people start discussing this topic and begin to grow. So 2-3 minutes is sufficient for you. So, to begin with, if we talk about the basics of C, So, your story begins here with C programming. We will discuss Keywords, Identifiers, Different Data Types, Variables, and Constraints. We are discussing Input, Output, and Functions. Let's talk about operators. The storage classes include Auto and External, which are available to you. The register is set, and the static is set. Let's discuss the Logical Operator among various operators. These are all the Bitwise and Arithmetic operators. Their presidency comes into effect. And at the same time, their associativity comes into play. then format specifiers What is signed, unsigned, character, integer, and hexadecimal in your context. How do we represent them. It is a basic concept. So let's move on to complete this entire thing. You hardly need 2-3 days, which is sufficient. That means if you focus on this topic for just 2-3 days. So you can easily cover it. Within just 2 to 3 days. Alright, so this is one way for you The building block of C programming is the foundation. You should first know Inside this, what are your keywords, identifiers. The input, output functions, and operator that are available include several types. This is the story when you have done it. After that, we then move on to control statements. When it comes to control statements, we encounter loops. if else for y loop, do y loop, switch, break and continue This also brings in the nested concept. nested if else, nested for loop, nested y loop ठीक है So this concept also includes the nested concept within it. And these things, if I talk about competitive exams like GATE or UGC NET, you may not find these topics directly mentioned, but you should know what happens in exams like GATE, where programming and data structure are combined, and you won't find programming as a separate topic, instead, programming and data structure are covered together. The structure, algorithm, and these three are related. Those who are learning C data structures and algorithms together. These three together form your The best placement that exists is We can do it, and I am not like that. Whether you talk about something that happened a year or two ago today. Let's talk about the present or current situation. And let's also talk about the upcoming time, it's not like that. That in the next one or two years this will be over, no, C data structure and algorithm, if you have a concept of all three. If it's clear, then you have the entire story clear, after that you just need to revise, especially with the different concepts we have nowadays. There are platforms where you need to participate, apply, and once you're there, you just need to practice, okay. If you want to add an add-on. So you can add the concept of C++ or Java. Brother, you don't need to do anything more than this. Anyway, it doesn't have any parameter. You must have seen a lot of videos on YouTube for placement. If you go to that extent with the package, then do this. If you are going for a product-based approach, then do this. It's okay, those things are somehow related to all of you in some way. They are trying to guide. But let me tell you something. If the parameter is not set, then the placement is done. If this is done, then the placement is complete. Yes, the chances increase, the probability of yours increases. So if you have done C programming well. So this is enough in itself for you. Somewhere it helps to get a good job. But that's what happens, just a little bit. You may have applied to a company like that. And 100 people applied there. So you might have studied 100 percent of C programming. There may be 20-30 such cases among them. Those who have a very clear understanding of the concept. Now let's say you have 5 posts in it. Now you need to know what to do to get into the top 5 in 20-30. Then obviously you will have to build the concept of the data structure. Apart from that, you will have to build the concepts of the algorithm. So those are the ones that increase your probability. This concept is correct, right? So that's why all these things are very easy for you. We can also do it easily. You can also execute them simultaneously. That is also a very easy concept. Then the control statements have arrived. After that, we get to this point from here. The core concept that is here is where programming starts. That's correct, isn't it, regarding the functions. That's what happens with the maximum number of students, they just come up to this point and drop out. This means that 90% of students give up hope by this point that they will be able to do C programming. It doesn't start here, the actual C programming begins afterwards. I'm not just here to talk about practicals. Theoretical logic building should also be known to you. Because after that, only the syntax remains. If you remember the syntax, you can write it, but The logic building that exists is in C. Programming creates logic very well. Creating, to solve things. So, the concept of functions comes into play, recursion का concept, very very important The concept of recursion, in which we We are reading about the Fibonacci series in the context of the Tower of Hanoi. When we talk about noise, you will see all these concepts that we have discussed over there. actual, formal arguments, parameter passing techniques आ जाती हैं, call by value, call by reference, When you call by name, all these concepts come into play, scoping comes into play, so what is static scoping? Dynamic scoping is what it is, and at the same time its parallel concept is also applicable. The concept of pointers is also correct, and it is one of the most important concepts in the entire C programming. It's not that after doing this, the pointer comes here, but rather your concept of a pointer in the middle will start to take shape. So the introduction to pointers is how we use pointers, then using pointers with arrays and using pointers with strings. Pointers with functions, and pointers with structures. That concept of yours gets built along with the SAS. dynamic memory allocation, static allocation, dynamic memory allocation, malloc, malloc That brings us to the concept. Then you have string functions at your disposal. So, the concept of a string comes into play. Various library functions are available. For example, string length and string concatenation. I have already covered all of this. All the functions that exist I have already covered this with an example. concept of pointers and string I have also covered this, meaning all the points. You can see that, in the upper sections. All of them have been completed, whatever little was left. We are left with one topic, and that is also quite simple. That will be covered for you soon. The concept of structure and union is introduced. What is the structure and how do we design it It has the concept of a nested structure inside it. The unit is a type definition. He has explained all of them. Then finally we have file handling in the last part of C programming. In which we discuss input output. Along with this, the actual file How do we open and close. We modify the concept that it has. Files are introduced in C programming. In a way, you can say that once you've covered so many concepts here. So your C program has been made very well, that's fine. Now afterwards, you will implement the OOPS concepts in it. Start running what's on the C++ side. Alright, so that will be more than sufficient. Your preparation for the competitive exam. Even the competitive ones are present. The coding and other things that you get. That's okay, we do a bit more in C++ or Java. But this is about building your logic. This designs your logic in C programming. so this is all about the syllabus of C programming Thank you",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 1.88,
+      "original": "Dear Students, Welcome to Great Smashers",
+      "translated": "Dear Students, Welcome to Great Smashers"
+    },
+    {
+      "start": 1.88,
+      "end": 3.72,
+      "original": "आज के इस वीडियो में एक्स्पेइन करने जा रहा हूँ",
+      "translated": "In today's video, I am going to explain."
+    },
+    {
+      "start": 3.72,
+      "end": 5.54,
+      "original": "C Programming Slabas",
+      "translated": "C Programming Slabas"
+    },
+    {
+      "start": 5.54,
+      "end": 7.62,
+      "original": "और ये Slabas जो है वो हम लोग",
+      "translated": "And these Slabas that exist are for us."
+    },
+    {
+      "start": 7.62,
+      "end": 9.52,
+      "original": "तीन चीजों के उपर फोकस कर रहे हैं यहाँ पे",
+      "translated": "We are focusing on three things here."
+    },
+    {
+      "start": 9.52,
+      "end": 12.2,
+      "original": "सबसे पहला है आपके Interviews की",
+      "translated": "The first thing is your interviews."
+    },
+    {
+      "start": 12.2,
+      "end": 14.12,
+      "original": "अगर हम बात करें तो Interviews",
+      "translated": "If we talk about interviews"
+    },
+    {
+      "start": 14.12,
+      "end": 15.9,
+      "original": "मतलब चाहे आप Service Based",
+      "translated": "मतलब चाहे आप Service Based"
+    },
+    {
+      "start": 15.9,
+      "end": 19.72,
+      "original": "company की तियारी कर रहे हो या फिर product based company की तियारी कर रहे हो",
+      "translated": "Are you preparing for a service-based company or a product-based company?"
+    },
+    {
+      "start": 19.72,
+      "end": 24.6,
+      "original": "तो C programming में क्या चीज़ें पूछी जा सकती है क्या-क्या topics आपको",
+      "translated": "So what are the things that can be asked in C programming, what topics should you know."
+    },
+    {
+      "start": 24.6,
+      "end": 28.96,
+      "original": "complete करने है पहला focus हमारा इसके उपर है दूसरा focus है हमारा",
+      "translated": "Our first focus is to complete this, and our second focus is on top of that."
+    },
+    {
+      "start": 28.96,
+      "end": 33.38,
+      "original": "competitive exam की अगर हम बात करें चाहे आप gate के exam की बात कर लो",
+      "translated": "If we talk about competitive exams, whether it's the GATE exam or any other."
+    },
+    {
+      "start": 33.38,
+      "end": 35.28,
+      "original": "UG Senate की बात कर लो कोई PSU's",
+      "translated": "Let's talk about the UG Senate regarding some Public Sector Undertakings."
+    },
+    {
+      "start": 35.28,
+      "end": 37.04,
+      "original": "Companies की बात कर लो कोई भी",
+      "translated": "Let's talk about any company."
+    },
+    {
+      "start": 37.04,
+      "end": 38.98,
+      "original": "Competitive exam की अगर आप त्यारी कर रहे हो",
+      "translated": "If you are preparing for a competitive exam"
+    },
+    {
+      "start": 38.98,
+      "end": 40.78,
+      "original": "और उसमें अगर C Programming का",
+      "translated": "and in that if there is C Programming"
+    },
+    {
+      "start": 40.78,
+      "end": 42.84,
+      "original": "Slabus लिखा हुआ है तो क्या चीजें",
+      "translated": "The syllabus is written, so what are the things included in it."
+    },
+    {
+      "start": 42.84,
+      "end": 44.62,
+      "original": "आपको पूछी जा सकती है और",
+      "translated": "You may be asked"
+    },
+    {
+      "start": 44.62,
+      "end": 46.54,
+      "original": "तीसरी चीज आ जाती है आपका College",
+      "translated": "The third thing that comes is your college."
+    },
+    {
+      "start": 46.54,
+      "end": 48.7,
+      "original": "University का exam मतलब अगर आप",
+      "translated": "The university's exam means that if you"
+    },
+    {
+      "start": 48.7,
+      "end": 51.0,
+      "original": "किसी college में, university में, कहीं पे भी पढ़ रहे हो,",
+      "translated": "Whether you are studying in a college, university, or anywhere else,"
+    },
+    {
+      "start": 51.34,
+      "end": 54.14,
+      "original": "तो वहाँ पे अगर आपको C programming syllabus में है,",
+      "translated": "So if you have C programming in your syllabus,"
+    },
+    {
+      "start": 54.52,
+      "end": 56.32,
+      "original": "तो उसमें आपको क्या पूछा जा सकता है,",
+      "translated": "So what can be asked to you in that."
+    },
+    {
+      "start": 56.4,
+      "end": 57.82,
+      "original": "क्या चीज़ें आपको cover करनी चाहिए,",
+      "translated": "What things should you cover?"
+    },
+    {
+      "start": 58.24,
+      "end": 60.26,
+      "original": "तो ये पूरा का पूरा syllabus जो है,",
+      "translated": "So this is the entire syllabus that we have,"
+    },
+    {
+      "start": 60.68,
+      "end": 62.18,
+      "original": "इसको पहले तो note down कर लेना,",
+      "translated": "First, note this down,"
+    },
+    {
+      "start": 62.18,
+      "end": 64.24,
+      "original": "इसकी चाहे फोटो क्लिक कर लो या लिख लो ठीक है",
+      "translated": "You can either click a photo or write it down, that's okay."
+    },
+    {
+      "start": 64.24,
+      "end": 66.62,
+      "original": "क्योंकि C programming की अगर हम बात करें",
+      "translated": "Because if we talk about C programming."
+    },
+    {
+      "start": 66.62,
+      "end": 69.44,
+      "original": "one of the most basic programming language है",
+      "translated": "one of the most basic programming language है"
+    },
+    {
+      "start": 69.44,
+      "end": 72.3,
+      "original": "जो की सबसे ज़्यादा पूछी जाती है",
+      "translated": "Which is the most frequently asked question."
+    },
+    {
+      "start": 72.3,
+      "end": 74.12,
+      "original": "चाहे आप competitive exam की बात कर लो",
+      "translated": "Whether you are talking about competitive exams"
+    },
+    {
+      "start": 74.12,
+      "end": 75.66,
+      "original": "interviews की बात कर लो",
+      "translated": "Let's talk about interviews."
+    },
+    {
+      "start": 75.66,
+      "end": 76.46,
+      "original": "क्योंकि होता क्या न",
+      "translated": "Because that's what happens."
+    },
+    {
+      "start": 76.46,
+      "end": 79.58,
+      "original": "आज के टाइम पे students ने एक perception मना रखी है",
+      "translated": "Today, students have a perception in their minds."
+    },
+    {
+      "start": 79.58,
+      "end": 82.64,
+      "original": "कि छोड़ो यार C, C++ को क्या करनी है जावा",
+      "translated": "Let's leave that, what do we need to do with Java, forget about C, C++."
+    },
+    {
+      "start": 82.64,
+      "end": 85.28,
+      "original": "हम तो जी data science के बारे में करते हैं",
+      "translated": "We are talking about data science."
+    },
+    {
+      "start": 85.28,
+      "end": 87.34,
+      "original": "ऐसा करते हैं हम लोग big data के बारे में पढ़ते हैं",
+      "translated": "We study about big data like this."
+    },
+    {
+      "start": 87.34,
+      "end": 88.7,
+      "original": "हम लोग machine learning के बारे में",
+      "translated": "We are discussing machine learning."
+    },
+    {
+      "start": 88.7,
+      "end": 91.12,
+      "original": "virtual reality और ये सारा",
+      "translated": "Virtual reality and all this."
+    },
+    {
+      "start": 91.12,
+      "end": 93.56,
+      "original": "ठीक है इन चीजों के बारे में आपको knowledge होनी चाहिए",
+      "translated": "It's okay, you should have knowledge about these things."
+    },
+    {
+      "start": 93.56,
+      "end": 95.8,
+      "original": "आज के लिए सारे trending topics है",
+      "translated": "These are all the trending topics for today."
+    },
+    {
+      "start": 95.8,
+      "end": 98.4,
+      "original": "लेकिन guys जितने भी competitive exams",
+      "translated": "However, guys, all the competitive exams"
+    },
+    {
+      "start": 98.4,
+      "end": 99.9,
+      "original": "चाहे आप even",
+      "translated": "Whether you have an even"
+    },
+    {
+      "start": 99.9,
+      "end": 102.42,
+      "original": "interviews की भी बात करो ना product based",
+      "translated": "Let's also discuss interviews related to product-based jobs."
+    },
+    {
+      "start": 102.42,
+      "end": 104.08,
+      "original": "में या service based में वहाँ पे भी",
+      "translated": "In a service-based system, it is also there."
+    },
+    {
+      "start": 104.08,
+      "end": 106.06,
+      "original": "कहीं ना कहीं जो है वो अभी भी",
+      "translated": "Something is still present somewhere."
+    },
+    {
+      "start": 106.06,
+      "end": 108.0,
+      "original": "basic C programming के बारे में ही",
+      "translated": "It is only about basic C programming."
+    },
+    {
+      "start": 108.0,
+      "end": 110.3,
+      "original": "पूछा जाता है हाँ आप C के",
+      "translated": "The question is asked yes you are in C."
+    },
+    {
+      "start": 110.3,
+      "end": 112.16,
+      "original": "साथ साथ अगर आप और कोई करना चाहते हो",
+      "translated": "Additionally, if you want to do something else."
+    },
+    {
+      "start": 112.16,
+      "end": 114.38,
+      "original": "तो फिर इसमें add कर दो उप्स का concept",
+      "translated": "Then add the concept of ups in it."
+    },
+    {
+      "start": 114.38,
+      "end": 116.7,
+      "original": "आप C++ या फिर आप Java जो है",
+      "translated": "You can use C++ or you can use Java."
+    },
+    {
+      "start": 116.7,
+      "end": 118.28,
+      "original": "वो सबसे ज़्यादा पूछी जाती है",
+      "translated": "That is the most frequently asked question."
+    },
+    {
+      "start": 118.28,
+      "end": 120.9,
+      "original": "तो इसलिए जो आपका programming का",
+      "translated": "So that is why your programming background"
+    },
+    {
+      "start": 120.9,
+      "end": 122.74,
+      "original": "जो building block है जो pillar है",
+      "translated": "The building block that serves as the pillar"
+    },
+    {
+      "start": 122.74,
+      "end": 124.68,
+      "original": "वो कौन बनाता है वो आपका बनाता है",
+      "translated": "He who creates that creates you."
+    },
+    {
+      "start": 124.68,
+      "end": 126.9,
+      "original": "C programming तो इसलिए इसको करना",
+      "translated": "We do C programming for this reason."
+    },
+    {
+      "start": 126.9,
+      "end": 128.84,
+      "original": "जो है वो mandatory है ठीक है",
+      "translated": "What is there is mandatory, okay."
+    },
+    {
+      "start": 128.84,
+      "end": 130.68,
+      "original": "तो आप मान के चलो सबसे पहले अगर",
+      "translated": "So, let's assume that first of all, if"
+    },
+    {
+      "start": 130.68,
+      "end": 135.56,
+      "original": "हम बात करें syllabus में बहुत ही simple सा syllabus है बहुत ही simple सी",
+      "translated": "We are discussing a very simple syllabus, which is quite straightforward."
+    },
+    {
+      "start": 135.56,
+      "end": 139.54,
+      "original": "चीज़े है कोई ज़्यादा मुश्किर concept नहीं है और मैं आपको एक और चीज़ बता",
+      "translated": "There's no overly difficult concept and I'll tell you one more thing."
+    },
+    {
+      "start": 139.54,
+      "end": 144.96,
+      "original": "दूं कि almost all the important topics are already covered by me मतलब gate",
+      "translated": "I mean that almost all the important topics are already covered by me for the GATE exam."
+    },
+    {
+      "start": 144.96,
+      "end": 150.1,
+      "original": "smashers की playlist में almost सारे के सारे जो important topics हैं वो",
+      "translated": "The playlist of smashers includes almost all the important topics."
+    },
+    {
+      "start": 150.1,
+      "end": 152.32,
+      "original": "complete हो चुके है, बस जो छोटे-छोटे",
+      "translated": "The tasks that have been completed, are just the small ones."
+    },
+    {
+      "start": 152.32,
+      "end": 153.8,
+      "original": "points बीच में रह गए, fillers,",
+      "translated": "Some points were left in between, which served as fillers."
+    },
+    {
+      "start": 154.14,
+      "end": 156.0,
+      "original": "वो मैं बहुत जल्दी और complete कर दूँगा, तो",
+      "translated": "I will complete it very quickly, so"
+    },
+    {
+      "start": 156.0,
+      "end": 158.14,
+      "original": "आपको एक बहुत बड़ा advantage यहाँ भी मिल रहा है,",
+      "translated": "You are getting a huge advantage here as well."
+    },
+    {
+      "start": 158.44,
+      "end": 160.06,
+      "original": "तो hardly आप मान के चलो कि",
+      "translated": "So let's assume that hardly anything is going to happen."
+    },
+    {
+      "start": 160.06,
+      "end": 161.92,
+      "original": "2-3 मीने आपके enough है,",
+      "translated": "2-3 months is enough for you."
+    },
+    {
+      "start": 162.22,
+      "end": 164.08,
+      "original": "ठीक है न, एक पूरे semester में बढ़ते हैं",
+      "translated": "Alright, the complexity increases over an entire semester."
+    },
+    {
+      "start": 164.08,
+      "end": 167.2,
+      "original": "C programming, so आप मान के चलो कि अगर आप अच्छे से बढ़ना जाते हो,",
+      "translated": "In C programming, let's assume that if you know how to increment properly,"
+    },
+    {
+      "start": 167.26,
+      "end": 170.56,
+      "original": "daily कुछ लोग इस topic को अगर आप उठाते हो, start करते हो बढ़ना,",
+      "translated": "Daily, some people start discussing this topic and begin to grow."
+    },
+    {
+      "start": 170.96,
+      "end": 173.2,
+      "original": "तो 2-3 मिनें आपके sufficient है,",
+      "translated": "So 2-3 minutes is sufficient for you."
+    },
+    {
+      "start": 173.2,
+      "end": 176.26,
+      "original": "तो इसलिए सबसे पहले अगर हम बात करें, basics of C,",
+      "translated": "So, to begin with, if we talk about the basics of C,"
+    },
+    {
+      "start": 176.62,
+      "end": 179.64,
+      "original": "तो यहाँ पे आपके कहानी जो है वो start होती है C programming में,",
+      "translated": "So, your story begins here with C programming."
+    },
+    {
+      "start": 179.64,
+      "end": 185.44,
+      "original": "Keywords, Identifiers, Different Data Types, Variable, Constraints की बात करते हैं",
+      "translated": "We will discuss Keywords, Identifiers, Different Data Types, Variables, and Constraints."
+    },
+    {
+      "start": 185.44,
+      "end": 187.7,
+      "original": "Input, Output, Functions की हम लोग बात करते हैं",
+      "translated": "We are discussing Input, Output, and Functions."
+    },
+    {
+      "start": 187.7,
+      "end": 189.54,
+      "original": "Operators की बात करते हैं",
+      "translated": "Let's talk about operators."
+    },
+    {
+      "start": 189.54,
+      "end": 193.0,
+      "original": "Storage Classes की जिसमें आपके बास Auto, External जाता है",
+      "translated": "The storage classes include Auto and External, which are available to you."
+    },
+    {
+      "start": 193.0,
+      "end": 195.0,
+      "original": "Register जाता है, Static जाता है",
+      "translated": "The register is set, and the static is set."
+    },
+    {
+      "start": 195.0,
+      "end": 197.96,
+      "original": "Various Operators, जाएं Logical Operator की बात कर लो",
+      "translated": "Let's discuss the Logical Operator among various operators."
+    },
+    {
+      "start": 197.96,
+      "end": 200.34,
+      "original": "Bitwise, Arithmetic ये सारे के सारे Operators",
+      "translated": "These are all the Bitwise and Arithmetic operators."
+    },
+    {
+      "start": 200.34,
+      "end": 202.42,
+      "original": "उनकी Presidence आ जाती है",
+      "translated": "Their presidency comes into effect."
+    },
+    {
+      "start": 202.42,
+      "end": 205.46,
+      "original": "और साथ ही साथ उनकी associativity आ जाती है",
+      "translated": "And at the same time, their associativity comes into play."
+    },
+    {
+      "start": 205.46,
+      "end": 207.3,
+      "original": "then format specifiers",
+      "translated": "then format specifiers"
+    },
+    {
+      "start": 207.3,
+      "end": 211.56,
+      "original": "जो आपके signed है, unsigned है, character है, integer है, hexadecimal",
+      "translated": "What is signed, unsigned, character, integer, and hexadecimal in your context."
+    },
+    {
+      "start": 211.56,
+      "end": 213.0,
+      "original": "उनको हम कैसे represent करते है",
+      "translated": "How do we represent them."
+    },
+    {
+      "start": 213.0,
+      "end": 214.72,
+      "original": "बड़े basic से concept है",
+      "translated": "It is a basic concept."
+    },
+    {
+      "start": 214.72,
+      "end": 218.28,
+      "original": "तो आप मालिके चलो इस पूरे को complete करने के लिए",
+      "translated": "So let's move on to complete this entire thing."
+    },
+    {
+      "start": 218.28,
+      "end": 221.46,
+      "original": "hardly आपको 2-3 दिन sufficient है",
+      "translated": "You hardly need 2-3 days, which is sufficient."
+    },
+    {
+      "start": 221.46,
+      "end": 224.74,
+      "original": "मतलब अगर आप 2-3 दिन सिर्फ इस topic के उपर लगाओगे",
+      "translated": "That means if you focus on this topic for just 2-3 days."
+    },
+    {
+      "start": 224.74,
+      "end": 226.96,
+      "original": "तो आप easily cover कर सकते हो",
+      "translated": "So you can easily cover it."
+    },
+    {
+      "start": 226.96,
+      "end": 228.82,
+      "original": "सिर्फ 2 to 3 days के अंदर",
+      "translated": "Within just 2 to 3 days."
+    },
+    {
+      "start": 228.82,
+      "end": 230.76,
+      "original": "ठीक है तो यह आपका एक तरह से",
+      "translated": "Alright, so this is one way for you"
+    },
+    {
+      "start": 230.76,
+      "end": 233.28,
+      "original": "C programming का building block है",
+      "translated": "The building block of C programming is the foundation."
+    },
+    {
+      "start": 233.28,
+      "end": 234.6,
+      "original": "आपको पहले तो पता होना चाहिए",
+      "translated": "You should first know"
+    },
+    {
+      "start": 234.6,
+      "end": 237.0,
+      "original": "इसके अंदर कौन-कौन से आपके keywords, identifiers",
+      "translated": "Inside this, what are your keywords, identifiers."
+    },
+    {
+      "start": 237.0,
+      "end": 239.94,
+      "original": "input, output functions, operator कौन-कौन से आते हैं",
+      "translated": "The input, output functions, and operator that are available include several types."
+    },
+    {
+      "start": 239.94,
+      "end": 241.32,
+      "original": "यह कहानी जब आपने कर ली",
+      "translated": "This is the story when you have done it."
+    },
+    {
+      "start": 241.32,
+      "end": 245.08,
+      "original": "उसके बाद फिर next हम लोग जाते हैं जी control statements के ऊपर",
+      "translated": "After that, we then move on to control statements."
+    },
+    {
+      "start": 245.08,
+      "end": 248.18,
+      "original": "control statements की बात करें तो उसमें हम अरपस आ जाता है",
+      "translated": "When it comes to control statements, we encounter loops."
+    },
+    {
+      "start": 248.18,
+      "end": 253.42,
+      "original": "if else for y loop, do y loop, switch, break and continue",
+      "translated": "if else for y loop, do y loop, switch, break and continue"
+    },
+    {
+      "start": 253.42,
+      "end": 255.56,
+      "original": "इसके साथ सथ nested concept भी आ जाता है",
+      "translated": "This also brings in the nested concept."
+    },
+    {
+      "start": 255.56,
+      "end": 258.52,
+      "original": "nested if else, nested for loop, nested y loop ठीक है",
+      "translated": "nested if else, nested for loop, nested y loop ठीक है"
+    },
+    {
+      "start": 258.52,
+      "end": 261.34,
+      "original": "तो ये concept जो है वो nested वाला भी इसके अंदर आ जाता है",
+      "translated": "So this concept also includes the nested concept within it."
+    },
+    {
+      "start": 261.34,
+      "end": 291.34,
+      "original": "और ये चीज़े अगर मैं बात करूँ नो competitive exam है जैसे gate के exam देख लो या UGC net के exam देख लो वहाँ पे maybe आपको ये topics directly ना लिखे हो वहाँ पे पता क्या होता है जैसे gate के exam की बात करें तो उसमें क्या होता है programming और data structure को combinedly ही लिखा जाता है अलग से programming नहीं आता आपको programming और data structure combined ह",
+      "translated": "And these things, if I talk about competitive exams like GATE or UGC NET, you may not find these topics directly mentioned, but you should know what happens in exams like GATE, where programming and data structure are combined, and you won't find programming as a separate topic, instead, programming and data structure are covered together."
+    },
+    {
+      "start": 291.34,
+      "end": 293.26,
+      "original": "structure, algorithm, ये तीनों",
+      "translated": "The structure, algorithm, and these three are related."
+    },
+    {
+      "start": 293.26,
+      "end": 295.14,
+      "original": "जो मिलके, C data structure, algorithm",
+      "translated": "Those who are learning C data structures and algorithms together."
+    },
+    {
+      "start": 295.14,
+      "end": 297.36,
+      "original": "ये तीनों मिलके ही आपकी",
+      "translated": "These three together form your"
+    },
+    {
+      "start": 297.36,
+      "end": 299.26,
+      "original": "अच्छी से अच्छी placement जो है वो",
+      "translated": "The best placement that exists is"
+    },
+    {
+      "start": 299.26,
+      "end": 301.26,
+      "original": "करवा सकते हैं, और मैं ऐसा नहीं है",
+      "translated": "We can do it, and I am not like that."
+    },
+    {
+      "start": 301.26,
+      "end": 303.5,
+      "original": "कि कोई आज से एक दो साल पहले की बात करो",
+      "translated": "Whether you talk about something that happened a year or two ago today."
+    },
+    {
+      "start": 303.5,
+      "end": 305.22,
+      "original": "आज की, अभी की बात करो",
+      "translated": "Let's talk about the present or current situation."
+    },
+    {
+      "start": 305.22,
+      "end": 307.24,
+      "original": "और आने वाले टाइम की भी बात करो, ऐसा भी नहीं",
+      "translated": "And let's also talk about the upcoming time, it's not like that."
+    },
+    {
+      "start": 307.24,
+      "end": 314.0,
+      "original": "कि आने वाले एक दो साल में यह खत्म हो जाएगा नहीं C data structure और algorithm यह तीनों अगर आपको concept",
+      "translated": "That in the next one or two years this will be over, no, C data structure and algorithm, if you have a concept of all three."
+    },
+    {
+      "start": 314.0,
+      "end": 319.84,
+      "original": "clear है तो आपको पूरी की पूरी कहानी ही जो है वह clear है उसके बाद तो बस आपको revise करना है आजकल जो different",
+      "translated": "If it's clear, then you have the entire story clear, after that you just need to revise, especially with the different concepts we have nowadays."
+    },
+    {
+      "start": 319.84,
+      "end": 326.04,
+      "original": "प्लैटफॉर्म्स है उन पर जाके आपको पार्टिसिपेट करना है अप्लाई करना और वहाँ पर जाके आपको सिर्फ प्रैक्टिस करनी है ठीक है",
+      "translated": "There are platforms where you need to participate, apply, and once you're there, you just need to practice, okay."
+    },
+    {
+      "start": 326.04,
+      "end": 328.16,
+      "original": "सासाथ अगर आप add on करना चाहते हो",
+      "translated": "If you want to add an add-on."
+    },
+    {
+      "start": 328.16,
+      "end": 330.58,
+      "original": "तो C++ या Java का concept add कर सकते हो",
+      "translated": "So you can add the concept of C++ or Java."
+    },
+    {
+      "start": 330.58,
+      "end": 333.82,
+      "original": "भाईया इससे ज़्यादा आपको करने की कोई जिरूरत ही नहीं है",
+      "translated": "Brother, you don't need to do anything more than this."
+    },
+    {
+      "start": 333.82,
+      "end": 336.1,
+      "original": "वैसे भी इसका कोई parameter ही नहीं है",
+      "translated": "Anyway, it doesn't have any parameter."
+    },
+    {
+      "start": 336.1,
+      "end": 338.96,
+      "original": "कि placement के लिए बहुत सारी वीडियो जामने देखे होंगे YouTube पे",
+      "translated": "You must have seen a lot of videos on YouTube for placement."
+    },
+    {
+      "start": 338.96,
+      "end": 341.06,
+      "original": "कि अगर आप इतना package जाते हो तो ये करो",
+      "translated": "If you go to that extent with the package, then do this."
+    },
+    {
+      "start": 341.06,
+      "end": 342.42,
+      "original": "product based जाते हो तो ये करो",
+      "translated": "If you are going for a product-based approach, then do this."
+    },
+    {
+      "start": 342.42,
+      "end": 345.18,
+      "original": "ठीक है वो चीज़े सारे से सारे आपको कहीं न कहीं",
+      "translated": "It's okay, those things are somehow related to all of you in some way."
+    },
+    {
+      "start": 345.18,
+      "end": 347.04,
+      "original": "guide करने की कोशिश कर रहे हैं",
+      "translated": "They are trying to guide."
+    },
+    {
+      "start": 347.04,
+      "end": 348.96,
+      "original": "लेकिन आपको मैं बता दू कोई ऐसा",
+      "translated": "But let me tell you something."
+    },
+    {
+      "start": 348.96,
+      "end": 351.12,
+      "original": "parameter नहीं है कि ये हो गया तो placement done है",
+      "translated": "If the parameter is not set, then the placement is done."
+    },
+    {
+      "start": 351.12,
+      "end": 352.92,
+      "original": "या ये कर लिया तो placement done है",
+      "translated": "If this is done, then the placement is complete."
+    },
+    {
+      "start": 352.92,
+      "end": 355.82,
+      "original": "हाँ chances बढ़ जाते हैं probability बढ़ जाती है आपकी",
+      "translated": "Yes, the chances increase, the probability of yours increases."
+    },
+    {
+      "start": 355.82,
+      "end": 358.72,
+      "original": "तो ऐसी C programming अगर आपने अच्छे से कर ली",
+      "translated": "So if you have done C programming well."
+    },
+    {
+      "start": 358.72,
+      "end": 361.74,
+      "original": "तो enough ये भी अपने आप में enough है आपको",
+      "translated": "So this is enough in itself for you."
+    },
+    {
+      "start": 361.74,
+      "end": 363.8,
+      "original": "कहीं न कहीं अच्छी job दिलवाने में",
+      "translated": "Somewhere it helps to get a good job."
+    },
+    {
+      "start": 363.8,
+      "end": 365.82,
+      "original": "लेकिन वही होता है कि थोड़ा सा",
+      "translated": "But that's what happens, just a little bit."
+    },
+    {
+      "start": 365.82,
+      "end": 368.96,
+      "original": "हो सकता है कि आपने like किसी company के लिए apply किया",
+      "translated": "You may have applied to a company like that."
+    },
+    {
+      "start": 368.96,
+      "end": 370.56,
+      "original": "और वहाँ पे 100 लोगों ने apply किया",
+      "translated": "And 100 people applied there."
+    },
+    {
+      "start": 370.56,
+      "end": 373.18,
+      "original": "तो हो सकता है 100 के 100 C programming पढ़के आये हो",
+      "translated": "So you might have studied 100 percent of C programming."
+    },
+    {
+      "start": 373.18,
+      "end": 375.88,
+      "original": "उन में से हो सकता है कि 20-30 ऐसे हो",
+      "translated": "There may be 20-30 such cases among them."
+    },
+    {
+      "start": 375.88,
+      "end": 377.96,
+      "original": "जिनको बहुत ही अच्छे से concept clear है",
+      "translated": "Those who have a very clear understanding of the concept."
+    },
+    {
+      "start": 377.96,
+      "end": 380.72,
+      "original": "अब आपने let's say उसमें number of post 5 है",
+      "translated": "Now let's say you have 5 posts in it."
+    },
+    {
+      "start": 380.72,
+      "end": 384.12,
+      "original": "अब आपने 20-30 में top 5 में आने के लिए क्या करना पड़ेगा",
+      "translated": "Now you need to know what to do to get into the top 5 in 20-30."
+    },
+    {
+      "start": 384.12,
+      "end": 387.02,
+      "original": "फिर obviously data structure को concept आपको build करना पड़ेगा",
+      "translated": "Then obviously you will have to build the concept of the data structure."
+    },
+    {
+      "start": 387.02,
+      "end": 389.84,
+      "original": "उसके इलावा आपको algorithm के concept build करने पड़ेगे",
+      "translated": "Apart from that, you will have to build the concepts of the algorithm."
+    },
+    {
+      "start": 389.84,
+      "end": 392.28,
+      "original": "तो वही है आपके probability बढ़ा देते हैं",
+      "translated": "So those are the ones that increase your probability."
+    },
+    {
+      "start": 392.28,
+      "end": 393.64,
+      "original": "बस ये concept है ठीक है न",
+      "translated": "This concept is correct, right?"
+    },
+    {
+      "start": 393.64,
+      "end": 396.28,
+      "original": "तो इसलिए आपको ये सारी चीज़े बहुत easy है",
+      "translated": "So that's why all these things are very easy for you."
+    },
+    {
+      "start": 396.28,
+      "end": 397.9,
+      "original": "और असानी से कर भी सकते हैं",
+      "translated": "We can also do it easily."
+    },
+    {
+      "start": 397.9,
+      "end": 400.16,
+      "original": "साथ ही साथ आप इनको execute करके भी दे सकते हो",
+      "translated": "You can also execute them simultaneously."
+    },
+    {
+      "start": 400.16,
+      "end": 401.64,
+      "original": "वो भी बहुत easy concept है",
+      "translated": "That is also a very easy concept."
+    },
+    {
+      "start": 401.64,
+      "end": 403.24,
+      "original": "then control statements आ गया",
+      "translated": "Then the control statements have arrived."
+    },
+    {
+      "start": 403.24,
+      "end": 405.02,
+      "original": "उसके बाद हमारे पास आ जाता है यहाँ से",
+      "translated": "After that, we get to this point from here."
+    },
+    {
+      "start": 405.02,
+      "end": 408.08,
+      "original": "main कार्नी जो है वो programming की यहाँ से start होती है",
+      "translated": "The core concept that is here is where programming starts."
+    },
+    {
+      "start": 408.08,
+      "end": 409.94,
+      "original": "that is functions ठीक है न",
+      "translated": "That's correct, isn't it, regarding the functions."
+    },
+    {
+      "start": 409.94,
+      "end": 413.32,
+      "original": "वो होता है न maximum student बस यहाँ तक आके छोड़ देते हैं",
+      "translated": "That's what happens with the maximum number of students, they just come up to this point and drop out."
+    },
+    {
+      "start": 413.32,
+      "end": 416.9,
+      "original": "मतलब 90% student तो यहाँ तक आके hope ही छोड़ देता है कि होगी C programming,",
+      "translated": "This means that 90% of students give up hope by this point that they will be able to do C programming."
+    },
+    {
+      "start": 417.0,
+      "end": 420.1,
+      "original": "नहीं भी यहाँ, असली C programming तो उसके बाद start है,",
+      "translated": "It doesn't start here, the actual C programming begins afterwards."
+    },
+    {
+      "start": 420.5,
+      "end": 423.22,
+      "original": "मैं यहाँ पे सिर्फ practical की बार नहीं करना,",
+      "translated": "I'm not just here to talk about practicals."
+    },
+    {
+      "start": 423.66,
+      "end": 426.14,
+      "original": "theoretical logic building भी आपको आनी चाहिए,",
+      "translated": "Theoretical logic building should also be known to you."
+    },
+    {
+      "start": 426.5,
+      "end": 428.3,
+      "original": "क्योंकि उसके बाद तो सिर्फ syntax बचते हैं,",
+      "translated": "Because after that, only the syntax remains."
+    },
+    {
+      "start": 428.3,
+      "end": 430.34,
+      "original": "syntax याद है तो आप लिख सकते हो, लेकिन",
+      "translated": "If you remember the syntax, you can write it, but"
+    },
+    {
+      "start": 430.34,
+      "end": 432.28,
+      "original": "logic building जो है, वो C",
+      "translated": "The logic building that exists is in C."
+    },
+    {
+      "start": 432.28,
+      "end": 434.3,
+      "original": "programming बहुत अच्छे से बनाती है, logic",
+      "translated": "Programming creates logic very well."
+    },
+    {
+      "start": 434.3,
+      "end": 436.3,
+      "original": "बनाना, चीजों को solve करने के लिए",
+      "translated": "Creating, to solve things."
+    },
+    {
+      "start": 436.3,
+      "end": 438.16,
+      "original": "तो देखो, functions का concept आ जाता है,",
+      "translated": "So, the concept of functions comes into play,"
+    },
+    {
+      "start": 438.28,
+      "end": 440.4,
+      "original": "recursion का concept, very very important",
+      "translated": "recursion का concept, very very important"
+    },
+    {
+      "start": 440.4,
+      "end": 442.14,
+      "original": "recursion का concept, जिसमें हम",
+      "translated": "The concept of recursion, in which we"
+    },
+    {
+      "start": 442.14,
+      "end": 444.3,
+      "original": "Fibonacci series के बारे में पढ़ते हैं, Tower of",
+      "translated": "We are reading about the Fibonacci series in the context of the Tower of Hanoi."
+    },
+    {
+      "start": 444.3,
+      "end": 448.52,
+      "original": "पर नॉइ के बारे में पड़ते हैं, आप हमारे, वहाँ पे जो है, ये सारे के सारे concept जो आ जाते हैं,",
+      "translated": "When we talk about noise, you will see all these concepts that we have discussed over there."
+    },
+    {
+      "start": 448.56,
+      "end": 453.78,
+      "original": "actual, formal arguments, parameter passing techniques आ जाती हैं, call by value, call by reference,",
+      "translated": "actual, formal arguments, parameter passing techniques आ जाती हैं, call by value, call by reference,"
+    },
+    {
+      "start": 453.9,
+      "end": 457.8,
+      "original": "call by name, ये सारी कानी आ जाती है, scoping आ जाती है, static scoping क्या है,",
+      "translated": "When you call by name, all these concepts come into play, scoping comes into play, so what is static scoping?"
+    },
+    {
+      "start": 458.16,
+      "end": 461.64,
+      "original": "dynamic scoping क्या है, और साथ ही साथ इसके parallel concept चलता है,",
+      "translated": "Dynamic scoping is what it is, and at the same time its parallel concept is also applicable."
+    },
+    {
+      "start": 461.64,
+      "end": 469.88,
+      "original": "pointers का भी ठीक है ना तो one of the most important जो top का important concept है पूरे C programming में वो है concept of pointers",
+      "translated": "The concept of pointers is also correct, and it is one of the most important concepts in the entire C programming."
+    },
+    {
+      "start": 469.88,
+      "end": 476.02,
+      "original": "ऐसा नहीं है कि यह करने के बाद pointer आता है यहाँ पे भी आपका बीच में pointer का concept जो है वो start होई जाएगा",
+      "translated": "It's not that after doing this, the pointer comes here, but rather your concept of a pointer in the middle will start to take shape."
+    },
+    {
+      "start": 476.02,
+      "end": 482.82,
+      "original": "तो pointers का introduction कैसे हम pointers को use करते हैं फिर pointers को array के साथ pointers को string के साथ",
+      "translated": "So the introduction to pointers is how we use pointers, then using pointers with arrays and using pointers with strings."
+    },
+    {
+      "start": 482.82,
+      "end": 485.54,
+      "original": "pointers को function के साथ, pointers को structure के साथ",
+      "translated": "Pointers with functions, and pointers with structures."
+    },
+    {
+      "start": 485.54,
+      "end": 487.94,
+      "original": "वो आपका concept जो है वो सास साथ build हो जाता है",
+      "translated": "That concept of yours gets built along with the SAS."
+    },
+    {
+      "start": 487.94,
+      "end": 492.24,
+      "original": "dynamic memory allocation, static allocation, dynamic memory allocation, malloc, malloc",
+      "translated": "dynamic memory allocation, static allocation, dynamic memory allocation, malloc, malloc"
+    },
+    {
+      "start": 492.24,
+      "end": 493.34,
+      "original": "वो आ जाता है concept",
+      "translated": "That brings us to the concept."
+    },
+    {
+      "start": 493.34,
+      "end": 495.42,
+      "original": "फिर आ जाता है आपके पास string functions",
+      "translated": "Then you have string functions at your disposal."
+    },
+    {
+      "start": 495.42,
+      "end": 497.14,
+      "original": "ठीक है तो string का concept आ जाता है",
+      "translated": "So, the concept of a string comes into play."
+    },
+    {
+      "start": 497.14,
+      "end": 499.58,
+      "original": "various library functions आ जाते है",
+      "translated": "Various library functions are available."
+    },
+    {
+      "start": 499.58,
+      "end": 501.78,
+      "original": "जैसे string length, string concatenation",
+      "translated": "For example, string length and string concatenation."
+    },
+    {
+      "start": 501.78,
+      "end": 504.06,
+      "original": "ये सारे already cover करवा चुका हूँ मैं",
+      "translated": "I have already covered all of this."
+    },
+    {
+      "start": 504.06,
+      "end": 505.08,
+      "original": "जितने भी functions है",
+      "translated": "All the functions that exist"
+    },
+    {
+      "start": 505.08,
+      "end": 507.56,
+      "original": "with example आपके already cover करवा चुका हूँ",
+      "translated": "I have already covered this with an example."
+    },
+    {
+      "start": 507.56,
+      "end": 509.4,
+      "original": "concept of pointers and string",
+      "translated": "concept of pointers and string"
+    },
+    {
+      "start": 509.4,
+      "end": 511.48,
+      "original": "यह भी cover करवा चुका हूँ, मतलब जितने points",
+      "translated": "I have also covered this, meaning all the points."
+    },
+    {
+      "start": 511.48,
+      "end": 513.38,
+      "original": "आपको दिख रहे हैं ना, उपर उपर के",
+      "translated": "You can see that, in the upper sections."
+    },
+    {
+      "start": 513.38,
+      "end": 515.5,
+      "original": "वो सारे के सारे done हो चुके हैं, जो थोड़े बहुत",
+      "translated": "All of them have been completed, whatever little was left."
+    },
+    {
+      "start": 515.5,
+      "end": 517.66,
+      "original": "रह गए topic एक आदा, वो भी simple सा",
+      "translated": "We are left with one topic, and that is also quite simple."
+    },
+    {
+      "start": 517.66,
+      "end": 519.68,
+      "original": "वो जल्दी ही आपको cover करवा दिया जाएगा",
+      "translated": "That will be covered for you soon."
+    },
+    {
+      "start": 519.68,
+      "end": 522.52,
+      "original": "structure and union का concept आ जाता है",
+      "translated": "The concept of structure and union is introduced."
+    },
+    {
+      "start": 522.52,
+      "end": 524.66,
+      "original": "structure क्या है कैसे हम design करते है",
+      "translated": "What is the structure and how do we design it"
+    },
+    {
+      "start": 524.66,
+      "end": 526.66,
+      "original": "उसके अंदर nested structure का concept है",
+      "translated": "It has the concept of a nested structure inside it."
+    },
+    {
+      "start": 526.66,
+      "end": 528.22,
+      "original": "unit है type def है",
+      "translated": "The unit is a type definition."
+    },
+    {
+      "start": 528.22,
+      "end": 529.5,
+      "original": "वो सारे के सारे बताई हुए है",
+      "translated": "He has explained all of them."
+    },
+    {
+      "start": 529.5,
+      "end": 533.16,
+      "original": "then finally आ जाता है last में file handling in C programming",
+      "translated": "Then finally we have file handling in the last part of C programming."
+    },
+    {
+      "start": 533.16,
+      "end": 535.52,
+      "original": "जिसमें हम input output की बात करते है",
+      "translated": "In which we discuss input output."
+    },
+    {
+      "start": 535.52,
+      "end": 536.84,
+      "original": "साथ ही सच file को",
+      "translated": "Along with this, the actual file"
+    },
+    {
+      "start": 536.84,
+      "end": 538.66,
+      "original": "कैसे हम open करते है close करते है",
+      "translated": "How do we open and close."
+    },
+    {
+      "start": 538.66,
+      "end": 540.4,
+      "original": "modify करते है वो concept जो है वो",
+      "translated": "We modify the concept that it has."
+    },
+    {
+      "start": 540.4,
+      "end": 542.42,
+      "original": "files का C programming में आ जाता है",
+      "translated": "Files are introduced in C programming."
+    },
+    {
+      "start": 542.42,
+      "end": 546.34,
+      "original": "बस यहाँ पे आके एक तरह से कह सकते हो कि अगर आपने इतने concept कर लिये",
+      "translated": "In a way, you can say that once you've covered so many concepts here."
+    },
+    {
+      "start": 546.34,
+      "end": 549.4,
+      "original": "तो C आपकी बहुत अच्छे से बन गई ठीक है",
+      "translated": "So your C program has been made very well, that's fine."
+    },
+    {
+      "start": 549.4,
+      "end": 552.44,
+      "original": "अब इसके बाद आप इसमें OOPS के concept आड़ कर दो",
+      "translated": "Now afterwards, you will implement the OOPS concepts in it."
+    },
+    {
+      "start": 552.44,
+      "end": 555.26,
+      "original": "मतलब C++ की तरफ जो है वो चलना स्टार्ट कर दो",
+      "translated": "Start running what's on the C++ side."
+    },
+    {
+      "start": 555.26,
+      "end": 557.86,
+      "original": "ठीक है तो that will be more than sufficient",
+      "translated": "Alright, so that will be more than sufficient."
+    },
+    {
+      "start": 557.86,
+      "end": 559.68,
+      "original": "आपकी competitive exam की त्यारी जो है",
+      "translated": "Your preparation for the competitive exam."
+    },
+    {
+      "start": 559.68,
+      "end": 561.24,
+      "original": "even competitive जो है",
+      "translated": "Even the competitive ones are present."
+    },
+    {
+      "start": 561.24,
+      "end": 562.9,
+      "original": "आपकी जो आती है coding वगेरा",
+      "translated": "The coding and other things that you get."
+    },
+    {
+      "start": 562.9,
+      "end": 566.54,
+      "original": "वो ठीक है हम C++ में या Java में थोड़ा ज़्यादा करते हैं",
+      "translated": "That's okay, we do a bit more in C++ or Java."
+    },
+    {
+      "start": 566.54,
+      "end": 569.02,
+      "original": "लेकिन ये आपके logic building है",
+      "translated": "But this is about building your logic."
+    },
+    {
+      "start": 569.02,
+      "end": 572.32,
+      "original": "ये आपके logic को design करती है C programming",
+      "translated": "This designs your logic in C programming."
+    },
+    {
+      "start": 572.32,
+      "end": 575.4,
+      "original": "so this is all about the syllabus of C programming",
+      "translated": "so this is all about the syllabus of C programming"
+    },
+    {
+      "start": 575.4,
+      "end": 576.02,
+      "original": "Thank you",
+      "translated": "Thank you"
+    }
+  ]
+}

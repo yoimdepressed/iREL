@@ -1,0 +1,1076 @@
+{
+  "detected_language": "hi",
+  "full_text": " Dear Students, Welcome to Great Smashers आज के इस वीडियो में एक्स्पेइन करने जा रहा हूँ C Programming Slabas और ये Slabas जो है वो हम लोग तीन चीजों के उपर फोकस कर रहे हैं यहाँ पे सबसे पहला है आपके Interviews की अगर हम बात करें तो Interviews मतलब चाहे आप Service Based company की तियारी कर रहे हो या फिर product based company की तियारी कर रहे हो तो C programming में क्या चीज़ें पूछी जा सकती है क्या-क्या topics आपको complete करने है पहला focus हमारा इसके उपर है दूसरा focus है हमारा competitive exam की अगर हम बात करें चाहे आप gate के exam की बात कर लो UG Senate की बात कर लो कोई PSU's Companies की बात कर लो कोई भी Competitive exam की अगर आप त्यारी कर रहे हो और उसमें अगर C Programming का Slabus लिखा हुआ है तो क्या चीजें आपको पूछी जा सकती है और तीसरी चीज आ जाती है आपका College University का exam मतलब अगर आप किसी college में, university में, कहीं पे भी पढ़ रहे हो, तो वहाँ पे अगर आपको C programming syllabus में है, तो उसमें आपको क्या पूछा जा सकता है, क्या चीज़ें आपको cover करनी चाहिए, तो ये पूरा का पूरा syllabus जो है, इसको पहले तो note down कर लेना, इसकी चाहे फोटो क्लिक कर लो या लिख लो ठीक है क्योंकि C programming की अगर हम बात करें one of the most basic programming language है जो की सबसे ज़्यादा पूछी जाती है चाहे आप competitive exam की बात कर लो interviews की बात कर लो क्योंकि होता क्या न आज के टाइम पे students ने एक perception मना रखी है कि छोड़ो यार C, C++ को क्या करनी है जावा हम तो जी data science के बारे में करते हैं ऐसा करते हैं हम लोग big data के बारे में पढ़ते हैं हम लोग machine learning के बारे में virtual reality और ये सारा ठीक है इन चीजों के बारे में आपको knowledge होनी चाहिए आज के लिए सारे trending topics है लेकिन guys जितने भी competitive exams चाहे आप even interviews की भी बात करो ना product based में या service based में वहाँ पे भी कहीं ना कहीं जो है वो अभी भी basic C programming के बारे में ही पूछा जाता है हाँ आप C के साथ साथ अगर आप और कोई करना चाहते हो तो फिर इसमें add कर दो उप्स का concept आप C++ या फिर आप Java जो है वो सबसे ज़्यादा पूछी जाती है तो इसलिए जो आपका programming का जो building block है जो pillar है वो कौन बनाता है वो आपका बनाता है C programming तो इसलिए इसको करना जो है वो mandatory है ठीक है तो आप मान के चलो सबसे पहले अगर हम बात करें syllabus में बहुत ही simple सा syllabus है बहुत ही simple सी चीज़े है कोई ज़्यादा मुश्किर concept नहीं है और मैं आपको एक और चीज़ बता दूं कि almost all the important topics are already covered by me मतलब gate smashers की playlist में almost सारे के सारे जो important topics हैं वो complete हो चुके है, बस जो छोटे-छोटे points बीच में रह गए, fillers, वो मैं बहुत जल्दी और complete कर दूँगा, तो आपको एक बहुत बड़ा advantage यहाँ भी मिल रहा है, तो hardly आप मान के चलो कि 2-3 मीने आपके enough है, ठीक है न, एक पूरे semester में बढ़ते हैं C programming, so आप मान के चलो कि अगर आप अच्छे से बढ़ना जाते हो, daily कुछ लोग इस topic को अगर आप उठाते हो, start करते हो बढ़ना, तो 2-3 मिनें आपके sufficient है, तो इसलिए सबसे पहले अगर हम बात करें, basics of C, तो यहाँ पे आपके कहानी जो है वो start होती है C programming में, Keywords, Identifiers, Different Data Types, Variable, Constraints की बात करते हैं Input, Output, Functions की हम लोग बात करते हैं Operators की बात करते हैं Storage Classes की जिसमें आपके बास Auto, External जाता है Register जाता है, Static जाता है Various Operators, जाएं Logical Operator की बात कर लो Bitwise, Arithmetic ये सारे के सारे Operators उनकी Presidence आ जाती है और साथ ही साथ उनकी associativity आ जाती है then format specifiers जो आपके signed है, unsigned है, character है, integer है, hexadecimal उनको हम कैसे represent करते है बड़े basic से concept है तो आप मालिके चलो इस पूरे को complete करने के लिए hardly आपको 2-3 दिन sufficient है मतलब अगर आप 2-3 दिन सिर्फ इस topic के उपर लगाओगे तो आप easily cover कर सकते हो सिर्फ 2 to 3 days के अंदर ठीक है तो यह आपका एक तरह से C programming का building block है आपको पहले तो पता होना चाहिए इसके अंदर कौन-कौन से आपके keywords, identifiers input, output functions, operator कौन-कौन से आते हैं यह कहानी जब आपने कर ली उसके बाद फिर next हम लोग जाते हैं जी control statements के ऊपर control statements की बात करें तो उसमें हम अरपस आ जाता है if else for y loop, do y loop, switch, break and continue इसके साथ सथ nested concept भी आ जाता है nested if else, nested for loop, nested y loop ठीक है तो ये concept जो है वो nested वाला भी इसके अंदर आ जाता है और ये चीज़े अगर मैं बात करूँ नो competitive exam है जैसे gate के exam देख लो या UGC net के exam देख लो वहाँ पे maybe आपको ये topics directly ना लिखे हो वहाँ पे पता क्या होता है जैसे gate के exam की बात करें तो उसमें क्या होता है programming और data structure को combinedly ही लिखा जाता है अलग से programming नहीं आता आपको programming और data structure combined ह structure, algorithm, ये तीनों जो मिलके, C data structure, algorithm ये तीनों मिलके ही आपकी अच्छी से अच्छी placement जो है वो करवा सकते हैं, और मैं ऐसा नहीं है कि कोई आज से एक दो साल पहले की बात करो आज की, अभी की बात करो और आने वाले टाइम की भी बात करो, ऐसा भी नहीं कि आने वाले एक दो साल में यह खत्म हो जाएगा नहीं C data structure और algorithm यह तीनों अगर आपको concept clear है तो आपको पूरी की पूरी कहानी ही जो है वह clear है उसके बाद तो बस आपको revise करना है आजकल जो different प्लैटफॉर्म्स है उन पर जाके आपको पार्टिसिपेट करना है अप्लाई करना और वहाँ पर जाके आपको सिर्फ प्रैक्टिस करनी है ठीक है सासाथ अगर आप add on करना चाहते हो तो C++ या Java का concept add कर सकते हो भाईया इससे ज़्यादा आपको करने की कोई जिरूरत ही नहीं है वैसे भी इसका कोई parameter ही नहीं है कि placement के लिए बहुत सारी वीडियो जामने देखे होंगे YouTube पे कि अगर आप इतना package जाते हो तो ये करो product based जाते हो तो ये करो ठीक है वो चीज़े सारे से सारे आपको कहीं न कहीं guide करने की कोशिश कर रहे हैं लेकिन आपको मैं बता दू कोई ऐसा parameter नहीं है कि ये हो गया तो placement done है या ये कर लिया तो placement done है हाँ chances बढ़ जाते हैं probability बढ़ जाती है आपकी तो ऐसी C programming अगर आपने अच्छे से कर ली तो enough ये भी अपने आप में enough है आपको कहीं न कहीं अच्छी job दिलवाने में लेकिन वही होता है कि थोड़ा सा हो सकता है कि आपने like किसी company के लिए apply किया और वहाँ पे 100 लोगों ने apply किया तो हो सकता है 100 के 100 C programming पढ़के आये हो उन में से हो सकता है कि 20-30 ऐसे हो जिनको बहुत ही अच्छे से concept clear है अब आपने let's say उसमें number of post 5 है अब आपने 20-30 में top 5 में आने के लिए क्या करना पड़ेगा फिर obviously data structure को concept आपको build करना पड़ेगा उसके इलावा आपको algorithm के concept build करने पड़ेगे तो वही है आपके probability बढ़ा देते हैं बस ये concept है ठीक है न तो इसलिए आपको ये सारी चीज़े बहुत easy है और असानी से कर भी सकते हैं साथ ही साथ आप इनको execute करके भी दे सकते हो वो भी बहुत easy concept है then control statements आ गया उसके बाद हमारे पास आ जाता है यहाँ से main कार्नी जो है वो programming की यहाँ से start होती है that is functions ठीक है न वो होता है न maximum student बस यहाँ तक आके छोड़ देते हैं मतलब 90% student तो यहाँ तक आके hope ही छोड़ देता है कि होगी C programming, नहीं भी यहाँ, असली C programming तो उसके बाद start है, मैं यहाँ पे सिर्फ practical की बार नहीं करना, theoretical logic building भी आपको आनी चाहिए, क्योंकि उसके बाद तो सिर्फ syntax बचते हैं, syntax याद है तो आप लिख सकते हो, लेकिन logic building जो है, वो C programming बहुत अच्छे से बनाती है, logic बनाना, चीजों को solve करने के लिए तो देखो, functions का concept आ जाता है, recursion का concept, very very important recursion का concept, जिसमें हम Fibonacci series के बारे में पढ़ते हैं, Tower of पर नॉइ के बारे में पड़ते हैं, आप हमारे, वहाँ पे जो है, ये सारे के सारे concept जो आ जाते हैं, actual, formal arguments, parameter passing techniques आ जाती हैं, call by value, call by reference, call by name, ये सारी कानी आ जाती है, scoping आ जाती है, static scoping क्या है, dynamic scoping क्या है, और साथ ही साथ इसके parallel concept चलता है, pointers का भी ठीक है ना तो one of the most important जो top का important concept है पूरे C programming में वो है concept of pointers ऐसा नहीं है कि यह करने के बाद pointer आता है यहाँ पे भी आपका बीच में pointer का concept जो है वो start होई जाएगा तो pointers का introduction कैसे हम pointers को use करते हैं फिर pointers को array के साथ pointers को string के साथ pointers को function के साथ, pointers को structure के साथ वो आपका concept जो है वो सास साथ build हो जाता है dynamic memory allocation, static allocation, dynamic memory allocation, malloc, malloc वो आ जाता है concept फिर आ जाता है आपके पास string functions ठीक है तो string का concept आ जाता है various library functions आ जाते है जैसे string length, string concatenation ये सारे already cover करवा चुका हूँ मैं जितने भी functions है with example आपके already cover करवा चुका हूँ concept of pointers and string यह भी cover करवा चुका हूँ, मतलब जितने points आपको दिख रहे हैं ना, उपर उपर के वो सारे के सारे done हो चुके हैं, जो थोड़े बहुत रह गए topic एक आदा, वो भी simple सा वो जल्दी ही आपको cover करवा दिया जाएगा structure and union का concept आ जाता है structure क्या है कैसे हम design करते है उसके अंदर nested structure का concept है unit है type def है वो सारे के सारे बताई हुए है then finally आ जाता है last में file handling in C programming जिसमें हम input output की बात करते है साथ ही सच file को कैसे हम open करते है close करते है modify करते है वो concept जो है वो files का C programming में आ जाता है बस यहाँ पे आके एक तरह से कह सकते हो कि अगर आपने इतने concept कर लिये तो C आपकी बहुत अच्छे से बन गई ठीक है अब इसके बाद आप इसमें OOPS के concept आड़ कर दो मतलब C++ की तरफ जो है वो चलना स्टार्ट कर दो ठीक है तो that will be more than sufficient आपकी competitive exam की त्यारी जो है even competitive जो है आपकी जो आती है coding वगेरा वो ठीक है हम C++ में या Java में थोड़ा ज़्यादा करते हैं लेकिन ये आपके logic building है ये आपके logic को design करती है C programming so this is all about the syllabus of C programming Thank you",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 1.88,
+      "text": "Dear Students, Welcome to Great Smashers"
+    },
+    {
+      "start": 1.88,
+      "end": 3.72,
+      "text": "आज के इस वीडियो में एक्स्पेइन करने जा रहा हूँ"
+    },
+    {
+      "start": 3.72,
+      "end": 5.54,
+      "text": "C Programming Slabas"
+    },
+    {
+      "start": 5.54,
+      "end": 7.62,
+      "text": "और ये Slabas जो है वो हम लोग"
+    },
+    {
+      "start": 7.62,
+      "end": 9.52,
+      "text": "तीन चीजों के उपर फोकस कर रहे हैं यहाँ पे"
+    },
+    {
+      "start": 9.52,
+      "end": 12.2,
+      "text": "सबसे पहला है आपके Interviews की"
+    },
+    {
+      "start": 12.2,
+      "end": 14.12,
+      "text": "अगर हम बात करें तो Interviews"
+    },
+    {
+      "start": 14.12,
+      "end": 15.9,
+      "text": "मतलब चाहे आप Service Based"
+    },
+    {
+      "start": 15.9,
+      "end": 19.72,
+      "text": "company की तियारी कर रहे हो या फिर product based company की तियारी कर रहे हो"
+    },
+    {
+      "start": 19.72,
+      "end": 24.6,
+      "text": "तो C programming में क्या चीज़ें पूछी जा सकती है क्या-क्या topics आपको"
+    },
+    {
+      "start": 24.6,
+      "end": 28.96,
+      "text": "complete करने है पहला focus हमारा इसके उपर है दूसरा focus है हमारा"
+    },
+    {
+      "start": 28.96,
+      "end": 33.38,
+      "text": "competitive exam की अगर हम बात करें चाहे आप gate के exam की बात कर लो"
+    },
+    {
+      "start": 33.38,
+      "end": 35.28,
+      "text": "UG Senate की बात कर लो कोई PSU's"
+    },
+    {
+      "start": 35.28,
+      "end": 37.04,
+      "text": "Companies की बात कर लो कोई भी"
+    },
+    {
+      "start": 37.04,
+      "end": 38.98,
+      "text": "Competitive exam की अगर आप त्यारी कर रहे हो"
+    },
+    {
+      "start": 38.98,
+      "end": 40.78,
+      "text": "और उसमें अगर C Programming का"
+    },
+    {
+      "start": 40.78,
+      "end": 42.84,
+      "text": "Slabus लिखा हुआ है तो क्या चीजें"
+    },
+    {
+      "start": 42.84,
+      "end": 44.62,
+      "text": "आपको पूछी जा सकती है और"
+    },
+    {
+      "start": 44.62,
+      "end": 46.54,
+      "text": "तीसरी चीज आ जाती है आपका College"
+    },
+    {
+      "start": 46.54,
+      "end": 48.7,
+      "text": "University का exam मतलब अगर आप"
+    },
+    {
+      "start": 48.7,
+      "end": 51.0,
+      "text": "किसी college में, university में, कहीं पे भी पढ़ रहे हो,"
+    },
+    {
+      "start": 51.34,
+      "end": 54.14,
+      "text": "तो वहाँ पे अगर आपको C programming syllabus में है,"
+    },
+    {
+      "start": 54.52,
+      "end": 56.32,
+      "text": "तो उसमें आपको क्या पूछा जा सकता है,"
+    },
+    {
+      "start": 56.4,
+      "end": 57.82,
+      "text": "क्या चीज़ें आपको cover करनी चाहिए,"
+    },
+    {
+      "start": 58.24,
+      "end": 60.26,
+      "text": "तो ये पूरा का पूरा syllabus जो है,"
+    },
+    {
+      "start": 60.68,
+      "end": 62.18,
+      "text": "इसको पहले तो note down कर लेना,"
+    },
+    {
+      "start": 62.18,
+      "end": 64.24,
+      "text": "इसकी चाहे फोटो क्लिक कर लो या लिख लो ठीक है"
+    },
+    {
+      "start": 64.24,
+      "end": 66.62,
+      "text": "क्योंकि C programming की अगर हम बात करें"
+    },
+    {
+      "start": 66.62,
+      "end": 69.44,
+      "text": "one of the most basic programming language है"
+    },
+    {
+      "start": 69.44,
+      "end": 72.3,
+      "text": "जो की सबसे ज़्यादा पूछी जाती है"
+    },
+    {
+      "start": 72.3,
+      "end": 74.12,
+      "text": "चाहे आप competitive exam की बात कर लो"
+    },
+    {
+      "start": 74.12,
+      "end": 75.66,
+      "text": "interviews की बात कर लो"
+    },
+    {
+      "start": 75.66,
+      "end": 76.46,
+      "text": "क्योंकि होता क्या न"
+    },
+    {
+      "start": 76.46,
+      "end": 79.58,
+      "text": "आज के टाइम पे students ने एक perception मना रखी है"
+    },
+    {
+      "start": 79.58,
+      "end": 82.64,
+      "text": "कि छोड़ो यार C, C++ को क्या करनी है जावा"
+    },
+    {
+      "start": 82.64,
+      "end": 85.28,
+      "text": "हम तो जी data science के बारे में करते हैं"
+    },
+    {
+      "start": 85.28,
+      "end": 87.34,
+      "text": "ऐसा करते हैं हम लोग big data के बारे में पढ़ते हैं"
+    },
+    {
+      "start": 87.34,
+      "end": 88.7,
+      "text": "हम लोग machine learning के बारे में"
+    },
+    {
+      "start": 88.7,
+      "end": 91.12,
+      "text": "virtual reality और ये सारा"
+    },
+    {
+      "start": 91.12,
+      "end": 93.56,
+      "text": "ठीक है इन चीजों के बारे में आपको knowledge होनी चाहिए"
+    },
+    {
+      "start": 93.56,
+      "end": 95.8,
+      "text": "आज के लिए सारे trending topics है"
+    },
+    {
+      "start": 95.8,
+      "end": 98.4,
+      "text": "लेकिन guys जितने भी competitive exams"
+    },
+    {
+      "start": 98.4,
+      "end": 99.9,
+      "text": "चाहे आप even"
+    },
+    {
+      "start": 99.9,
+      "end": 102.42,
+      "text": "interviews की भी बात करो ना product based"
+    },
+    {
+      "start": 102.42,
+      "end": 104.08,
+      "text": "में या service based में वहाँ पे भी"
+    },
+    {
+      "start": 104.08,
+      "end": 106.06,
+      "text": "कहीं ना कहीं जो है वो अभी भी"
+    },
+    {
+      "start": 106.06,
+      "end": 108.0,
+      "text": "basic C programming के बारे में ही"
+    },
+    {
+      "start": 108.0,
+      "end": 110.3,
+      "text": "पूछा जाता है हाँ आप C के"
+    },
+    {
+      "start": 110.3,
+      "end": 112.16,
+      "text": "साथ साथ अगर आप और कोई करना चाहते हो"
+    },
+    {
+      "start": 112.16,
+      "end": 114.38,
+      "text": "तो फिर इसमें add कर दो उप्स का concept"
+    },
+    {
+      "start": 114.38,
+      "end": 116.7,
+      "text": "आप C++ या फिर आप Java जो है"
+    },
+    {
+      "start": 116.7,
+      "end": 118.28,
+      "text": "वो सबसे ज़्यादा पूछी जाती है"
+    },
+    {
+      "start": 118.28,
+      "end": 120.9,
+      "text": "तो इसलिए जो आपका programming का"
+    },
+    {
+      "start": 120.9,
+      "end": 122.74,
+      "text": "जो building block है जो pillar है"
+    },
+    {
+      "start": 122.74,
+      "end": 124.68,
+      "text": "वो कौन बनाता है वो आपका बनाता है"
+    },
+    {
+      "start": 124.68,
+      "end": 126.9,
+      "text": "C programming तो इसलिए इसको करना"
+    },
+    {
+      "start": 126.9,
+      "end": 128.84,
+      "text": "जो है वो mandatory है ठीक है"
+    },
+    {
+      "start": 128.84,
+      "end": 130.68,
+      "text": "तो आप मान के चलो सबसे पहले अगर"
+    },
+    {
+      "start": 130.68,
+      "end": 135.56,
+      "text": "हम बात करें syllabus में बहुत ही simple सा syllabus है बहुत ही simple सी"
+    },
+    {
+      "start": 135.56,
+      "end": 139.54,
+      "text": "चीज़े है कोई ज़्यादा मुश्किर concept नहीं है और मैं आपको एक और चीज़ बता"
+    },
+    {
+      "start": 139.54,
+      "end": 144.96,
+      "text": "दूं कि almost all the important topics are already covered by me मतलब gate"
+    },
+    {
+      "start": 144.96,
+      "end": 150.1,
+      "text": "smashers की playlist में almost सारे के सारे जो important topics हैं वो"
+    },
+    {
+      "start": 150.1,
+      "end": 152.32,
+      "text": "complete हो चुके है, बस जो छोटे-छोटे"
+    },
+    {
+      "start": 152.32,
+      "end": 153.8,
+      "text": "points बीच में रह गए, fillers,"
+    },
+    {
+      "start": 154.14,
+      "end": 156.0,
+      "text": "वो मैं बहुत जल्दी और complete कर दूँगा, तो"
+    },
+    {
+      "start": 156.0,
+      "end": 158.14,
+      "text": "आपको एक बहुत बड़ा advantage यहाँ भी मिल रहा है,"
+    },
+    {
+      "start": 158.44,
+      "end": 160.06,
+      "text": "तो hardly आप मान के चलो कि"
+    },
+    {
+      "start": 160.06,
+      "end": 161.92,
+      "text": "2-3 मीने आपके enough है,"
+    },
+    {
+      "start": 162.22,
+      "end": 164.08,
+      "text": "ठीक है न, एक पूरे semester में बढ़ते हैं"
+    },
+    {
+      "start": 164.08,
+      "end": 167.2,
+      "text": "C programming, so आप मान के चलो कि अगर आप अच्छे से बढ़ना जाते हो,"
+    },
+    {
+      "start": 167.26,
+      "end": 170.56,
+      "text": "daily कुछ लोग इस topic को अगर आप उठाते हो, start करते हो बढ़ना,"
+    },
+    {
+      "start": 170.96,
+      "end": 173.2,
+      "text": "तो 2-3 मिनें आपके sufficient है,"
+    },
+    {
+      "start": 173.2,
+      "end": 176.26,
+      "text": "तो इसलिए सबसे पहले अगर हम बात करें, basics of C,"
+    },
+    {
+      "start": 176.62,
+      "end": 179.64,
+      "text": "तो यहाँ पे आपके कहानी जो है वो start होती है C programming में,"
+    },
+    {
+      "start": 179.64,
+      "end": 185.44,
+      "text": "Keywords, Identifiers, Different Data Types, Variable, Constraints की बात करते हैं"
+    },
+    {
+      "start": 185.44,
+      "end": 187.7,
+      "text": "Input, Output, Functions की हम लोग बात करते हैं"
+    },
+    {
+      "start": 187.7,
+      "end": 189.54,
+      "text": "Operators की बात करते हैं"
+    },
+    {
+      "start": 189.54,
+      "end": 193.0,
+      "text": "Storage Classes की जिसमें आपके बास Auto, External जाता है"
+    },
+    {
+      "start": 193.0,
+      "end": 195.0,
+      "text": "Register जाता है, Static जाता है"
+    },
+    {
+      "start": 195.0,
+      "end": 197.96,
+      "text": "Various Operators, जाएं Logical Operator की बात कर लो"
+    },
+    {
+      "start": 197.96,
+      "end": 200.34,
+      "text": "Bitwise, Arithmetic ये सारे के सारे Operators"
+    },
+    {
+      "start": 200.34,
+      "end": 202.42,
+      "text": "उनकी Presidence आ जाती है"
+    },
+    {
+      "start": 202.42,
+      "end": 205.46,
+      "text": "और साथ ही साथ उनकी associativity आ जाती है"
+    },
+    {
+      "start": 205.46,
+      "end": 207.3,
+      "text": "then format specifiers"
+    },
+    {
+      "start": 207.3,
+      "end": 211.56,
+      "text": "जो आपके signed है, unsigned है, character है, integer है, hexadecimal"
+    },
+    {
+      "start": 211.56,
+      "end": 213.0,
+      "text": "उनको हम कैसे represent करते है"
+    },
+    {
+      "start": 213.0,
+      "end": 214.72,
+      "text": "बड़े basic से concept है"
+    },
+    {
+      "start": 214.72,
+      "end": 218.28,
+      "text": "तो आप मालिके चलो इस पूरे को complete करने के लिए"
+    },
+    {
+      "start": 218.28,
+      "end": 221.46,
+      "text": "hardly आपको 2-3 दिन sufficient है"
+    },
+    {
+      "start": 221.46,
+      "end": 224.74,
+      "text": "मतलब अगर आप 2-3 दिन सिर्फ इस topic के उपर लगाओगे"
+    },
+    {
+      "start": 224.74,
+      "end": 226.96,
+      "text": "तो आप easily cover कर सकते हो"
+    },
+    {
+      "start": 226.96,
+      "end": 228.82,
+      "text": "सिर्फ 2 to 3 days के अंदर"
+    },
+    {
+      "start": 228.82,
+      "end": 230.76,
+      "text": "ठीक है तो यह आपका एक तरह से"
+    },
+    {
+      "start": 230.76,
+      "end": 233.28,
+      "text": "C programming का building block है"
+    },
+    {
+      "start": 233.28,
+      "end": 234.6,
+      "text": "आपको पहले तो पता होना चाहिए"
+    },
+    {
+      "start": 234.6,
+      "end": 237.0,
+      "text": "इसके अंदर कौन-कौन से आपके keywords, identifiers"
+    },
+    {
+      "start": 237.0,
+      "end": 239.94,
+      "text": "input, output functions, operator कौन-कौन से आते हैं"
+    },
+    {
+      "start": 239.94,
+      "end": 241.32,
+      "text": "यह कहानी जब आपने कर ली"
+    },
+    {
+      "start": 241.32,
+      "end": 245.08,
+      "text": "उसके बाद फिर next हम लोग जाते हैं जी control statements के ऊपर"
+    },
+    {
+      "start": 245.08,
+      "end": 248.18,
+      "text": "control statements की बात करें तो उसमें हम अरपस आ जाता है"
+    },
+    {
+      "start": 248.18,
+      "end": 253.42,
+      "text": "if else for y loop, do y loop, switch, break and continue"
+    },
+    {
+      "start": 253.42,
+      "end": 255.56,
+      "text": "इसके साथ सथ nested concept भी आ जाता है"
+    },
+    {
+      "start": 255.56,
+      "end": 258.52,
+      "text": "nested if else, nested for loop, nested y loop ठीक है"
+    },
+    {
+      "start": 258.52,
+      "end": 261.34,
+      "text": "तो ये concept जो है वो nested वाला भी इसके अंदर आ जाता है"
+    },
+    {
+      "start": 261.34,
+      "end": 291.34,
+      "text": "और ये चीज़े अगर मैं बात करूँ नो competitive exam है जैसे gate के exam देख लो या UGC net के exam देख लो वहाँ पे maybe आपको ये topics directly ना लिखे हो वहाँ पे पता क्या होता है जैसे gate के exam की बात करें तो उसमें क्या होता है programming और data structure को combinedly ही लिखा जाता है अलग से programming नहीं आता आपको programming और data structure combined ह"
+    },
+    {
+      "start": 291.34,
+      "end": 293.26,
+      "text": "structure, algorithm, ये तीनों"
+    },
+    {
+      "start": 293.26,
+      "end": 295.14,
+      "text": "जो मिलके, C data structure, algorithm"
+    },
+    {
+      "start": 295.14,
+      "end": 297.36,
+      "text": "ये तीनों मिलके ही आपकी"
+    },
+    {
+      "start": 297.36,
+      "end": 299.26,
+      "text": "अच्छी से अच्छी placement जो है वो"
+    },
+    {
+      "start": 299.26,
+      "end": 301.26,
+      "text": "करवा सकते हैं, और मैं ऐसा नहीं है"
+    },
+    {
+      "start": 301.26,
+      "end": 303.5,
+      "text": "कि कोई आज से एक दो साल पहले की बात करो"
+    },
+    {
+      "start": 303.5,
+      "end": 305.22,
+      "text": "आज की, अभी की बात करो"
+    },
+    {
+      "start": 305.22,
+      "end": 307.24,
+      "text": "और आने वाले टाइम की भी बात करो, ऐसा भी नहीं"
+    },
+    {
+      "start": 307.24,
+      "end": 314.0,
+      "text": "कि आने वाले एक दो साल में यह खत्म हो जाएगा नहीं C data structure और algorithm यह तीनों अगर आपको concept"
+    },
+    {
+      "start": 314.0,
+      "end": 319.84,
+      "text": "clear है तो आपको पूरी की पूरी कहानी ही जो है वह clear है उसके बाद तो बस आपको revise करना है आजकल जो different"
+    },
+    {
+      "start": 319.84,
+      "end": 326.04,
+      "text": "प्लैटफॉर्म्स है उन पर जाके आपको पार्टिसिपेट करना है अप्लाई करना और वहाँ पर जाके आपको सिर्फ प्रैक्टिस करनी है ठीक है"
+    },
+    {
+      "start": 326.04,
+      "end": 328.16,
+      "text": "सासाथ अगर आप add on करना चाहते हो"
+    },
+    {
+      "start": 328.16,
+      "end": 330.58,
+      "text": "तो C++ या Java का concept add कर सकते हो"
+    },
+    {
+      "start": 330.58,
+      "end": 333.82,
+      "text": "भाईया इससे ज़्यादा आपको करने की कोई जिरूरत ही नहीं है"
+    },
+    {
+      "start": 333.82,
+      "end": 336.1,
+      "text": "वैसे भी इसका कोई parameter ही नहीं है"
+    },
+    {
+      "start": 336.1,
+      "end": 338.96,
+      "text": "कि placement के लिए बहुत सारी वीडियो जामने देखे होंगे YouTube पे"
+    },
+    {
+      "start": 338.96,
+      "end": 341.06,
+      "text": "कि अगर आप इतना package जाते हो तो ये करो"
+    },
+    {
+      "start": 341.06,
+      "end": 342.42,
+      "text": "product based जाते हो तो ये करो"
+    },
+    {
+      "start": 342.42,
+      "end": 345.18,
+      "text": "ठीक है वो चीज़े सारे से सारे आपको कहीं न कहीं"
+    },
+    {
+      "start": 345.18,
+      "end": 347.04,
+      "text": "guide करने की कोशिश कर रहे हैं"
+    },
+    {
+      "start": 347.04,
+      "end": 348.96,
+      "text": "लेकिन आपको मैं बता दू कोई ऐसा"
+    },
+    {
+      "start": 348.96,
+      "end": 351.12,
+      "text": "parameter नहीं है कि ये हो गया तो placement done है"
+    },
+    {
+      "start": 351.12,
+      "end": 352.92,
+      "text": "या ये कर लिया तो placement done है"
+    },
+    {
+      "start": 352.92,
+      "end": 355.82,
+      "text": "हाँ chances बढ़ जाते हैं probability बढ़ जाती है आपकी"
+    },
+    {
+      "start": 355.82,
+      "end": 358.72,
+      "text": "तो ऐसी C programming अगर आपने अच्छे से कर ली"
+    },
+    {
+      "start": 358.72,
+      "end": 361.74,
+      "text": "तो enough ये भी अपने आप में enough है आपको"
+    },
+    {
+      "start": 361.74,
+      "end": 363.8,
+      "text": "कहीं न कहीं अच्छी job दिलवाने में"
+    },
+    {
+      "start": 363.8,
+      "end": 365.82,
+      "text": "लेकिन वही होता है कि थोड़ा सा"
+    },
+    {
+      "start": 365.82,
+      "end": 368.96,
+      "text": "हो सकता है कि आपने like किसी company के लिए apply किया"
+    },
+    {
+      "start": 368.96,
+      "end": 370.56,
+      "text": "और वहाँ पे 100 लोगों ने apply किया"
+    },
+    {
+      "start": 370.56,
+      "end": 373.18,
+      "text": "तो हो सकता है 100 के 100 C programming पढ़के आये हो"
+    },
+    {
+      "start": 373.18,
+      "end": 375.88,
+      "text": "उन में से हो सकता है कि 20-30 ऐसे हो"
+    },
+    {
+      "start": 375.88,
+      "end": 377.96,
+      "text": "जिनको बहुत ही अच्छे से concept clear है"
+    },
+    {
+      "start": 377.96,
+      "end": 380.72,
+      "text": "अब आपने let's say उसमें number of post 5 है"
+    },
+    {
+      "start": 380.72,
+      "end": 384.12,
+      "text": "अब आपने 20-30 में top 5 में आने के लिए क्या करना पड़ेगा"
+    },
+    {
+      "start": 384.12,
+      "end": 387.02,
+      "text": "फिर obviously data structure को concept आपको build करना पड़ेगा"
+    },
+    {
+      "start": 387.02,
+      "end": 389.84,
+      "text": "उसके इलावा आपको algorithm के concept build करने पड़ेगे"
+    },
+    {
+      "start": 389.84,
+      "end": 392.28,
+      "text": "तो वही है आपके probability बढ़ा देते हैं"
+    },
+    {
+      "start": 392.28,
+      "end": 393.64,
+      "text": "बस ये concept है ठीक है न"
+    },
+    {
+      "start": 393.64,
+      "end": 396.28,
+      "text": "तो इसलिए आपको ये सारी चीज़े बहुत easy है"
+    },
+    {
+      "start": 396.28,
+      "end": 397.9,
+      "text": "और असानी से कर भी सकते हैं"
+    },
+    {
+      "start": 397.9,
+      "end": 400.16,
+      "text": "साथ ही साथ आप इनको execute करके भी दे सकते हो"
+    },
+    {
+      "start": 400.16,
+      "end": 401.64,
+      "text": "वो भी बहुत easy concept है"
+    },
+    {
+      "start": 401.64,
+      "end": 403.24,
+      "text": "then control statements आ गया"
+    },
+    {
+      "start": 403.24,
+      "end": 405.02,
+      "text": "उसके बाद हमारे पास आ जाता है यहाँ से"
+    },
+    {
+      "start": 405.02,
+      "end": 408.08,
+      "text": "main कार्नी जो है वो programming की यहाँ से start होती है"
+    },
+    {
+      "start": 408.08,
+      "end": 409.94,
+      "text": "that is functions ठीक है न"
+    },
+    {
+      "start": 409.94,
+      "end": 413.32,
+      "text": "वो होता है न maximum student बस यहाँ तक आके छोड़ देते हैं"
+    },
+    {
+      "start": 413.32,
+      "end": 416.9,
+      "text": "मतलब 90% student तो यहाँ तक आके hope ही छोड़ देता है कि होगी C programming,"
+    },
+    {
+      "start": 417.0,
+      "end": 420.1,
+      "text": "नहीं भी यहाँ, असली C programming तो उसके बाद start है,"
+    },
+    {
+      "start": 420.5,
+      "end": 423.22,
+      "text": "मैं यहाँ पे सिर्फ practical की बार नहीं करना,"
+    },
+    {
+      "start": 423.66,
+      "end": 426.14,
+      "text": "theoretical logic building भी आपको आनी चाहिए,"
+    },
+    {
+      "start": 426.5,
+      "end": 428.3,
+      "text": "क्योंकि उसके बाद तो सिर्फ syntax बचते हैं,"
+    },
+    {
+      "start": 428.3,
+      "end": 430.34,
+      "text": "syntax याद है तो आप लिख सकते हो, लेकिन"
+    },
+    {
+      "start": 430.34,
+      "end": 432.28,
+      "text": "logic building जो है, वो C"
+    },
+    {
+      "start": 432.28,
+      "end": 434.3,
+      "text": "programming बहुत अच्छे से बनाती है, logic"
+    },
+    {
+      "start": 434.3,
+      "end": 436.3,
+      "text": "बनाना, चीजों को solve करने के लिए"
+    },
+    {
+      "start": 436.3,
+      "end": 438.16,
+      "text": "तो देखो, functions का concept आ जाता है,"
+    },
+    {
+      "start": 438.28,
+      "end": 440.4,
+      "text": "recursion का concept, very very important"
+    },
+    {
+      "start": 440.4,
+      "end": 442.14,
+      "text": "recursion का concept, जिसमें हम"
+    },
+    {
+      "start": 442.14,
+      "end": 444.3,
+      "text": "Fibonacci series के बारे में पढ़ते हैं, Tower of"
+    },
+    {
+      "start": 444.3,
+      "end": 448.52,
+      "text": "पर नॉइ के बारे में पड़ते हैं, आप हमारे, वहाँ पे जो है, ये सारे के सारे concept जो आ जाते हैं,"
+    },
+    {
+      "start": 448.56,
+      "end": 453.78,
+      "text": "actual, formal arguments, parameter passing techniques आ जाती हैं, call by value, call by reference,"
+    },
+    {
+      "start": 453.9,
+      "end": 457.8,
+      "text": "call by name, ये सारी कानी आ जाती है, scoping आ जाती है, static scoping क्या है,"
+    },
+    {
+      "start": 458.16,
+      "end": 461.64,
+      "text": "dynamic scoping क्या है, और साथ ही साथ इसके parallel concept चलता है,"
+    },
+    {
+      "start": 461.64,
+      "end": 469.88,
+      "text": "pointers का भी ठीक है ना तो one of the most important जो top का important concept है पूरे C programming में वो है concept of pointers"
+    },
+    {
+      "start": 469.88,
+      "end": 476.02,
+      "text": "ऐसा नहीं है कि यह करने के बाद pointer आता है यहाँ पे भी आपका बीच में pointer का concept जो है वो start होई जाएगा"
+    },
+    {
+      "start": 476.02,
+      "end": 482.82,
+      "text": "तो pointers का introduction कैसे हम pointers को use करते हैं फिर pointers को array के साथ pointers को string के साथ"
+    },
+    {
+      "start": 482.82,
+      "end": 485.54,
+      "text": "pointers को function के साथ, pointers को structure के साथ"
+    },
+    {
+      "start": 485.54,
+      "end": 487.94,
+      "text": "वो आपका concept जो है वो सास साथ build हो जाता है"
+    },
+    {
+      "start": 487.94,
+      "end": 492.24,
+      "text": "dynamic memory allocation, static allocation, dynamic memory allocation, malloc, malloc"
+    },
+    {
+      "start": 492.24,
+      "end": 493.34,
+      "text": "वो आ जाता है concept"
+    },
+    {
+      "start": 493.34,
+      "end": 495.42,
+      "text": "फिर आ जाता है आपके पास string functions"
+    },
+    {
+      "start": 495.42,
+      "end": 497.14,
+      "text": "ठीक है तो string का concept आ जाता है"
+    },
+    {
+      "start": 497.14,
+      "end": 499.58,
+      "text": "various library functions आ जाते है"
+    },
+    {
+      "start": 499.58,
+      "end": 501.78,
+      "text": "जैसे string length, string concatenation"
+    },
+    {
+      "start": 501.78,
+      "end": 504.06,
+      "text": "ये सारे already cover करवा चुका हूँ मैं"
+    },
+    {
+      "start": 504.06,
+      "end": 505.08,
+      "text": "जितने भी functions है"
+    },
+    {
+      "start": 505.08,
+      "end": 507.56,
+      "text": "with example आपके already cover करवा चुका हूँ"
+    },
+    {
+      "start": 507.56,
+      "end": 509.4,
+      "text": "concept of pointers and string"
+    },
+    {
+      "start": 509.4,
+      "end": 511.48,
+      "text": "यह भी cover करवा चुका हूँ, मतलब जितने points"
+    },
+    {
+      "start": 511.48,
+      "end": 513.38,
+      "text": "आपको दिख रहे हैं ना, उपर उपर के"
+    },
+    {
+      "start": 513.38,
+      "end": 515.5,
+      "text": "वो सारे के सारे done हो चुके हैं, जो थोड़े बहुत"
+    },
+    {
+      "start": 515.5,
+      "end": 517.66,
+      "text": "रह गए topic एक आदा, वो भी simple सा"
+    },
+    {
+      "start": 517.66,
+      "end": 519.68,
+      "text": "वो जल्दी ही आपको cover करवा दिया जाएगा"
+    },
+    {
+      "start": 519.68,
+      "end": 522.52,
+      "text": "structure and union का concept आ जाता है"
+    },
+    {
+      "start": 522.52,
+      "end": 524.66,
+      "text": "structure क्या है कैसे हम design करते है"
+    },
+    {
+      "start": 524.66,
+      "end": 526.66,
+      "text": "उसके अंदर nested structure का concept है"
+    },
+    {
+      "start": 526.66,
+      "end": 528.22,
+      "text": "unit है type def है"
+    },
+    {
+      "start": 528.22,
+      "end": 529.5,
+      "text": "वो सारे के सारे बताई हुए है"
+    },
+    {
+      "start": 529.5,
+      "end": 533.16,
+      "text": "then finally आ जाता है last में file handling in C programming"
+    },
+    {
+      "start": 533.16,
+      "end": 535.52,
+      "text": "जिसमें हम input output की बात करते है"
+    },
+    {
+      "start": 535.52,
+      "end": 536.84,
+      "text": "साथ ही सच file को"
+    },
+    {
+      "start": 536.84,
+      "end": 538.66,
+      "text": "कैसे हम open करते है close करते है"
+    },
+    {
+      "start": 538.66,
+      "end": 540.4,
+      "text": "modify करते है वो concept जो है वो"
+    },
+    {
+      "start": 540.4,
+      "end": 542.42,
+      "text": "files का C programming में आ जाता है"
+    },
+    {
+      "start": 542.42,
+      "end": 546.34,
+      "text": "बस यहाँ पे आके एक तरह से कह सकते हो कि अगर आपने इतने concept कर लिये"
+    },
+    {
+      "start": 546.34,
+      "end": 549.4,
+      "text": "तो C आपकी बहुत अच्छे से बन गई ठीक है"
+    },
+    {
+      "start": 549.4,
+      "end": 552.44,
+      "text": "अब इसके बाद आप इसमें OOPS के concept आड़ कर दो"
+    },
+    {
+      "start": 552.44,
+      "end": 555.26,
+      "text": "मतलब C++ की तरफ जो है वो चलना स्टार्ट कर दो"
+    },
+    {
+      "start": 555.26,
+      "end": 557.86,
+      "text": "ठीक है तो that will be more than sufficient"
+    },
+    {
+      "start": 557.86,
+      "end": 559.68,
+      "text": "आपकी competitive exam की त्यारी जो है"
+    },
+    {
+      "start": 559.68,
+      "end": 561.24,
+      "text": "even competitive जो है"
+    },
+    {
+      "start": 561.24,
+      "end": 562.9,
+      "text": "आपकी जो आती है coding वगेरा"
+    },
+    {
+      "start": 562.9,
+      "end": 566.54,
+      "text": "वो ठीक है हम C++ में या Java में थोड़ा ज़्यादा करते हैं"
+    },
+    {
+      "start": 566.54,
+      "end": 569.02,
+      "text": "लेकिन ये आपके logic building है"
+    },
+    {
+      "start": 569.02,
+      "end": 572.32,
+      "text": "ये आपके logic को design करती है C programming"
+    },
+    {
+      "start": 572.32,
+      "end": 575.4,
+      "text": "so this is all about the syllabus of C programming"
+    },
+    {
+      "start": 575.4,
+      "end": 576.02,
+      "text": "Thank you"
+    }
+  ]
+}

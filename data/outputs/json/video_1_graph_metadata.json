@@ -1,0 +1,40 @@
+{
+  "video_id": "video_1",
+  "total_concepts": 4,
+  "total_edges": 3,
+  "recommended_learning_order": [
+    "velocity",
+    "speed",
+    "flow",
+    "viscosity"
+  ],
+  "nodes": [
+    "velocity",
+    "viscosity",
+    "speed",
+    "flow"
+  ],
+  "edges": [
+    {
+      "from": "velocity",
+      "to": "viscosity",
+      "confidence": 0.6091,
+      "nli_score": 0.565,
+      "evidence": "p2 equals to p1 plus row gh therefore, from here we will get the value of velocity v1. v1 equals to under root 2gh divided by a1 by a2 whole square minus 1 the second example is the speed of efflux. there is a hole on the side of an open container and the fluid is flowing out. here, we need to solve"
+    },
+    {
+      "from": "speed",
+      "to": "viscosity",
+      "confidence": 0.4936,
+      "nli_score": 0.4746,
+      "evidence": "p2 equals to p1 plus row gh therefore, from here we will get the value of velocity v1. v1 equals to under root 2gh divided by a1 by a2 whole square minus 1 the second example is the speed of efflux. there is a hole on the side of an open container and the fluid is flowing out. here, we need to solve"
+    },
+    {
+      "from": "flow",
+      "to": "viscosity",
+      "confidence": 0.4334,
+      "nli_score": 0.311,
+      "evidence": "p2 equals to p1 plus row gh therefore, from here we will get the value of velocity v1. v1 equals to under root 2gh divided by a1 by a2 whole square minus 1 the second example is the speed of efflux. there is a hole on the side of an open container and the fluid is flowing out. here, we need to solve"
+    }
+  ]
+}

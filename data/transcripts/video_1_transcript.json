@@ -1,0 +1,546 @@
+{
+  "detected_language": "hi",
+  "full_text": " हेलो बच्चों, इस वीडियो में हम Mechanical Properties of Fluids के Important Concepts and Formulas Less Than 10 Minutes में कवर कर लेंगे स्टार्ट करते हैं Pascal's Law से किसी Incompressible Fluid के किसी Point पर अगर Pressure चेंज करते हैं तो उस Fluid के हर Point पर Pressure उस Same Value से चेंज हो जाता है So, अगर hydraulic lift के side 1 पर force F लग रहा है and side 2 पर एक car है then pressure दोनों तरफ same आएगा and ये equation hold करेगी pressure equals to F1 by A1 equals to F2 by A2 and since fluid incompressible है therefore volume change दोनों side same रहेगा therefore L1 times A1 equals to L2 times A2 अब बात करते है variation of pressure with depth ये variation gravity की वज़े से आता है and अगर दो point में h depth का difference है then lower point पर pressure higher होगा with a value p2 equals to p1 plus rho gh where rho is the density of the fluid अब बात करते है streamline flow की अगर किसी fluid के हर point की जो भी velocity है वो over a period of time same रहती है तो ऐसे study flow को streamline flow कहते है continuity principle कहता है कि किसी incompressible and non-viscous fluid का किसी tube में flow observe करें तो हर point पर product of cross-sectional area and velocity same रहेगा therefore A1 times V1 equals to A2 times V2 अगर fluid compressible है तो density हर point पर different हो सकती है therefore इस case में continuity equation इस तरीके से लिखेंगे rho 1 times a1 v1 equals to rho 2 times a2 v2 burn-nulis equation की बात करते हैं यहां हम energy की equation लगाते हैं और हमें मिलता है pressure p plus rho gh plus half rho v square equals to constant constant का मतलब यह हुआ बच्चो कि fluid के किसी भी point पर अगर हम ये sum calculate कर रहे हैं तो उसकी value हर point पर same आएगी अभी तक जो points discuss किये हैं उन्हें use करके सारे questions solve हो जाएंगे बच्चो for example बच्चो अगर हम venturi meter device की बात करें तो इस device पर जो questions आते हैं उसमें हम तीनो equation use करते हैं ये device incompressible fluid की flow speed major करने के लिए use आता है इस device में दो चीज़े हैं pipe एक side से broad है और middle में बहुत narrow है point 1 है बच्चो tube का broad side and point 2 है narrow part पहली equation है continuity की a1 v1 equals to a2 v2 second equation है Bernoulli equation p1 plus half rho v1 square equals to p2 plus half rho v2 square दोनों points same height पर हैं इसलिए row gh वाली term cancel out हो जाती है and last equation, third equation है बच्चो pressure variation वाली P2 equals to P1 plus row gh therefore यहां से velocity V1 की value हमें मिलेगी V1 equals to under root 2gh divided by A1 by A2 whole square minus 1 दूसरा example है speed of efflux यहाँ एक open container में side में hole है और fluid बाहर flow हो रहा है यहाँ हमें equation solve करके बाहर निकलते fluid की velocity निकालनी है यह एक बहुत important result है बच्चों और आपको इस case में velocity की value याद रखनी है which is equals to under root 2gh अब बात करते हैं बच्चों viscosity की viscosity is internal friction in fluid यहाँ coefficient of viscosity आता है इस example में दो plates हैं lower plate fix है और top plate पर force F लग रही है और यह V velocity से move कर रही है दोनों plates के बीच L distance है और plates का surface area A है अब बात करते हैं बच्चो stocks law की कोई sphere of radius R अगर viscous fluid में move कर रहा है with a velocity V तो वो viscous force feel करेगा जिसकी value होगी force F equals to 6 pi times eta R V आगे बात करते हैं terminal velocity की किसी column में sigma density का viscous fluid है इसमें row density का R radius वाला sphere starts falling from rest बचो ये sphere एक point के बाद constant velocity से move करने लगेगा ये तब होगा जब इस पर लग रहे upward direction में viscous force and upthrust force इन दोनों का sum downward direction में लग रहे इसके weight के बराबर हो जाएगा इस velocity को terminal velocity बोलते हैं and इसकी value आती है जनरली बच्चो कॉशियंस में फ्लूइड एर दी जाती है उस केस में सिग्मा की वैल्यू नेगलीजबल होती है तो फॉर्मला हमारा सिंपलिफाई होके बन जाएगा बच्चो आई होप ये वीडियो आपकी एक्जाम प्रिपरेशन में हेल्फ़ूल रहेगा best of luck for your exam",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 9.68,
+      "text": "हेलो बच्चों, इस वीडियो में हम Mechanical Properties of Fluids के Important Concepts and Formulas Less Than 10 Minutes में कवर कर लेंगे"
+    },
+    {
+      "start": 9.68,
+      "end": 12.06,
+      "text": "स्टार्ट करते हैं Pascal's Law से"
+    },
+    {
+      "start": 12.06,
+      "end": 17.0,
+      "text": "किसी Incompressible Fluid के किसी Point पर अगर Pressure चेंज करते हैं"
+    },
+    {
+      "start": 17.56,
+      "end": 23.02,
+      "text": "तो उस Fluid के हर Point पर Pressure उस Same Value से चेंज हो जाता है"
+    },
+    {
+      "start": 23.02,
+      "end": 28.6,
+      "text": "So, अगर hydraulic lift के side 1 पर force F लग रहा है"
+    },
+    {
+      "start": 28.6,
+      "end": 31.44,
+      "text": "and side 2 पर एक car है"
+    },
+    {
+      "start": 31.44,
+      "end": 33.94,
+      "text": "then pressure दोनों तरफ same आएगा"
+    },
+    {
+      "start": 33.94,
+      "end": 36.32,
+      "text": "and ये equation hold करेगी"
+    },
+    {
+      "start": 36.32,
+      "end": 41.38,
+      "text": "pressure equals to F1 by A1 equals to F2 by A2"
+    },
+    {
+      "start": 41.38,
+      "end": 43.8,
+      "text": "and since fluid incompressible है"
+    },
+    {
+      "start": 43.8,
+      "end": 47.38,
+      "text": "therefore volume change दोनों side same रहेगा"
+    },
+    {
+      "start": 47.38,
+      "end": 52.66,
+      "text": "therefore L1 times A1 equals to L2 times A2"
+    },
+    {
+      "start": 52.66,
+      "end": 56.18,
+      "text": "अब बात करते है variation of pressure with depth"
+    },
+    {
+      "start": 56.18,
+      "end": 58.58,
+      "text": "ये variation gravity की वज़े से आता है"
+    },
+    {
+      "start": 58.58,
+      "end": 63.02,
+      "text": "and अगर दो point में h depth का difference है"
+    },
+    {
+      "start": 63.02,
+      "end": 66.22,
+      "text": "then lower point पर pressure higher होगा"
+    },
+    {
+      "start": 66.22,
+      "end": 71.16,
+      "text": "with a value p2 equals to p1 plus rho gh"
+    },
+    {
+      "start": 71.16,
+      "end": 74.18,
+      "text": "where rho is the density of the fluid"
+    },
+    {
+      "start": 74.18,
+      "end": 77.4,
+      "text": "अब बात करते है streamline flow की"
+    },
+    {
+      "start": 77.4,
+      "end": 81.36,
+      "text": "अगर किसी fluid के हर point की जो भी velocity है"
+    },
+    {
+      "start": 81.36,
+      "end": 84.54,
+      "text": "वो over a period of time same रहती है"
+    },
+    {
+      "start": 84.54,
+      "end": 87.94,
+      "text": "तो ऐसे study flow को streamline flow कहते है"
+    },
+    {
+      "start": 87.94,
+      "end": 90.24,
+      "text": "continuity principle कहता है"
+    },
+    {
+      "start": 90.24,
+      "end": 94.44,
+      "text": "कि किसी incompressible and non-viscous fluid का"
+    },
+    {
+      "start": 94.44,
+      "end": 96.86,
+      "text": "किसी tube में flow observe करें"
+    },
+    {
+      "start": 96.86,
+      "end": 100.42,
+      "text": "तो हर point पर product of cross-sectional area"
+    },
+    {
+      "start": 100.42,
+      "end": 102.34,
+      "text": "and velocity same रहेगा"
+    },
+    {
+      "start": 102.34,
+      "end": 106.8,
+      "text": "therefore A1 times V1 equals to A2 times V2"
+    },
+    {
+      "start": 106.8,
+      "end": 108.78,
+      "text": "अगर fluid compressible है"
+    },
+    {
+      "start": 108.78,
+      "end": 111.38,
+      "text": "तो density हर point पर different हो सकती है"
+    },
+    {
+      "start": 111.38,
+      "end": 115.64,
+      "text": "therefore इस case में continuity equation इस तरीके से लिखेंगे"
+    },
+    {
+      "start": 115.64,
+      "end": 120.76,
+      "text": "rho 1 times a1 v1 equals to rho 2 times a2 v2"
+    },
+    {
+      "start": 120.76,
+      "end": 123.66,
+      "text": "burn-nulis equation की बात करते हैं"
+    },
+    {
+      "start": 123.66,
+      "end": 126.08,
+      "text": "यहां हम energy की equation लगाते हैं"
+    },
+    {
+      "start": 126.08,
+      "end": 133.18,
+      "text": "और हमें मिलता है pressure p plus rho gh plus half rho v square equals to constant"
+    },
+    {
+      "start": 133.18,
+      "end": 135.26,
+      "text": "constant का मतलब यह हुआ बच्चो"
+    },
+    {
+      "start": 135.26,
+      "end": 138.44,
+      "text": "कि fluid के किसी भी point पर अगर हम"
+    },
+    {
+      "start": 138.44,
+      "end": 140.72,
+      "text": "ये sum calculate कर रहे हैं"
+    },
+    {
+      "start": 140.72,
+      "end": 143.42,
+      "text": "तो उसकी value हर point पर same आएगी"
+    },
+    {
+      "start": 143.42,
+      "end": 146.14,
+      "text": "अभी तक जो points discuss किये हैं"
+    },
+    {
+      "start": 146.14,
+      "end": 149.24,
+      "text": "उन्हें use करके सारे questions solve हो जाएंगे बच्चो"
+    },
+    {
+      "start": 149.24,
+      "end": 150.7,
+      "text": "for example बच्चो"
+    },
+    {
+      "start": 150.7,
+      "end": 153.38,
+      "text": "अगर हम venturi meter device की बात करें"
+    },
+    {
+      "start": 153.38,
+      "end": 156.0,
+      "text": "तो इस device पर जो questions आते हैं"
+    },
+    {
+      "start": 156.0,
+      "end": 158.48,
+      "text": "उसमें हम तीनो equation use करते हैं"
+    },
+    {
+      "start": 158.48,
+      "end": 160.96,
+      "text": "ये device incompressible fluid की"
+    },
+    {
+      "start": 160.96,
+      "end": 163.9,
+      "text": "flow speed major करने के लिए use आता है"
+    },
+    {
+      "start": 163.9,
+      "end": 166.52,
+      "text": "इस device में दो चीज़े हैं"
+    },
+    {
+      "start": 166.52,
+      "end": 168.32,
+      "text": "pipe एक side से broad है"
+    },
+    {
+      "start": 168.32,
+      "end": 170.66,
+      "text": "और middle में बहुत narrow है"
+    },
+    {
+      "start": 170.66,
+      "end": 173.48,
+      "text": "point 1 है बच्चो tube का broad side"
+    },
+    {
+      "start": 173.48,
+      "end": 176.02,
+      "text": "and point 2 है narrow part"
+    },
+    {
+      "start": 176.02,
+      "end": 177.98,
+      "text": "पहली equation है continuity की"
+    },
+    {
+      "start": 177.98,
+      "end": 180.8,
+      "text": "a1 v1 equals to a2 v2"
+    },
+    {
+      "start": 180.8,
+      "end": 182.16,
+      "text": "second equation है"
+    },
+    {
+      "start": 182.16,
+      "end": 183.28,
+      "text": "Bernoulli equation"
+    },
+    {
+      "start": 183.28,
+      "end": 186.04,
+      "text": "p1 plus half rho v1 square"
+    },
+    {
+      "start": 186.04,
+      "end": 189.92,
+      "text": "equals to p2 plus half rho v2 square"
+    },
+    {
+      "start": 189.92,
+      "end": 192.3,
+      "text": "दोनों points same height पर हैं"
+    },
+    {
+      "start": 192.3,
+      "end": 195.66,
+      "text": "इसलिए row gh वाली term cancel out हो जाती है"
+    },
+    {
+      "start": 195.66,
+      "end": 198.34,
+      "text": "and last equation, third equation है बच्चो"
+    },
+    {
+      "start": 198.34,
+      "end": 199.98,
+      "text": "pressure variation वाली"
+    },
+    {
+      "start": 199.98,
+      "end": 203.44,
+      "text": "P2 equals to P1 plus row gh"
+    },
+    {
+      "start": 203.44,
+      "end": 207.2,
+      "text": "therefore यहां से velocity V1 की value हमें मिलेगी"
+    },
+    {
+      "start": 207.2,
+      "end": 210.2,
+      "text": "V1 equals to under root 2gh"
+    },
+    {
+      "start": 210.2,
+      "end": 214.88,
+      "text": "divided by A1 by A2 whole square minus 1"
+    },
+    {
+      "start": 214.88,
+      "end": 218.62,
+      "text": "दूसरा example है speed of efflux"
+    },
+    {
+      "start": 218.62,
+      "end": 224.78,
+      "text": "यहाँ एक open container में side में hole है और fluid बाहर flow हो रहा है"
+    },
+    {
+      "start": 224.78,
+      "end": 230.72,
+      "text": "यहाँ हमें equation solve करके बाहर निकलते fluid की velocity निकालनी है"
+    },
+    {
+      "start": 230.72,
+      "end": 233.04,
+      "text": "यह एक बहुत important result है बच्चों"
+    },
+    {
+      "start": 233.04,
+      "end": 236.46,
+      "text": "और आपको इस case में velocity की value याद रखनी है"
+    },
+    {
+      "start": 236.46,
+      "end": 239.28,
+      "text": "which is equals to under root 2gh"
+    },
+    {
+      "start": 239.28,
+      "end": 241.7,
+      "text": "अब बात करते हैं बच्चों viscosity की"
+    },
+    {
+      "start": 241.7,
+      "end": 244.66,
+      "text": "viscosity is internal friction in fluid"
+    },
+    {
+      "start": 244.66,
+      "end": 252.72,
+      "text": "यहाँ coefficient of viscosity आता है"
+    },
+    {
+      "start": 252.72,
+      "end": 263.32,
+      "text": "इस example में दो plates हैं"
+    },
+    {
+      "start": 263.32,
+      "end": 267.8,
+      "text": "lower plate fix है और top plate पर force F लग रही है"
+    },
+    {
+      "start": 267.8,
+      "end": 270.58,
+      "text": "और यह V velocity से move कर रही है"
+    },
+    {
+      "start": 270.58,
+      "end": 273.2,
+      "text": "दोनों plates के बीच L distance है"
+    },
+    {
+      "start": 273.2,
+      "end": 276.1,
+      "text": "और plates का surface area A है"
+    },
+    {
+      "start": 276.1,
+      "end": 277.72,
+      "text": "अब बात करते हैं बच्चो"
+    },
+    {
+      "start": 277.72,
+      "end": 278.82,
+      "text": "stocks law की"
+    },
+    {
+      "start": 278.82,
+      "end": 281.12,
+      "text": "कोई sphere of radius R"
+    },
+    {
+      "start": 281.12,
+      "end": 283.6,
+      "text": "अगर viscous fluid में move कर रहा है"
+    },
+    {
+      "start": 283.6,
+      "end": 285.06,
+      "text": "with a velocity V"
+    },
+    {
+      "start": 285.06,
+      "end": 287.42,
+      "text": "तो वो viscous force feel करेगा"
+    },
+    {
+      "start": 287.42,
+      "end": 288.86,
+      "text": "जिसकी value होगी"
+    },
+    {
+      "start": 288.86,
+      "end": 290.8,
+      "text": "force F equals to"
+    },
+    {
+      "start": 290.8,
+      "end": 294.18,
+      "text": "6 pi times eta R V"
+    },
+    {
+      "start": 294.18,
+      "end": 295.88,
+      "text": "आगे बात करते हैं"
+    },
+    {
+      "start": 295.88,
+      "end": 297.1,
+      "text": "terminal velocity की"
+    },
+    {
+      "start": 297.1,
+      "end": 298.8,
+      "text": "किसी column में"
+    },
+    {
+      "start": 298.8,
+      "end": 300.98,
+      "text": "sigma density का viscous fluid है"
+    },
+    {
+      "start": 300.98,
+      "end": 302.88,
+      "text": "इसमें row density का"
+    },
+    {
+      "start": 302.88,
+      "end": 306.82,
+      "text": "R radius वाला sphere starts falling from rest"
+    },
+    {
+      "start": 306.82,
+      "end": 309.06,
+      "text": "बचो ये sphere एक point के बाद"
+    },
+    {
+      "start": 309.06,
+      "end": 311.46,
+      "text": "constant velocity से move करने लगेगा"
+    },
+    {
+      "start": 311.46,
+      "end": 315.5,
+      "text": "ये तब होगा जब इस पर लग रहे upward direction में"
+    },
+    {
+      "start": 315.5,
+      "end": 318.28,
+      "text": "viscous force and upthrust force"
+    },
+    {
+      "start": 318.28,
+      "end": 321.5,
+      "text": "इन दोनों का sum downward direction में लग रहे"
+    },
+    {
+      "start": 321.5,
+      "end": 324.06,
+      "text": "इसके weight के बराबर हो जाएगा"
+    },
+    {
+      "start": 324.06,
+      "end": 327.44,
+      "text": "इस velocity को terminal velocity बोलते हैं"
+    },
+    {
+      "start": 327.44,
+      "end": 328.82,
+      "text": "and इसकी value आती है"
+    },
+    {
+      "start": 328.82,
+      "end": 343.06,
+      "text": "जनरली बच्चो कॉशियंस में फ्लूइड एर दी जाती है"
+    },
+    {
+      "start": 343.06,
+      "end": 345.86,
+      "text": "उस केस में सिग्मा की वैल्यू नेगलीजबल होती है"
+    },
+    {
+      "start": 345.86,
+      "end": 348.48,
+      "text": "तो फॉर्मला हमारा सिंपलिफाई होके बन जाएगा"
+    },
+    {
+      "start": 348.48,
+      "end": 358.4,
+      "text": "बच्चो आई होप ये वीडियो आपकी एक्जाम प्रिपरेशन में हेल्फ़ूल रहेगा"
+    },
+    {
+      "start": 358.4,
+      "end": 360.18,
+      "text": "best of luck for your exam"
+    }
+  ]
+}

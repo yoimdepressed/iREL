@@ -1,0 +1,22 @@
+{
+  "video_id": "video_5",
+  "language_mix": "Telugu-English",
+  "prerequisite_edges": [
+    {
+      "from": "format",
+      "to": "output",
+      "confidence": 0.497,
+      "nli_score": 0.2814,
+      "positional_score": 1.0,
+      "evidence": "we should use the constructor and string to persuade the object. the scan presence of the video variable name steer simply prints and finds the strings presence of the comma. look at this display, it seems like a lot of things are being called simultaneously, so let's write the null pointer exception. they said let's use c to get the strings, and atish and matrim also agreed. there are two words in my name, jane, but only a single word is displayed. so here till school is a very important point and percentage is a format specifier that whatever is there in the percentage. to read a single word"
+    },
+    {
+      "from": "strings",
+      "to": "output",
+      "confidence": 0.4644,
+      "nli_score": 0.2349,
+      "positional_score": 1.0,
+      "evidence": "we should use the constructor and string to persuade the object. the scan presence of the video variable name steer simply prints and finds the strings presence of the comma. look at this display, it seems like a lot of things are being called simultaneously, so let's write the null pointer exception. they said let's use c to get the strings, and atish and matrim also agreed. there are two words in my name, jane, but only a single word is displayed. so here till school is a very important point and percentage is a format specifier that whatever is there in the percentage. to read a single word"
+    }
+  ]
+}

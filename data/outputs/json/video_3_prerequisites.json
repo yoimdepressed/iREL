@@ -1,0 +1,46 @@
+{
+  "video_id": "video_3",
+  "language_mix": "Hindi-English",
+  "prerequisite_edges": [
+    {
+      "from": "windows",
+      "to": "access",
+      "confidence": 0.494,
+      "nli_score": 0.7058,
+      "positional_score": 0.0,
+      "evidence": "because the system call will be invoked. the kernel is responsible for doing this work. if you want to perform, then you need to make a system call. what exists is generally as i just mentioned, it varies according to the operating system. there are 300 system calls in many operating systems. in windows 7, there are around 700 system calls. so we categorize these system calls. first, let's discuss file-related system calls. the term file related system call means where we need to access any file."
+    },
+    {
+      "from": "security",
+      "to": "access",
+      "confidence": 0.4654,
+      "nli_score": 0.6649,
+      "positional_score": 0.0,
+      "evidence": "we need to increment the semaphore values, allocate memory, and understand all these concepts in this system. when we access a call, then in communication, we generally use communication protocols. inter process communication means that two processes communicate with each other. they can use a method or we can use a pipe method. here, shared memory is through the pipe system call. shm get is used to retrieve the value of shared memory. or if i have to create connections. we need to terminate the connections, and the system calls related to that are here. so this is the major categorization of "
+    },
+    {
+      "from": "protection",
+      "to": "access",
+      "confidence": 0.4464,
+      "nli_score": 0.6377,
+      "positional_score": 0.0,
+      "evidence": "we need to increment the semaphore values, allocate memory, and understand all these concepts in this system. when we access a call, then in communication, we generally use communication protocols. inter process communication means that two processes communicate with each other. they can use a method or we can use a pipe method. here, shared memory is through the pipe system call. shm get is used to retrieve the value of shared memory. or if i have to create connections. we need to terminate the connections, and the system calls related to that are here. so this is the major categorization of "
+    },
+    {
+      "from": "security",
+      "to": "processes",
+      "confidence": 0.4352,
+      "nli_score": 0.6217,
+      "positional_score": 0.0,
+      "evidence": "we need to increment the semaphore values, allocate memory, and understand all these concepts in this system. when we access a call, then in communication, we generally use communication protocols. inter process communication means that two processes communicate with each other. they can use a method or we can use a pipe method. here, shared memory is through the pipe system call. shm get is used to retrieve the value of shared memory. or if i have to create connections. we need to terminate the connections, and the system calls related to that are here. so this is the major categorization of "
+    },
+    {
+      "from": "protection",
+      "to": "processes",
+      "confidence": 0.4315,
+      "nli_score": 0.6164,
+      "positional_score": 0.0,
+      "evidence": "we need to increment the semaphore values, allocate memory, and understand all these concepts in this system. when we access a call, then in communication, we generally use communication protocols. inter process communication means that two processes communicate with each other. they can use a method or we can use a pipe method. here, shared memory is through the pipe system call. shm get is used to retrieve the value of shared memory. or if i have to create connections. we need to terminate the connections, and the system calls related to that are here. so this is the major categorization of "
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Knowledge Graph — video_5</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0f0f1a;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  #header {
+    padding: 16px 24px;
+    background: #1a1a2e;
+    border-bottom: 1px solid #2d2d4e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+  #header h1 { font-size: 1.1rem; color: #c084fc; letter-spacing: 0.05em; }
+  #header p { font-size: 0.78rem; color: #888; margin-top: 2px; }
+  #legend {
+    display: flex;
+    gap: 20px;
+    font-size: 0.75rem;
+  }
+  .legend-item { display: flex; align-items: center; gap: 6px; }
+  .legend-dot {
+    width: 10px; height: 10px; border-radius: 50%;
+  }
+  #order-bar {
+    padding: 10px 24px;
+    background: #13131f;
+    border-bottom: 1px solid #2d2d4e;
+    font-size: 0.73rem;
+    color: #aaa;
+    flex-shrink: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  #order-bar strong { color: #c084fc; margin-right: 8px; }
+  .order-node {
+    color: #e0e0e0;
+    background: #1e1e3a;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin: 0 2px;
+  }
+  #graph { flex: 1; }
+  svg { width: 100%; height: 100%; }
+  .node circle {
+    stroke: #0f0f1a;
+    stroke-width: 2px;
+    cursor: pointer;
+    transition: r 0.2s, filter 0.2s;
+  }
+  .node circle:hover {
+    filter: brightness(1.4);
+  }
+  .node text {
+    fill: #f0f0f0;
+    font-size: 12px;
+    font-weight: 500;
+    pointer-events: none;
+    text-shadow: 0 1px 3px #000;
+  }
+  .link {
+    fill: none;
+    stroke-opacity: 0.55;
+    transition: stroke-opacity 0.2s;
+  }
+  .link:hover { stroke-opacity: 1; }
+  .node.dimmed circle { opacity: 0.15; }
+  .node.dimmed text { opacity: 0.1; }
+  .link.dimmed { stroke-opacity: 0.05; }
+  #tooltip {
+    position: fixed;
+    background: #1e1e3a;
+    border: 1px solid #4a4a7a;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 0.78rem;
+    pointer-events: none;
+    display: none;
+    max-width: 260px;
+    line-height: 1.6;
+    color: #ddd;
+    z-index: 100;
+  }
+  #tooltip strong { color: #c084fc; display: block; margin-bottom: 4px; font-size: 0.85rem; }
+  #tooltip .tag {
+    display: inline-block;
+    background: #2d2d50;
+    padding: 1px 8px;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    margin-top: 4px;
+  }
+  .arrowhead { fill: #888; }
+</style>
+</head>
+<body>
+<div id="header">
+  <div>
+    <h1>📚 Knowledge Graph — Video 5</h1>
+    <p>3 concepts &nbsp;·&nbsp; 2 prerequisite links</p>
+  </div>
+  <div id="legend">
+    <div class="legend-item"><div class="legend-dot" style="background:#ff6b6b"></div>Foundational</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#a855f7"></div>Intermediate</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#4ecdc4"></div>Advanced</div>
+  </div>
+</div>
+<div id="order-bar">
+  <strong>Learning Order:</strong><span class="order-node">format</span> → <span class="order-node">strings</span> → <span class="order-node">output</span>
+</div>
+<div id="graph"></div>
+<div id="tooltip"></div>
+
+<script>
+const nodesData = [{"id": "format", "label": "format", "group": "foundational", "color": "#ff6b6b", "in_degree": 0, "out_degree": 1}, {"id": "output", "label": "output", "group": "advanced", "color": "#4ecdc4", "in_degree": 2, "out_degree": 0}, {"id": "strings", "label": "strings", "group": "foundational", "color": "#ff6b6b", "in_degree": 0, "out_degree": 1}];
+const edgesData = [{"source": "format", "target": "output", "confidence": 0.497, "nli_score": 0.281}, {"source": "strings", "target": "output", "confidence": 0.464, "nli_score": 0.235}];
+
+const container = document.getElementById('graph');
+const W = container.clientWidth || window.innerWidth;
+const H = container.clientHeight || window.innerHeight - 100;
+
+const svg = d3.select('#graph').append('svg')
+  .attr('viewBox', `0 0 ${W} ${H}`)
+  .attr('preserveAspectRatio', 'xMidYMid meet');
+
+// Arrow marker
+svg.append('defs').append('marker')
+  .attr('id', 'arrow')
+  .attr('viewBox', '0 -5 10 10')
+  .attr('refX', 22)
+  .attr('refY', 0)
+  .attr('markerWidth', 6)
+  .attr('markerHeight', 6)
+  .attr('orient', 'auto')
+  .append('path')
+  .attr('d', 'M0,-5L10,0L0,5')
+  .attr('class', 'arrowhead');
+
+const g = svg.append('g');
+
+// Zoom & pan
+svg.call(d3.zoom().scaleExtent([0.3, 3]).on('zoom', e => g.attr('transform', e.transform)));
+
+// Edge color by confidence
+const edgeColor = d => d3.interpolateRgb('#3a3a6a', '#c084fc')(d.confidence);
+
+const link = g.append('g').selectAll('line')
+  .data(edgesData).enter().append('line')
+  .attr('class', 'link')
+  .attr('stroke', edgeColor)
+  .attr('stroke-width', d => 1.5 + d.confidence * 2.5)
+  .attr('marker-end', 'url(#arrow)');
+
+const nodeSize = d => 10 + d.in_degree * 2 + d.out_degree * 1.5;
+
+const node = g.append('g').selectAll('g')
+  .data(nodesData).enter().append('g')
+  .attr('class', 'node')
+  .call(d3.drag()
+    .on('start', (e, d) => { if (!e.active) sim.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+    .on('drag',  (e, d) => { d.fx = e.x; d.fy = e.y; })
+    .on('end',   (e, d) => { if (!e.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
+
+node.append('circle')
+  .attr('r', nodeSize)
+  .attr('fill', d => d.color)
+  .attr('stroke', '#0f0f1a')
+  .attr('stroke-width', 2);
+
+node.append('text')
+  .text(d => d.label)
+  .attr('x', d => nodeSize(d) + 4)
+  .attr('y', 4)
+  .attr('font-size', '12px');
+
+// Hover highlight
+const tooltip = document.getElementById('tooltip');
+
+node.on('mouseover', (e, d) => {
+  const connected = new Set([d.id]);
+  edgesData.forEach(ed => {
+    if (ed.source === d.id || (ed.source.id === d.id)) connected.add(ed.target.id || ed.target);
+    if (ed.target === d.id || (ed.target.id === d.id)) connected.add(ed.source.id || ed.source);
+  });
+  node.classed('dimmed', n => !connected.has(n.id));
+  link.classed('dimmed', l => {
+    const s = l.source.id || l.source;
+    const t = l.target.id || l.target;
+    return s !== d.id && t !== d.id;
+  });
+  tooltip.style.display = 'block';
+  tooltip.innerHTML = `<strong>${d.label}</strong>
+    <div>Role: <b>${d.group}</b></div>
+    <div>← Prerequisites: ${d.in_degree}</div>
+    <div>→ Leads to: ${d.out_degree}</div>`;
+})
+.on('mousemove', e => {
+  tooltip.style.left = (e.clientX + 14) + 'px';
+  tooltip.style.top  = (e.clientY - 10) + 'px';
+})
+.on('mouseout', () => {
+  node.classed('dimmed', false);
+  link.classed('dimmed', false);
+  tooltip.style.display = 'none';
+});
+
+// Force simulation
+const sim = d3.forceSimulation(nodesData)
+  .force('link', d3.forceLink(edgesData).id(d => d.id).distance(120).strength(0.6))
+  .force('charge', d3.forceManyBody().strength(-350))
+  .force('center', d3.forceCenter(W / 2, H / 2))
+  .force('collide', d3.forceCollide().radius(d => nodeSize(d) + 18))
+  .on('tick', () => {
+    link
+      .attr('x1', d => d.source.x).attr('y1', d => d.source.y)
+      .attr('x2', d => d.target.x).attr('y2', d => d.target.y);
+    node.attr('transform', d => `translate(${d.x},${d.y})`);
+  });
+</script>
+</body>
+</html>

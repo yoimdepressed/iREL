@@ -1,0 +1,655 @@
+{
+  "detected_language": "hi",
+  "original_full_text": " हेलो बच्चों, इस वीडियो में हम Mechanical Properties of Fluids के Important Concepts and Formulas Less Than 10 Minutes में कवर कर लेंगे स्टार्ट करते हैं Pascal's Law से किसी Incompressible Fluid के किसी Point पर अगर Pressure चेंज करते हैं तो उस Fluid के हर Point पर Pressure उस Same Value से चेंज हो जाता है So, अगर hydraulic lift के side 1 पर force F लग रहा है and side 2 पर एक car है then pressure दोनों तरफ same आएगा and ये equation hold करेगी pressure equals to F1 by A1 equals to F2 by A2 and since fluid incompressible है therefore volume change दोनों side same रहेगा therefore L1 times A1 equals to L2 times A2 अब बात करते है variation of pressure with depth ये variation gravity की वज़े से आता है and अगर दो point में h depth का difference है then lower point पर pressure higher होगा with a value p2 equals to p1 plus rho gh where rho is the density of the fluid अब बात करते है streamline flow की अगर किसी fluid के हर point की जो भी velocity है वो over a period of time same रहती है तो ऐसे study flow को streamline flow कहते है continuity principle कहता है कि किसी incompressible and non-viscous fluid का किसी tube में flow observe करें तो हर point पर product of cross-sectional area and velocity same रहेगा therefore A1 times V1 equals to A2 times V2 अगर fluid compressible है तो density हर point पर different हो सकती है therefore इस case में continuity equation इस तरीके से लिखेंगे rho 1 times a1 v1 equals to rho 2 times a2 v2 burn-nulis equation की बात करते हैं यहां हम energy की equation लगाते हैं और हमें मिलता है pressure p plus rho gh plus half rho v square equals to constant constant का मतलब यह हुआ बच्चो कि fluid के किसी भी point पर अगर हम ये sum calculate कर रहे हैं तो उसकी value हर point पर same आएगी अभी तक जो points discuss किये हैं उन्हें use करके सारे questions solve हो जाएंगे बच्चो for example बच्चो अगर हम venturi meter device की बात करें तो इस device पर जो questions आते हैं उसमें हम तीनो equation use करते हैं ये device incompressible fluid की flow speed major करने के लिए use आता है इस device में दो चीज़े हैं pipe एक side से broad है और middle में बहुत narrow है point 1 है बच्चो tube का broad side and point 2 है narrow part पहली equation है continuity की a1 v1 equals to a2 v2 second equation है Bernoulli equation p1 plus half rho v1 square equals to p2 plus half rho v2 square दोनों points same height पर हैं इसलिए row gh वाली term cancel out हो जाती है and last equation, third equation है बच्चो pressure variation वाली P2 equals to P1 plus row gh therefore यहां से velocity V1 की value हमें मिलेगी V1 equals to under root 2gh divided by A1 by A2 whole square minus 1 दूसरा example है speed of efflux यहाँ एक open container में side में hole है और fluid बाहर flow हो रहा है यहाँ हमें equation solve करके बाहर निकलते fluid की velocity निकालनी है यह एक बहुत important result है बच्चों और आपको इस case में velocity की value याद रखनी है which is equals to under root 2gh अब बात करते हैं बच्चों viscosity की viscosity is internal friction in fluid यहाँ coefficient of viscosity आता है इस example में दो plates हैं lower plate fix है और top plate पर force F लग रही है और यह V velocity से move कर रही है दोनों plates के बीच L distance है और plates का surface area A है अब बात करते हैं बच्चो stocks law की कोई sphere of radius R अगर viscous fluid में move कर रहा है with a velocity V तो वो viscous force feel करेगा जिसकी value होगी force F equals to 6 pi times eta R V आगे बात करते हैं terminal velocity की किसी column में sigma density का viscous fluid है इसमें row density का R radius वाला sphere starts falling from rest बचो ये sphere एक point के बाद constant velocity से move करने लगेगा ये तब होगा जब इस पर लग रहे upward direction में viscous force and upthrust force इन दोनों का sum downward direction में लग रहे इसके weight के बराबर हो जाएगा इस velocity को terminal velocity बोलते हैं and इसकी value आती है जनरली बच्चो कॉशियंस में फ्लूइड एर दी जाती है उस केस में सिग्मा की वैल्यू नेगलीजबल होती है तो फॉर्मला हमारा सिंपलिफाई होके बन जाएगा बच्चो आई होप ये वीडियो आपकी एक्जाम प्रिपरेशन में हेल्फ़ूल रहेगा best of luck for your exam",
+  "translated_full_text": "Hello kids, in this video, we will cover the important concepts and formulas of Mechanical Properties of Fluids in less than 10 minutes. We start with Pascal's Law. If the pressure at any point in an incompressible fluid changes. So the pressure at every point of that fluid changes from the same value. So, if a force F is being applied to side 1 of the hydraulic lift. and there is a car on side 2 Then the pressure will be the same on both sides. and this equation will hold. pressure equals to F1 by A1 equals to F2 by A2 and since fluid incompressible है Therefore, the volume change will be the same on both sides. therefore L1 times A1 equals to L2 times A2 Now let's discuss the variation of pressure with depth. This variation comes because of gravity. and if there is a difference in h depth between two points Then the pressure at the lower point will be higher. with a value p2 equals to p1 plus rho gh where rho is the density of the fluid Now let's discuss the concept of streamline flow. If every point of a fluid has a certain velocity It remains the same over a period of time. So this kind of study flow is called a streamline flow. The continuity principle states that that of an incompressible and non-viscous fluid Observe the flow in any tube. So at every point, the product of the cross-sectional area and the velocity will remain the same. therefore A1 times V1 equals to A2 times V2 If the fluid is compressible So the density can be different at every point. Therefore, in this case, the continuity equation will be written in this manner. rho 1 times a1 v1 equals to rho 2 times a2 v2 Let's talk about the burn-nulis equation. Here we apply the energy equation. We get pressure p plus rho gh plus half rho v squared equals a constant. The term constant means this, kids. that at any point of the fluid if we They are calculating the sum. So its value will be the same at every point. So far, the points that have been discussed. Using these, all the questions will be solved, kids. For example, children. If we talk about the venturi meter device So the questions that come on this device In it, we use all three equations. This device is related to an incompressible fluid. The flow speed is primarily used to make major adjustments. This device has two things. The pipe is broad on one side. The middle is very narrow. Point 1 is the broad side of the tube, kids. and point 2 है narrow part The first equation is the equation of continuity. a1 v1 equals to a2 v2 The second equation is Bernoulli equation p1 plus half rho v1 square equals to p2 plus half rho v2 square Both points are at the same height. Therefore, the row gh term cancels out. and the last equation, which is the third equation, kids. The sentence is translated to: pressure variation. P2 equals to P1 plus row gh Therefore, from here we will get the value of velocity V1. V1 equals to under root 2gh divided by A1 by A2 whole square minus 1 The second example is the speed of efflux. There is a hole on the side of an open container and the fluid is flowing out. Here, we need to solve the equation to find the velocity of the fluid coming out. This is a very important result for children. And you need to remember the value of velocity in this case. which is equals to under root 2gh Now let's talk about viscosity for kids. viscosity is internal friction in fluid Here, the coefficient of viscosity comes into play. In this example, there are two plates. The lower plate is fixed and a force F is being applied to the top plate. It is moving with a velocity of V. There is an L distance between the two plates. The surface area of the plates is A. Now let's talk to the kids. The concept of Stocks Law A sphere of radius R If it is moving in a viscous fluid with a velocity V So it will feel the viscous force. whose value will be force F equals to 6 pi times eta R V Let's move on to the next topic. of terminal velocity In any column Sigma density is a viscous fluid. It has row density. R radius वाला sphere starts falling from rest The sphere comes after a point. It will start moving with a constant velocity. This will happen when it is moving in the upward direction. viscous force and upthrust force The sum of these two is accumulating in the downward direction. Its weight will become equal. This velocity is called terminal velocity. and its value is obtained Generally, fluids are given in cushions to children. In that case, the value of sigma is negligible. So our formula will simplify to become. I hope this video will be helpful in your exam preparation. best of luck for your exam",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 9.68,
+      "original": "हेलो बच्चों, इस वीडियो में हम Mechanical Properties of Fluids के Important Concepts and Formulas Less Than 10 Minutes में कवर कर लेंगे",
+      "translated": "Hello kids, in this video, we will cover the important concepts and formulas of Mechanical Properties of Fluids in less than 10 minutes."
+    },
+    {
+      "start": 9.68,
+      "end": 12.06,
+      "original": "स्टार्ट करते हैं Pascal's Law से",
+      "translated": "We start with Pascal's Law."
+    },
+    {
+      "start": 12.06,
+      "end": 17.0,
+      "original": "किसी Incompressible Fluid के किसी Point पर अगर Pressure चेंज करते हैं",
+      "translated": "If the pressure at any point in an incompressible fluid changes."
+    },
+    {
+      "start": 17.56,
+      "end": 23.02,
+      "original": "तो उस Fluid के हर Point पर Pressure उस Same Value से चेंज हो जाता है",
+      "translated": "So the pressure at every point of that fluid changes from the same value."
+    },
+    {
+      "start": 23.02,
+      "end": 28.6,
+      "original": "So, अगर hydraulic lift के side 1 पर force F लग रहा है",
+      "translated": "So, if a force F is being applied to side 1 of the hydraulic lift."
+    },
+    {
+      "start": 28.6,
+      "end": 31.44,
+      "original": "and side 2 पर एक car है",
+      "translated": "and there is a car on side 2"
+    },
+    {
+      "start": 31.44,
+      "end": 33.94,
+      "original": "then pressure दोनों तरफ same आएगा",
+      "translated": "Then the pressure will be the same on both sides."
+    },
+    {
+      "start": 33.94,
+      "end": 36.32,
+      "original": "and ये equation hold करेगी",
+      "translated": "and this equation will hold."
+    },
+    {
+      "start": 36.32,
+      "end": 41.38,
+      "original": "pressure equals to F1 by A1 equals to F2 by A2",
+      "translated": "pressure equals to F1 by A1 equals to F2 by A2"
+    },
+    {
+      "start": 41.38,
+      "end": 43.8,
+      "original": "and since fluid incompressible है",
+      "translated": "and since fluid incompressible है"
+    },
+    {
+      "start": 43.8,
+      "end": 47.38,
+      "original": "therefore volume change दोनों side same रहेगा",
+      "translated": "Therefore, the volume change will be the same on both sides."
+    },
+    {
+      "start": 47.38,
+      "end": 52.66,
+      "original": "therefore L1 times A1 equals to L2 times A2",
+      "translated": "therefore L1 times A1 equals to L2 times A2"
+    },
+    {
+      "start": 52.66,
+      "end": 56.18,
+      "original": "अब बात करते है variation of pressure with depth",
+      "translated": "Now let's discuss the variation of pressure with depth."
+    },
+    {
+      "start": 56.18,
+      "end": 58.58,
+      "original": "ये variation gravity की वज़े से आता है",
+      "translated": "This variation comes because of gravity."
+    },
+    {
+      "start": 58.58,
+      "end": 63.02,
+      "original": "and अगर दो point में h depth का difference है",
+      "translated": "and if there is a difference in h depth between two points"
+    },
+    {
+      "start": 63.02,
+      "end": 66.22,
+      "original": "then lower point पर pressure higher होगा",
+      "translated": "Then the pressure at the lower point will be higher."
+    },
+    {
+      "start": 66.22,
+      "end": 71.16,
+      "original": "with a value p2 equals to p1 plus rho gh",
+      "translated": "with a value p2 equals to p1 plus rho gh"
+    },
+    {
+      "start": 71.16,
+      "end": 74.18,
+      "original": "where rho is the density of the fluid",
+      "translated": "where rho is the density of the fluid"
+    },
+    {
+      "start": 74.18,
+      "end": 77.4,
+      "original": "अब बात करते है streamline flow की",
+      "translated": "Now let's discuss the concept of streamline flow."
+    },
+    {
+      "start": 77.4,
+      "end": 81.36,
+      "original": "अगर किसी fluid के हर point की जो भी velocity है",
+      "translated": "If every point of a fluid has a certain velocity"
+    },
+    {
+      "start": 81.36,
+      "end": 84.54,
+      "original": "वो over a period of time same रहती है",
+      "translated": "It remains the same over a period of time."
+    },
+    {
+      "start": 84.54,
+      "end": 87.94,
+      "original": "तो ऐसे study flow को streamline flow कहते है",
+      "translated": "So this kind of study flow is called a streamline flow."
+    },
+    {
+      "start": 87.94,
+      "end": 90.24,
+      "original": "continuity principle कहता है",
+      "translated": "The continuity principle states that"
+    },
+    {
+      "start": 90.24,
+      "end": 94.44,
+      "original": "कि किसी incompressible and non-viscous fluid का",
+      "translated": "that of an incompressible and non-viscous fluid"
+    },
+    {
+      "start": 94.44,
+      "end": 96.86,
+      "original": "किसी tube में flow observe करें",
+      "translated": "Observe the flow in any tube."
+    },
+    {
+      "start": 96.86,
+      "end": 100.42,
+      "original": "तो हर point पर product of cross-sectional area",
+      "translated": "So at every point, the product of the cross-sectional area"
+    },
+    {
+      "start": 100.42,
+      "end": 102.34,
+      "original": "and velocity same रहेगा",
+      "translated": "and the velocity will remain the same."
+    },
+    {
+      "start": 102.34,
+      "end": 106.8,
+      "original": "therefore A1 times V1 equals to A2 times V2",
+      "translated": "therefore A1 times V1 equals to A2 times V2"
+    },
+    {
+      "start": 106.8,
+      "end": 108.78,
+      "original": "अगर fluid compressible है",
+      "translated": "If the fluid is compressible"
+    },
+    {
+      "start": 108.78,
+      "end": 111.38,
+      "original": "तो density हर point पर different हो सकती है",
+      "translated": "So the density can be different at every point."
+    },
+    {
+      "start": 111.38,
+      "end": 115.64,
+      "original": "therefore इस case में continuity equation इस तरीके से लिखेंगे",
+      "translated": "Therefore, in this case, the continuity equation will be written in this manner."
+    },
+    {
+      "start": 115.64,
+      "end": 120.76,
+      "original": "rho 1 times a1 v1 equals to rho 2 times a2 v2",
+      "translated": "rho 1 times a1 v1 equals to rho 2 times a2 v2"
+    },
+    {
+      "start": 120.76,
+      "end": 123.66,
+      "original": "burn-nulis equation की बात करते हैं",
+      "translated": "Let's talk about the burn-nulis equation."
+    },
+    {
+      "start": 123.66,
+      "end": 126.08,
+      "original": "यहां हम energy की equation लगाते हैं",
+      "translated": "Here we apply the energy equation."
+    },
+    {
+      "start": 126.08,
+      "end": 133.18,
+      "original": "और हमें मिलता है pressure p plus rho gh plus half rho v square equals to constant",
+      "translated": "We get pressure p plus rho gh plus half rho v squared equals a constant."
+    },
+    {
+      "start": 133.18,
+      "end": 135.26,
+      "original": "constant का मतलब यह हुआ बच्चो",
+      "translated": "The term constant means this, kids."
+    },
+    {
+      "start": 135.26,
+      "end": 138.44,
+      "original": "कि fluid के किसी भी point पर अगर हम",
+      "translated": "that at any point of the fluid if we"
+    },
+    {
+      "start": 138.44,
+      "end": 140.72,
+      "original": "ये sum calculate कर रहे हैं",
+      "translated": "They are calculating the sum."
+    },
+    {
+      "start": 140.72,
+      "end": 143.42,
+      "original": "तो उसकी value हर point पर same आएगी",
+      "translated": "So its value will be the same at every point."
+    },
+    {
+      "start": 143.42,
+      "end": 146.14,
+      "original": "अभी तक जो points discuss किये हैं",
+      "translated": "So far, the points that have been discussed."
+    },
+    {
+      "start": 146.14,
+      "end": 149.24,
+      "original": "उन्हें use करके सारे questions solve हो जाएंगे बच्चो",
+      "translated": "Using these, all the questions will be solved, kids."
+    },
+    {
+      "start": 149.24,
+      "end": 150.7,
+      "original": "for example बच्चो",
+      "translated": "For example, children."
+    },
+    {
+      "start": 150.7,
+      "end": 153.38,
+      "original": "अगर हम venturi meter device की बात करें",
+      "translated": "If we talk about the venturi meter device"
+    },
+    {
+      "start": 153.38,
+      "end": 156.0,
+      "original": "तो इस device पर जो questions आते हैं",
+      "translated": "So the questions that come on this device"
+    },
+    {
+      "start": 156.0,
+      "end": 158.48,
+      "original": "उसमें हम तीनो equation use करते हैं",
+      "translated": "In it, we use all three equations."
+    },
+    {
+      "start": 158.48,
+      "end": 160.96,
+      "original": "ये device incompressible fluid की",
+      "translated": "This device is related to an incompressible fluid."
+    },
+    {
+      "start": 160.96,
+      "end": 163.9,
+      "original": "flow speed major करने के लिए use आता है",
+      "translated": "The flow speed is primarily used to make major adjustments."
+    },
+    {
+      "start": 163.9,
+      "end": 166.52,
+      "original": "इस device में दो चीज़े हैं",
+      "translated": "This device has two things."
+    },
+    {
+      "start": 166.52,
+      "end": 168.32,
+      "original": "pipe एक side से broad है",
+      "translated": "The pipe is broad on one side."
+    },
+    {
+      "start": 168.32,
+      "end": 170.66,
+      "original": "और middle में बहुत narrow है",
+      "translated": "The middle is very narrow."
+    },
+    {
+      "start": 170.66,
+      "end": 173.48,
+      "original": "point 1 है बच्चो tube का broad side",
+      "translated": "Point 1 is the broad side of the tube, kids."
+    },
+    {
+      "start": 173.48,
+      "end": 176.02,
+      "original": "and point 2 है narrow part",
+      "translated": "and point 2 है narrow part"
+    },
+    {
+      "start": 176.02,
+      "end": 177.98,
+      "original": "पहली equation है continuity की",
+      "translated": "The first equation is the equation of continuity."
+    },
+    {
+      "start": 177.98,
+      "end": 180.8,
+      "original": "a1 v1 equals to a2 v2",
+      "translated": "a1 v1 equals to a2 v2"
+    },
+    {
+      "start": 180.8,
+      "end": 182.16,
+      "original": "second equation है",
+      "translated": "The second equation is"
+    },
+    {
+      "start": 182.16,
+      "end": 183.28,
+      "original": "Bernoulli equation",
+      "translated": "Bernoulli equation"
+    },
+    {
+      "start": 183.28,
+      "end": 186.04,
+      "original": "p1 plus half rho v1 square",
+      "translated": "p1 plus half rho v1 square"
+    },
+    {
+      "start": 186.04,
+      "end": 189.92,
+      "original": "equals to p2 plus half rho v2 square",
+      "translated": "equals to p2 plus half rho v2 square"
+    },
+    {
+      "start": 189.92,
+      "end": 192.3,
+      "original": "दोनों points same height पर हैं",
+      "translated": "Both points are at the same height."
+    },
+    {
+      "start": 192.3,
+      "end": 195.66,
+      "original": "इसलिए row gh वाली term cancel out हो जाती है",
+      "translated": "Therefore, the row gh term cancels out."
+    },
+    {
+      "start": 195.66,
+      "end": 198.34,
+      "original": "and last equation, third equation है बच्चो",
+      "translated": "and the last equation, which is the third equation, kids."
+    },
+    {
+      "start": 198.34,
+      "end": 199.98,
+      "original": "pressure variation वाली",
+      "translated": "The sentence is translated to: pressure variation."
+    },
+    {
+      "start": 199.98,
+      "end": 203.44,
+      "original": "P2 equals to P1 plus row gh",
+      "translated": "P2 equals to P1 plus row gh"
+    },
+    {
+      "start": 203.44,
+      "end": 207.2,
+      "original": "therefore यहां से velocity V1 की value हमें मिलेगी",
+      "translated": "Therefore, from here we will get the value of velocity V1."
+    },
+    {
+      "start": 207.2,
+      "end": 210.2,
+      "original": "V1 equals to under root 2gh",
+      "translated": "V1 equals to under root 2gh"
+    },
+    {
+      "start": 210.2,
+      "end": 214.88,
+      "original": "divided by A1 by A2 whole square minus 1",
+      "translated": "divided by A1 by A2 whole square minus 1"
+    },
+    {
+      "start": 214.88,
+      "end": 218.62,
+      "original": "दूसरा example है speed of efflux",
+      "translated": "The second example is the speed of efflux."
+    },
+    {
+      "start": 218.62,
+      "end": 224.78,
+      "original": "यहाँ एक open container में side में hole है और fluid बाहर flow हो रहा है",
+      "translated": "There is a hole on the side of an open container and the fluid is flowing out."
+    },
+    {
+      "start": 224.78,
+      "end": 230.72,
+      "original": "यहाँ हमें equation solve करके बाहर निकलते fluid की velocity निकालनी है",
+      "translated": "Here, we need to solve the equation to find the velocity of the fluid coming out."
+    },
+    {
+      "start": 230.72,
+      "end": 233.04,
+      "original": "यह एक बहुत important result है बच्चों",
+      "translated": "This is a very important result for children."
+    },
+    {
+      "start": 233.04,
+      "end": 236.46,
+      "original": "और आपको इस case में velocity की value याद रखनी है",
+      "translated": "And you need to remember the value of velocity in this case."
+    },
+    {
+      "start": 236.46,
+      "end": 239.28,
+      "original": "which is equals to under root 2gh",
+      "translated": "which is equals to under root 2gh"
+    },
+    {
+      "start": 239.28,
+      "end": 241.7,
+      "original": "अब बात करते हैं बच्चों viscosity की",
+      "translated": "Now let's talk about viscosity for kids."
+    },
+    {
+      "start": 241.7,
+      "end": 244.66,
+      "original": "viscosity is internal friction in fluid",
+      "translated": "viscosity is internal friction in fluid"
+    },
+    {
+      "start": 244.66,
+      "end": 252.72,
+      "original": "यहाँ coefficient of viscosity आता है",
+      "translated": "Here, the coefficient of viscosity comes into play."
+    },
+    {
+      "start": 252.72,
+      "end": 263.32,
+      "original": "इस example में दो plates हैं",
+      "translated": "In this example, there are two plates."
+    },
+    {
+      "start": 263.32,
+      "end": 267.8,
+      "original": "lower plate fix है और top plate पर force F लग रही है",
+      "translated": "The lower plate is fixed and a force F is being applied to the top plate."
+    },
+    {
+      "start": 267.8,
+      "end": 270.58,
+      "original": "और यह V velocity से move कर रही है",
+      "translated": "It is moving with a velocity of V."
+    },
+    {
+      "start": 270.58,
+      "end": 273.2,
+      "original": "दोनों plates के बीच L distance है",
+      "translated": "There is an L distance between the two plates."
+    },
+    {
+      "start": 273.2,
+      "end": 276.1,
+      "original": "और plates का surface area A है",
+      "translated": "The surface area of the plates is A."
+    },
+    {
+      "start": 276.1,
+      "end": 277.72,
+      "original": "अब बात करते हैं बच्चो",
+      "translated": "Now let's talk to the kids."
+    },
+    {
+      "start": 277.72,
+      "end": 278.82,
+      "original": "stocks law की",
+      "translated": "The concept of Stocks Law"
+    },
+    {
+      "start": 278.82,
+      "end": 281.12,
+      "original": "कोई sphere of radius R",
+      "translated": "A sphere of radius R"
+    },
+    {
+      "start": 281.12,
+      "end": 283.6,
+      "original": "अगर viscous fluid में move कर रहा है",
+      "translated": "If it is moving in a viscous fluid"
+    },
+    {
+      "start": 283.6,
+      "end": 285.06,
+      "original": "with a velocity V",
+      "translated": "with a velocity V"
+    },
+    {
+      "start": 285.06,
+      "end": 287.42,
+      "original": "तो वो viscous force feel करेगा",
+      "translated": "So it will feel the viscous force."
+    },
+    {
+      "start": 287.42,
+      "end": 288.86,
+      "original": "जिसकी value होगी",
+      "translated": "whose value will be"
+    },
+    {
+      "start": 288.86,
+      "end": 290.8,
+      "original": "force F equals to",
+      "translated": "force F equals to"
+    },
+    {
+      "start": 290.8,
+      "end": 294.18,
+      "original": "6 pi times eta R V",
+      "translated": "6 pi times eta R V"
+    },
+    {
+      "start": 294.18,
+      "end": 295.88,
+      "original": "आगे बात करते हैं",
+      "translated": "Let's move on to the next topic."
+    },
+    {
+      "start": 295.88,
+      "end": 297.1,
+      "original": "terminal velocity की",
+      "translated": "of terminal velocity"
+    },
+    {
+      "start": 297.1,
+      "end": 298.8,
+      "original": "किसी column में",
+      "translated": "In any column"
+    },
+    {
+      "start": 298.8,
+      "end": 300.98,
+      "original": "sigma density का viscous fluid है",
+      "translated": "Sigma density is a viscous fluid."
+    },
+    {
+      "start": 300.98,
+      "end": 302.88,
+      "original": "इसमें row density का",
+      "translated": "It has row density."
+    },
+    {
+      "start": 302.88,
+      "end": 306.82,
+      "original": "R radius वाला sphere starts falling from rest",
+      "translated": "R radius वाला sphere starts falling from rest"
+    },
+    {
+      "start": 306.82,
+      "end": 309.06,
+      "original": "बचो ये sphere एक point के बाद",
+      "translated": "The sphere comes after a point."
+    },
+    {
+      "start": 309.06,
+      "end": 311.46,
+      "original": "constant velocity से move करने लगेगा",
+      "translated": "It will start moving with a constant velocity."
+    },
+    {
+      "start": 311.46,
+      "end": 315.5,
+      "original": "ये तब होगा जब इस पर लग रहे upward direction में",
+      "translated": "This will happen when it is moving in the upward direction."
+    },
+    {
+      "start": 315.5,
+      "end": 318.28,
+      "original": "viscous force and upthrust force",
+      "translated": "viscous force and upthrust force"
+    },
+    {
+      "start": 318.28,
+      "end": 321.5,
+      "original": "इन दोनों का sum downward direction में लग रहे",
+      "translated": "The sum of these two is accumulating in the downward direction."
+    },
+    {
+      "start": 321.5,
+      "end": 324.06,
+      "original": "इसके weight के बराबर हो जाएगा",
+      "translated": "Its weight will become equal."
+    },
+    {
+      "start": 324.06,
+      "end": 327.44,
+      "original": "इस velocity को terminal velocity बोलते हैं",
+      "translated": "This velocity is called terminal velocity."
+    },
+    {
+      "start": 327.44,
+      "end": 328.82,
+      "original": "and इसकी value आती है",
+      "translated": "and its value is obtained"
+    },
+    {
+      "start": 328.82,
+      "end": 343.06,
+      "original": "जनरली बच्चो कॉशियंस में फ्लूइड एर दी जाती है",
+      "translated": "Generally, fluids are given in cushions to children."
+    },
+    {
+      "start": 343.06,
+      "end": 345.86,
+      "original": "उस केस में सिग्मा की वैल्यू नेगलीजबल होती है",
+      "translated": "In that case, the value of sigma is negligible."
+    },
+    {
+      "start": 345.86,
+      "end": 348.48,
+      "original": "तो फॉर्मला हमारा सिंपलिफाई होके बन जाएगा",
+      "translated": "So our formula will simplify to become."
+    },
+    {
+      "start": 348.48,
+      "end": 358.4,
+      "original": "बच्चो आई होप ये वीडियो आपकी एक्जाम प्रिपरेशन में हेल्फ़ूल रहेगा",
+      "translated": "I hope this video will be helpful in your exam preparation."
+    },
+    {
+      "start": 358.4,
+      "end": 360.18,
+      "original": "best of luck for your exam",
+      "translated": "best of luck for your exam"
+    }
+  ]
+}

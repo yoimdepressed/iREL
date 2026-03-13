@@ -1,0 +1,217 @@
+{
+  "detected_language": "te",
+  "original_full_text": " Hello friends, welcome to AH Career YouTube channel. Previous example లోమ్మనో కరెక్టర్ డేటా డైప్ తోట్ ఎలా వర్క్ చేయాలి అనా దాను గురించి తెల్స్కుండాం. వక అప్లికేసిం డోవలోప్మన్ట్ లో కావలోమ్ నంబర్స్ కరక్టర్సే కాదు మను వట్లితో పట్టు పట్టు స్ట్రింగ్స్ తో కొడా వర్క్ చేయాలి సో వక స్ట్రింగ్ ని లా రీడ్ చేయాలి అన్న దాను గురించి మను ఇద్ సామ్పుల్ లో తెల్స్కుండం So, reading a string without space, ఇంటా space లేకుండా ఒక single word ని ఎలా read చేయాలి అనా దాను గురించి మను ఇంటా example లో తెలిస్కుండా. సో కారేక్టర్ డేటాటైప్ అక్యుపాయిస్ వన బాట్ స్పేస్ ఇంద మేన్ మేమ్రి అన్న గురించ్చి నందిక్ చెప్పేను స్వా మీరు అనుకోచు మన వర్క్ చేస్యది స్ట్రింగ్స్ తో కదా ఇకడ మల్లి కార్క్టర్ డేటాటైప్ గురించ్ ఎందకు జెప్తునా రీనా సీ స్ట్రింగ్ ఇస్ నత్తింగ్ బటు గురుప అఫ్ కార్క్టర్స్ గురుప అఫ్ కార్క్టర్స్ కల్ప్తే కదావా వాక స్ట్రింగ్ ఆవుతుది అండ్ వార్ కాయండ్ ఇంఫర్మిషన్ సి లాంగ్వేస్ లో స్ట్రింగ్ అనే ఒక డేటా టైప్ ఏమి లేదు కార్క్టర్ డేటా టైప్ నే మనం తిస్కుని స్ట్ర ప్రసంటేస్ ఎస్ అనే ఫార్మట్ స్పేసిఫాయర్ తోటి వర్క్ చేయాలి ప్రసంటేస్ ఎస్ ఇస్ ఇస్యిసిర్ టూ రీడ్ స్ట్రింగ్స్ అనీ అర్ధమ్ సో అస్సల ఇండేస్ట్రీ రెక్వార్మెంట్ ఎండి మేన్స్ మన స్రక్ స్ట్రేంగ్డి ఎందు రీడ్ చేయాలి సే చాల అప్లికేశన్స్ లో స్ట్రేంగ్డ్ � లేదా మీరోక రిటేల్ అప్లికేశన్ కోక సఫ్వేర్ నే డాలోప్ చాస్తినారు అండ్ ఒక ప్రోడెక్ట్ నేమ్ నీ రిడ్డి చేయాలి సి అలాగ స్ట్రింగ్ స్టాట్ ఇవర్ సీ ఫ్రి ఈడి చోన్ డుఫ్రంస్ సీ ఫ్రి ఈడి అండ్ దింట్ లో ప్రోగ్రాము కావల్సిన బేసిక రెక్వార్మంట్ ఏదేత్ ఉంటుదో అద్ద� స్ట్రింయన్ వాస్తుండో ఇండెస్టికార్టికాయం చోవాలు పెలుక్ నాకన్న మీకి తెలుస్సిది స్తాన్ పట్టి మీకే ఎన్ని కారక్టర్స్ ఆవసన్ ఉంటాయో అని కారక్టర్స్ ని ఇకడా సాఇస్ కందం మెక్షిం చేండి means car is the data type str is the variable name in brackets we have given 20 means you are declaring a variable with the name str and which is going to read a string up to 20 characters length means maximum 20 characters unnanta string ni miru kawal antay read chayechu వనే అర్ధమ్ లేట్ స్టాట్ ప్రింట అఫ్ అం డోబ్బుల కోట్ స్టాట్ ఎంటర్ ఏ స్ట్రింగ్ నేన సింప్పులుక జంరిక మెసేజ్ స్తాన్ ఎంటర్ ఏ స్ట గూరుప ఆప్ కార్క్ట్రుట్ అండ స్ట్రింగ కి మనం పర్సండేజ స్ ఉస్త్రియాలి స్కాన ప్రసంటేజ స్ కమా ఎంప్రసంట్ దా వాడ్యియో వేరిబుల్ నేమ్ స్టీర్ సింప్లి అండ్ ప్రిండ్ అఫ్ స్టీంగీస్ ప్రసంటేజ స్ కమా ఎంప్ అంట్ ఉంట్ ఇట దిస్ప్లిస్. సాంల్ అది లాటి అన్నే కాలి రాయుక్కో త్రమున్ని అత్సిసె! కలతో నిలాలు. వార్ స్లేట్ సి వాడ్ యూ గెట్ ద్దాంట్ ఇకడ ద స్ట్రింగిస్ అనీ అతిష్ అనీ మత్రిమ ఉచ్చింది నా నేమ్ లో టూ వర్డ్ స్పేస్ జేన్ కాని నాకు సింగిల్ వర్డ్ మాత్రమే డిస్ప్లైన్ సో ఇక్కడం మీర్ తిల్స్కోల్స్యం ఒక వేరీ ఇంపాటంట్ పోయంట్ ఎండండే పర్సంటేజ్ ఎస్ ఫార్మట్ స్పేసిఫార్ ఏదేతే ఉందో ఇ పర్సంటేజ్ ఎస� without space, without space ఇట్టోంటి space లాకుండా single word రీడ్డ్ చేయాలంటే ఇప్రోగ్రామ్ అనేది మికు బాగా యూజ్యావుతుం సో ఇప్పుడు మీర్ సప్పోస్ నేమ్ రీడ్ చేయాలే ఏవంద ఇక్కడ ఎంటర్ ఇవర్ నేమ్ అనండి సి వేరిబుల్ నేమ్ స్టిర్ ను పెట్టేను ప్రబ్లుమేమ్ లేదు బట స్టిల్ యీ కేన్ వర్క్ విద్ యోర్ ప్రోగ్రామ్ అర్ మెస్ట్ రాతిష్ ఏహ్ కరీయర్ వెల్కమ్ స్యూ సో ఇలాగ మీక్ ఎలా కావల అంటా అలాగ ఆట్పుట్ ని ప్రింట జేయిచు సే ఇపుడ్ నేన్ మికు చూబిస్తం చోన్ సో ఇ డబ్బుల కోట్స్ లో న మత్తం డేటా ని నండ్ డిలిట్ చేసేనో అన్ని కారి చాస్తానండే వెల్కమ్ కా ఒక్వాలు నేన్ స్పేస్ ఇచ్చి జేనం రాసిన సరే అది తిస్కోదు, ఇంది కంటే పర్సంటేస్ ఎస్ అనే డేటా టైప్ ఎదేతో ఉందో, అది సింగిల్ వర్డ్ బెక్రాండ్ లో ఏదోక అప్లికేసిన అనిది రన్నావుత్తుంది సో ఇదో కుచ జాక్ జిస్ట్ బేసిక లేవల్ ఎగ్సాంపుల్ జస్టు టెల్ యూ దాట్ హావ్ టూ రిడే స్ట్రింగ్ అండ్ హావ్ టూ డిస్ప్లే స్ట్రింగ్ మ� కార్క్టేర్స్ నీ ఎల్లాగ రీడ్ చీయాలి అది కనకు ఉచ్చిందండే ఆ క్క్సెప్ట్ నీ బేస్ చేసి మేరు ఎట్టు ఎంటే అప్లికేశన్నాయన సరే డేవ్ బుబై అండ్ సియుంది నేక్స్ విడియో",
+  "translated_full_text": "Hello friends, welcome to AH Career YouTube channel. In the previous example, let's see how the corrector data works with the decoder. In the development of the application, we should not only focus on numbers and characters, but also work with strings and manually handle them to make the code work. So we need to read the string like that, which is told to us in this sample. So, let's see in an example how to read a single word without spaces. So character data type occupies one byte in the main memory and Nandik will tell you about that. So you think our work is done with strings, right, then why are you telling me again about character data type, Reena. See string is nothing but a group of characters, a group of characters, collectively known as a word or a string becomes a sentence. And we are going to discuss information about a data type called string in C language, what is not a character data type, we will take. The presenter must work with a format specifier called printf. Presently it is easier to read strings and all that. So actually in the industry requirement and demands of our stack is why we need to read it, they have a lot of applications in stranded. Or you are developing a retail application software and you have to create a product name like Reddy, so it should be like that string. The basic requirement that should be there in a program to do stativer see free IDT and dint lo is that it should have a stativer see free IDT dufrance see free IDI. The string was undoubtedly an indicator that you know more about it than I do. Catch the station and see how many characters you need, then resize the character box accordingly. means car is the data type str is the variable name in brackets we have given 20 means you are declaring a variable with the name str and which is going to read a string up to 20 characters length means maximum 20 characters unnanta string ni miru kawal antay read chayechu Let's print a double quote statement enter a string then simply display a message station enter a string. We should use the constructor and string to persuade the object. The scan presence of the video variable name steer simply prints and finds the strings presence of the comma. Look at this display, it seems like a lot of things are being called simultaneously, so let's write the null pointer exception. They said let's use C to get the strings, and Atish and Matrim also agreed. There are two words in my name, Jane, but only a single word is displayed. So here till school is a very important point and percentage is a format specifier that whatever is there in the percentage. To read a single word without space, it should be done without any space like this. IPROGRAM is very user-friendly for you. So now you suppose to read the name and wherever you enter the name here. I have set the C variable name stir but there is a problem still this can work with your program. Are you ready to see how to get the output so that I can print it in this way and show you the result. He says now I am showing you how to delete the entire data in double quotes so that it doesn't matter whatever the data is, welcome. If I give a space and write janam, it doesn't take it, does this percentage data type exist, or is it a single word. Some application is running in the background. So just to give you a basic level example, just tell you that how to read string and how to display string. How to read carters, when it is visible to the eye, based on that concept, create a base and climb up to the application level, that's it, Dave. Bubai and Siyundi watch the next video.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.52,
+      "original": "Hello friends, welcome to AH Career YouTube channel.",
+      "translated": "Hello friends, welcome to AH Career YouTube channel."
+    },
+    {
+      "start": 4.9,
+      "end": 10.34,
+      "original": "Previous example లోమ్మనో కరెక్టర్ డేటా డైప్ తోట్ ఎలా వర్క్ చేయాలి అనా దాను గురించి తెల్స్కుండాం.",
+      "translated": "In the previous example, let's see how the corrector data works with the decoder."
+    },
+    {
+      "start": 10.34,
+      "end": 20.08,
+      "original": "వక అప్లికేసిం డోవలోప్మన్ట్ లో కావలోమ్ నంబర్స్ కరక్టర్సే కాదు మను వట్లితో పట్టు పట్టు స్ట్రింగ్స్ తో కొడా వర్క్ చేయాలి",
+      "translated": "In the development of the application, we should not only focus on numbers and characters, but also work with strings and manually handle them to make the code work."
+    },
+    {
+      "start": 20.08,
+      "end": 27.1,
+      "original": "సో వక స్ట్రింగ్ ని లా రీడ్ చేయాలి అన్న దాను గురించి మను ఇద్ సామ్పుల్ లో తెల్స్కుండం",
+      "translated": "So we need to read the string like that, which is told to us in this sample."
+    },
+    {
+      "start": 27.1,
+      "end": 36.98,
+      "original": "So, reading a string without space, ఇంటా space లేకుండా ఒక single word ని ఎలా read చేయాలి అనా దాను గురించి మను ఇంటా example లో తెలిస్కుండా.",
+      "translated": "So, let's see in an example how to read a single word without spaces."
+    },
+    {
+      "start": 36.98,
+      "end": 46.4,
+      "original": "సో కారేక్టర్ డేటాటైప్ అక్యుపాయిస్ వన బాట్ స్పేస్ ఇంద మేన్ మేమ్రి అన్న గురించ్చి నందిక్ చెప్పేను",
+      "translated": "So character data type occupies one byte in the main memory and Nandik will tell you about that."
+    },
+    {
+      "start": 46.4,
+      "end": 52.82,
+      "original": "స్వా మీరు అనుకోచు మన వర్క్ చేస్యది స్ట్రింగ్స్ తో కదా ఇకడ మల్లి కార్క్టర్ డేటాటైప్ గురించ్ ఎందకు జెప్తునా రీనా",
+      "translated": "So you think our work is done with strings, right, then why are you telling me again about character data type, Reena."
+    },
+    {
+      "start": 52.82,
+      "end": 58.98,
+      "original": "సీ స్ట్రింగ్ ఇస్ నత్తింగ్ బటు గురుప అఫ్ కార్క్టర్స్ గురుప అఫ్ కార్క్టర్స్ కల్ప్తే కదావా వాక స్ట్రింగ్ ఆవుతుది",
+      "translated": "See string is nothing but a group of characters, a group of characters, collectively known as a word or a string becomes a sentence."
+    },
+    {
+      "start": 58.98,
+      "end": 88.98,
+      "original": "అండ్ వార్ కాయండ్ ఇంఫర్మిషన్ సి లాంగ్వేస్ లో స్ట్రింగ్ అనే ఒక డేటా టైప్ ఏమి లేదు కార్క్టర్ డేటా టైప్ నే మనం తిస్కుని స్ట్ర",
+      "translated": "And we are going to discuss information about a data type called string in C language, what is not a character data type, we will take."
+    },
+    {
+      "start": 88.98,
+      "end": 94.32,
+      "original": "ప్రసంటేస్ ఎస్ అనే ఫార్మట్ స్పేసిఫాయర్ తోటి వర్క్ చేయాలి",
+      "translated": "The presenter must work with a format specifier called printf."
+    },
+    {
+      "start": 94.32,
+      "end": 99.32,
+      "original": "ప్రసంటేస్ ఎస్ ఇస్ ఇస్యిసిర్ టూ రీడ్ స్ట్రింగ్స్ అనీ అర్ధమ్",
+      "translated": "Presently it is easier to read strings and all that."
+    },
+    {
+      "start": 99.32,
+      "end": 129.32,
+      "original": "సో అస్సల ఇండేస్ట్రీ రెక్వార్మెంట్ ఎండి మేన్స్ మన స్రక్ స్ట్రేంగ్డి ఎందు రీడ్ చేయాలి సే చాల అప్లికేశన్స్ లో స్ట్రేంగ్డ్ �",
+      "translated": "So actually in the industry requirement and demands of our stack is why we need to read it, they have a lot of applications in stranded."
+    },
+    {
+      "start": 129.32,
+      "end": 159.32,
+      "original": "లేదా మీరోక రిటేల్ అప్లికేశన్ కోక సఫ్వేర్ నే డాలోప్ చాస్తినారు అండ్ ఒక ప్రోడెక్ట్ నేమ్ నీ రిడ్డి చేయాలి సి అలాగ స్ట్రింగ్",
+      "translated": "Or you are developing a retail application software and you have to create a product name like Reddy, so it should be like that string."
+    },
+    {
+      "start": 159.32,
+      "end": 189.32,
+      "original": "స్టాట్ ఇవర్ సీ ఫ్రి ఈడి చోన్ డుఫ్రంస్ సీ ఫ్రి ఈడి అండ్ దింట్ లో ప్రోగ్రాము కావల్సిన బేసిక రెక్వార్మంట్ ఏదేత్ ఉంటుదో అద్ద�",
+      "translated": "The basic requirement that should be there in a program to do stativer see free IDT and dint lo is that it should have a stativer see free IDT dufrance see free IDI."
+    },
+    {
+      "start": 189.32,
+      "end": 217.96,
+      "original": "స్ట్రింయన్ వాస్తుండో ఇండెస్టికార్టికాయం చోవాలు పెలుక్ నాకన్న మీకి తెలుస్సిది",
+      "translated": "The string was undoubtedly an indicator that you know more about it than I do."
+    },
+    {
+      "start": 217.96,
+      "end": 223.8,
+      "original": "స్తాన్ పట్టి మీకే ఎన్ని కారక్టర్స్ ఆవసన్ ఉంటాయో అని కారక్టర్స్ ని ఇకడా సాఇస్ కందం మెక్షిం చేండి",
+      "translated": "Catch the station and see how many characters you need, then resize the character box accordingly."
+    },
+    {
+      "start": 223.8,
+      "end": 246.18,
+      "original": "means car is the data type str is the variable name in brackets we have given 20 means you are declaring a variable with the name str and which is going to read a string up to 20 characters length means maximum 20 characters unnanta string ni miru kawal antay read chayechu",
+      "translated": "means car is the data type str is the variable name in brackets we have given 20 means you are declaring a variable with the name str and which is going to read a string up to 20 characters length means maximum 20 characters unnanta string ni miru kawal antay read chayechu"
+    },
+    {
+      "start": 246.18,
+      "end": 276.18,
+      "original": "వనే అర్ధమ్ లేట్ స్టాట్ ప్రింట అఫ్ అం డోబ్బుల కోట్ స్టాట్ ఎంటర్ ఏ స్ట్రింగ్ నేన సింప్పులుక జంరిక మెసేజ్ స్తాన్ ఎంటర్ ఏ స్ట",
+      "translated": "Let's print a double quote statement enter a string then simply display a message station enter a string."
+    },
+    {
+      "start": 276.18,
+      "end": 281.7,
+      "original": "గూరుప ఆప్ కార్క్ట్రుట్ అండ స్ట్రింగ కి మనం పర్సండేజ స్ ఉస్త్రియాలి",
+      "translated": "We should use the constructor and string to persuade the object."
+    },
+    {
+      "start": 281.7,
+      "end": 311.7,
+      "original": "స్కాన ప్రసంటేజ స్ కమా ఎంప్రసంట్ దా వాడ్యియో వేరిబుల్ నేమ్ స్టీర్ సింప్లి అండ్ ప్రిండ్ అఫ్ స్టీంగీస్ ప్రసంటేజ స్ కమా ఎంప్",
+      "translated": "The scan presence of the video variable name steer simply prints and finds the strings presence of the comma."
+    },
+    {
+      "start": 311.7,
+      "end": 319.26,
+      "original": "అంట్ ఉంట్ ఇట దిస్ప్లిస్. సాంల్ అది లాటి అన్నే కాలి రాయుక్కో త్రమున్ని అత్సిసె! కలతో నిలాలు.",
+      "translated": "Look at this display, it seems like a lot of things are being called simultaneously, so let's write the null pointer exception."
+    },
+    {
+      "start": 319.26,
+      "end": 325.68,
+      "original": "వార్ స్లేట్ సి వాడ్ యూ గెట్ ద్దాంట్ ఇకడ ద స్ట్రింగిస్ అనీ అతిష్ అనీ మత్రిమ ఉచ్చింది",
+      "translated": "They said let's use C to get the strings, and Atish and Matrim also agreed."
+    },
+    {
+      "start": 325.68,
+      "end": 332.76,
+      "original": "నా నేమ్ లో టూ వర్డ్ స్పేస్ జేన్ కాని నాకు సింగిల్ వర్డ్ మాత్రమే డిస్ప్లైన్",
+      "translated": "There are two words in my name, Jane, but only a single word is displayed."
+    },
+    {
+      "start": 332.76,
+      "end": 362.76,
+      "original": "సో ఇక్కడం మీర్ తిల్స్కోల్స్యం ఒక వేరీ ఇంపాటంట్ పోయంట్ ఎండండే పర్సంటేజ్ ఎస్ ఫార్మట్ స్పేసిఫార్ ఏదేతే ఉందో ఇ పర్సంటేజ్ ఎస�",
+      "translated": "So here till school is a very important point and percentage is a format specifier that whatever is there in the percentage."
+    },
+    {
+      "start": 362.76,
+      "end": 367.56,
+      "original": "without space, without space ఇట్టోంటి space లాకుండా single word రీడ్డ్ చేయాలంటే",
+      "translated": "To read a single word without space, it should be done without any space like this."
+    },
+    {
+      "start": 367.56,
+      "end": 370.0,
+      "original": "ఇప్రోగ్రామ్ అనేది మికు బాగా యూజ్యావుతుం",
+      "translated": "IPROGRAM is very user-friendly for you."
+    },
+    {
+      "start": 370.0,
+      "end": 375.82,
+      "original": "సో ఇప్పుడు మీర్ సప్పోస్ నేమ్ రీడ్ చేయాలే ఏవంద ఇక్కడ ఎంటర్ ఇవర్ నేమ్ అనండి",
+      "translated": "So now you suppose to read the name and wherever you enter the name here."
+    },
+    {
+      "start": 375.82,
+      "end": 405.8,
+      "original": "సి వేరిబుల్ నేమ్ స్టిర్ ను పెట్టేను ప్రబ్లుమేమ్ లేదు బట స్టిల్ యీ కేన్ వర్క్ విద్ యోర్ ప్రోగ్రామ్",
+      "translated": "I have set the C variable name stir but there is a problem still this can work with your program."
+    },
+    {
+      "start": 405.82,
+      "end": 413.8,
+      "original": "అర్ మెస్ట్ రాతిష్ ఏహ్ కరీయర్ వెల్కమ్ స్యూ సో ఇలాగ మీక్ ఎలా కావల అంటా అలాగ ఆట్పుట్ ని ప్రింట జేయిచు",
+      "translated": "Are you ready to see how to get the output so that I can print it in this way and show you the result."
+    },
+    {
+      "start": 413.8,
+      "end": 443.8,
+      "original": "సే ఇపుడ్ నేన్ మికు చూబిస్తం చోన్ సో ఇ డబ్బుల కోట్స్ లో న మత్తం డేటా ని నండ్ డిలిట్ చేసేనో అన్ని కారి చాస్తానండే వెల్కమ్ కా",
+      "translated": "He says now I am showing you how to delete the entire data in double quotes so that it doesn't matter whatever the data is, welcome."
+    },
+    {
+      "start": 443.8,
+      "end": 473.8,
+      "original": "ఒక్వాలు నేన్ స్పేస్ ఇచ్చి జేనం రాసిన సరే అది తిస్కోదు, ఇంది కంటే పర్సంటేస్ ఎస్ అనే డేటా టైప్ ఎదేతో ఉందో, అది సింగిల్ వర్డ్",
+      "translated": "If I give a space and write janam, it doesn't take it, does this percentage data type exist, or is it a single word."
+    },
+    {
+      "start": 473.8,
+      "end": 477.46,
+      "original": "బెక్రాండ్ లో ఏదోక అప్లికేసిన అనిది రన్నావుత్తుంది",
+      "translated": "Some application is running in the background."
+    },
+    {
+      "start": 477.46,
+      "end": 507.46,
+      "original": "సో ఇదో కుచ జాక్ జిస్ట్ బేసిక లేవల్ ఎగ్సాంపుల్ జస్టు టెల్ యూ దాట్ హావ్ టూ రిడే స్ట్రింగ్ అండ్ హావ్ టూ డిస్ప్లే స్ట్రింగ్ మ�",
+      "translated": "So just to give you a basic level example, just tell you that how to read string and how to display string."
+    },
+    {
+      "start": 507.46,
+      "end": 537.46,
+      "original": "కార్క్టేర్స్ నీ ఎల్లాగ రీడ్ చీయాలి అది కనకు ఉచ్చిందండే ఆ క్క్సెప్ట్ నీ బేస్ చేసి మేరు ఎట్టు ఎంటే అప్లికేశన్నాయన సరే డేవ్",
+      "translated": "How to read carters, when it is visible to the eye, based on that concept, create a base and climb up to the application level, that's it, Dave."
+    },
+    {
+      "start": 537.46,
+      "end": 540.12,
+      "original": "బుబై అండ్ సియుంది నేక్స్ విడియో",
+      "translated": "Bubai and Siyundi watch the next video."
+    }
+  ]
+}

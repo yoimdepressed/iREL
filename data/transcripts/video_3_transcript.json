@@ -1,0 +1,1156 @@
+{
+  "detected_language": "hi",
+  "full_text": " Hello friends, welcome to Gate Smasher The topic is System Call Last video में हमने discuss किया कि user mode और kernel mode में हम कैसे work करते हैं जो user है अगर वो किसी भी application को use कर रहा है, API को use कर रहा है या अगर कोई भी program लिख रहा है तो वो generally हम किस mode में लिखते हैं user mode में लिखते हैं, लेकिन अगर मुझे operating system की कोई भी functionality को access करना है तो मुझे किस mode में जाना पड़ेगा kernel mode में तो user mode क्योंकि हमारा access तो user के उपर मतलब हम तो user mode को access कर रहे हैं तो kernel mode में जाने के लिए हम use करते हैं system call को तो system call एक way है एक programmatic way है जिससे हम या user mode से हम लोग kernel mode में shift हो जाते हैं या kernel की जो functionalities है, operating system की जो functionalities है, उसको हम access करते हैं, जैसे अगर मैं simple से example हूँ, अगर हम C का कोई program लिख रहे हैं, और C के program में मुझे कोई भी value, let's say 2 plus 2, 4, और इस 4 को मुझे monitor पर print कराना है, तो 2 plus 2 तो user mode तक है, processor 2 plus 2 कर देगा, no problem, लेकिन इसको print कहां कराना है, monitor पर, या let's say मुझे कुछ print कराना है और मुझे printer को access करना है तो जहांपे भी मेरे devices को access करना है मुझे किसकी help लेनी पड़ेगी या आप कह सकते हो किसके through होगा ये काम kernel के through kernel मतलब operating system के through ऐसी अगर मुझे किसी file को access करना है मुझे let's say कोई transaction perform करनी है या कुछ data change करना है किसी file में file का है hard disk में तो again hard disk को access करने के लिए किसी file को access करने के लिए मुझे kernel mode में जाना पड़ेगा because ये सारे devices ये सारे resources किसके कौन govern कर रहा है operating system operating system में कौन है main logical unit कौन है जो सारे के सारे processes सारे के सारे काम करता है वो है kernel तो यहाँ पे मुझे system call की help लेनी पड़ती है और system call generally क्या है कई बार कई operating system ऐसी हैं जैसे अगर हम Linux की बात करें तो Linux में हम जब C program लिखते हैं text editor on करके C program लिखते हैं तो वहाँ पे हम direct system call को use कर सकते हैं जैसे कि हम वहाँ पे read, write, close, open, fork बहुत सारी system calls को हम direct use करते हैं और generally जैसे Linux operating system में या कोई भी operating system के अगर हम बात करें there are hundreds of the system calls ऐसी अगर हम windows की बात करें वहाँ पे 700 के round system calls है लेकिन कई operating system ऐसी हैं जिनमें हम direct system call नहीं लिखते हम लिखते हैं use करते हैं APIs को यह हम use करते हैं वहाँ पे क्या होते हैं? local libraries होती हैं, जैसे हम printf या scanf, printf का मतलब है कि कोई value को print करवान है, तो हम क्या लिख रहे हैं? printf, लेकिन वो printf या scanf, वो system call नहीं है, printf is a function, लेकिन वो function क्या कर रहा है? वो system call को access कर रहा है, तो print का मतलब क्या है? राइट ही है, print मतलब एक तरह से राइट करना monitor के उपर तो चाहे आप direct system call को use करो चाहे आप किसी API को किसी function को use करो लेकिन end में काम किस के थूँ होगा system call के थूँ होगा because system call invoq करेगा kernel को कि ये काम perform करना है, तो system call जो है, वो generally जैसा कि मैंने अभी बताया कि operating system के according vary करता है कई ओं में 300 के round system calls है window 7 में 700 के round system calls है तो यह जो system calls है इनको हम categorize करते हैं सबसे पहले हम बात करें file related system calls file related system call का मतलब है जहांपे हमें अगर किसी भी file को access करना है मैं एक simple example से आपको बताता हूँ generally होता क्या है कि जब हम कोई भी C का program लिखते हैं, तो C का program हम क्या लिख रहे हैं, किसी ना किसी API को, किसी ना किसी application को use करके हम उस program को लिखते हैं लेकिन जब हम उस program को execute करते हैं, तो हम operating system में बोलते हैं, कि वो program अब process बन गया, मतलब जब वो running mode में है तो वो क्या बन गया process और running mode का मतलब है वो process कहां पे आजेगा RAM के अंदर आजेगा मतलब वो process अब किस के अंदर आगे RAM के अंदर और जो हमारा operating system है जो kernel है kernel भी कहां पड़ा है RAM के अंदर ही पड़ा है मैं एक general सा architecture ले रहा हूँ कई बर क्या होता है सारा का सारा kernel पूरा का पूरा code नहीं पड़ा होता है कई बर कुछ part जो है code का पड़ा होता है तो हम एक simple से example से बात कर रहे है जिसमें हम बोल रहे है कि kernel हमारा main memory में है और process भी main memory में है अब अगर हमें इस process के अंदर कोई भी execute करना है और उस particular file system को या file को क्या करेगा? एकसिस करेगा तो यहाँ पे जो एक work है सारा यह system call के through ही हो रहे है तो अगर हम file की बात करें तो file में हम क्या करते हैं? let's say मेरे को किसी file को create करना है create a file let's say I want to open a file I want to read a file I want to write some file तो यहाँ प्याँ तो इस सारे के सारे हम किसके थे कर रहे है फाइल लेटेड सिस्टम कॉल्स के थूब इन हस डिवाइज रिलेटेड सिस्टम को उड़ेट के सीधेवल का मतलब है तो यहां पर हम डिवाइस इसको जर्नरी क्या बोलना है हाडवेयर्स को एक्सेस करना चाहिए मैं हार्डस्की की बात करूँ प्रिंटर को या फिर अगर मैं मोनीटर को एक्सेस करना है तो इन सारे डिवाइस को ऑडीवाइस करने के लिए यूजर कभी भी direct access नहीं कर सकता उसको privilege लेनी पड़ेगी privilege कौन देगा operating system तो यहां पर privilege again system call के through लेंगे जहां हम read कर रहे हैं किसी device को device के ऊपर write कर रहे हैं जहां हम उस device की value को repositioning कर रहे हैं यहां हम उसके attributes को कर रहे हैं, ऐसी हम यहाँ पर use करते हैं, iOS control, input output, input output devices को अगर control करने के लिए हम यहाँ पर use करते हैं, यह file को control करने के, although यह header file है, वैसे file control, लेकिन generally हम use करते हैं कई बार यहाँ पर, next हमारे पास है, information related, information का मतलब है, कि processes के regarding, यहाँ किसी devices के regarding, कोई भी अगर मुझे attribute की information लेनी है वहाँ पे हम use करते है information related system call जिसमें हम get PID जैसे simple सा example है get PID हम कहाँ पे use कर रहे है अगर मुझे किसी process की ID का पता लगाना है get PPID parent ID का पता लगाने के लिए जहाँ पे भी हमें कुछ information चाहिए process से related जिसको हम general term में बोल देते हैं metadata मतलब एक data से related जो metadata है data तो क्या है let's say कोई file है file में let's say कोई भी एक audio file है audio file में जो content है वो तो है उसका data लेकिन उससे related जो data है उसका size file का name file की permission file का extension ये सारा क्या होता है attributes तो इस तरह का अगर मुझे कोई data access करना है उसके लिए हम use करते है information related system call ऐसी हम इसमें like यहाँ पे मैंने लिखा हुआ है system का अगर मुझे time या system की date या system का data मुझे access करना है तो उस case में हम use करते है information related then process control यह भी बहुत ज़्यादा major जो system call हम use करते है जिसमें हम किसी process को अगर load करवाने है वही जैसे मैंने भी बताया कि generally हम जो programs लिखते हैं या programs को save करते हैं वो कहाँ पे कर रहे हैं secondary memory में hard disk में क्यों क्योंकि हम permanent save चाहते हैं लेकिन जब हमें उनको load करना पड़ता है main memory में load करना है execute करना है उसके लिए हम process control system calls को use करते हैं Process को abort करना है Fork system call यह बहुत important system call है Fork system call का मतलब है कि जैसे हम जो operating system में हम बात करते हैं Multiprocessing environment मतलब हम multiple processes को या multiple task को एक ही time पे करना चाहते हैं उसके लिए हम use करते है multi threading environment मतलब हम multiple threads run करते हैं process related या फिर हम Fог system call को Uowane use कर सकते हैं Fog system call क्या करते है proc Yi अपना एक child process Create करते है और वह child process अपना काम कर रहे है parent process तरीके से multi processing environment यहां पर कर सकते हैं mag system call जो है वो भी हम किसे थूँ create करते है प्रोसेस control system call वाइट date and signal जो है process synchronization के हम use करते है किसी process को wait करवाना है या semaphore की values को up करवाना है memory को allocate करना है तो ये सारे funda जो है वो हम इस system call के थूँ access करते है then communication communication में हम generally use करते है inter process communication inter process communication का मतलब है दो processes आपस में communicate कर वो use कर सकते है method या तो pipe एक method हम use करते है या shared memory तो यहाँ पे pipe system call है SHM get है जो shared memory की value को get करने के लिए हम use करते है या फिर अगर मुझे connections को create करना है connections को terminate करना है उससे related यहाँ पे system calls है तो यह major categorization है system call की इसके लावा भी मेरे पार system calls होती है let's say protection या security से related है जिसमें हम CHMOD privileges को अगर मुझे change करना है किसी भी file के उपर तो हम CHMOD UMASK बहुत सारी privileges है बहुत सारी system calls है जिनको हम use करते है तो आपको यह सारी system calls direct याद करने की जुरूरत नहीं है लेकिन आपको at least इनका idea clear होना चाहिए कि system call हम क्यों use करते है और actual main का क्या importance है operating system के अंदर so this is all about the system calls thank you",
+  "segments": [
+    {
+      "start": 0.26,
+      "end": 2.38,
+      "text": "Hello friends, welcome to Gate Smasher"
+    },
+    {
+      "start": 2.38,
+      "end": 4.14,
+      "text": "The topic is System Call"
+    },
+    {
+      "start": 4.14,
+      "end": 6.2,
+      "text": "Last video में हमने discuss किया"
+    },
+    {
+      "start": 6.2,
+      "end": 7.94,
+      "text": "कि user mode और kernel mode में"
+    },
+    {
+      "start": 7.94,
+      "end": 9.58,
+      "text": "हम कैसे work करते हैं"
+    },
+    {
+      "start": 9.58,
+      "end": 12.08,
+      "text": "जो user है अगर वो किसी भी application"
+    },
+    {
+      "start": 12.08,
+      "end": 14.02,
+      "text": "को use कर रहा है, API को use कर रहा है"
+    },
+    {
+      "start": 14.02,
+      "end": 15.64,
+      "text": "या अगर कोई भी program लिख रहा है"
+    },
+    {
+      "start": 15.64,
+      "end": 18.04,
+      "text": "तो वो generally हम किस mode में लिखते हैं"
+    },
+    {
+      "start": 18.04,
+      "end": 19.7,
+      "text": "user mode में लिखते हैं, लेकिन"
+    },
+    {
+      "start": 19.7,
+      "end": 21.88,
+      "text": "अगर मुझे operating system की कोई भी"
+    },
+    {
+      "start": 21.88,
+      "end": 23.56,
+      "text": "functionality को access करना है"
+    },
+    {
+      "start": 23.56,
+      "end": 25.62,
+      "text": "तो मुझे किस mode में जाना पड़ेगा"
+    },
+    {
+      "start": 25.62,
+      "end": 26.86,
+      "text": "kernel mode में"
+    },
+    {
+      "start": 26.86,
+      "end": 29.9,
+      "text": "तो user mode क्योंकि हमारा access तो user के उपर"
+    },
+    {
+      "start": 29.9,
+      "end": 32.1,
+      "text": "मतलब हम तो user mode को access कर रहे हैं"
+    },
+    {
+      "start": 32.1,
+      "end": 34.02,
+      "text": "तो kernel mode में जाने के लिए"
+    },
+    {
+      "start": 34.02,
+      "end": 35.94,
+      "text": "हम use करते हैं"
+    },
+    {
+      "start": 35.94,
+      "end": 36.86,
+      "text": "system call को"
+    },
+    {
+      "start": 36.86,
+      "end": 39.98,
+      "text": "तो system call एक way है एक programmatic way है"
+    },
+    {
+      "start": 39.98,
+      "end": 42.5,
+      "text": "जिससे हम या user mode से"
+    },
+    {
+      "start": 42.5,
+      "end": 44.44,
+      "text": "हम लोग kernel mode में"
+    },
+    {
+      "start": 44.44,
+      "end": 45.56,
+      "text": "shift हो जाते हैं"
+    },
+    {
+      "start": 45.56,
+      "end": 69.86,
+      "text": "या kernel की जो functionalities है, operating system की जो functionalities है, उसको हम access करते हैं, जैसे अगर मैं simple से example हूँ, अगर हम C का कोई program लिख रहे हैं, और C के program में मुझे कोई भी value, let's say 2 plus 2, 4, और इस 4 को मुझे monitor पर print कराना है, तो 2 plus 2 तो user mode तक है, processor 2 plus 2 कर देगा, no problem, लेकिन इसको print कहां कराना है, monitor पर,"
+    },
+    {
+      "start": 69.86,
+      "end": 71.88,
+      "text": "या let's say मुझे कुछ print कराना है"
+    },
+    {
+      "start": 71.88,
+      "end": 73.64,
+      "text": "और मुझे printer को access करना है"
+    },
+    {
+      "start": 73.64,
+      "end": 76.16,
+      "text": "तो जहांपे भी मेरे devices को access करना है"
+    },
+    {
+      "start": 76.16,
+      "end": 78.3,
+      "text": "मुझे किसकी help लेनी पड़ेगी"
+    },
+    {
+      "start": 78.3,
+      "end": 80.7,
+      "text": "या आप कह सकते हो किसके through होगा ये काम"
+    },
+    {
+      "start": 80.7,
+      "end": 81.94,
+      "text": "kernel के through"
+    },
+    {
+      "start": 81.94,
+      "end": 84.42,
+      "text": "kernel मतलब operating system के through"
+    },
+    {
+      "start": 84.42,
+      "end": 86.74,
+      "text": "ऐसी अगर मुझे किसी file को access करना है"
+    },
+    {
+      "start": 86.74,
+      "end": 89.02,
+      "text": "मुझे let's say कोई transaction perform करनी है"
+    },
+    {
+      "start": 89.02,
+      "end": 90.98,
+      "text": "या कुछ data change करना है किसी file में"
+    },
+    {
+      "start": 90.98,
+      "end": 92.88,
+      "text": "file का है hard disk में"
+    },
+    {
+      "start": 92.88,
+      "end": 94.98,
+      "text": "तो again hard disk को access करने के लिए"
+    },
+    {
+      "start": 94.98,
+      "end": 96.64,
+      "text": "किसी file को access करने के लिए"
+    },
+    {
+      "start": 96.64,
+      "end": 98.8,
+      "text": "मुझे kernel mode में जाना पड़ेगा"
+    },
+    {
+      "start": 98.8,
+      "end": 100.3,
+      "text": "because ये सारे devices"
+    },
+    {
+      "start": 100.3,
+      "end": 102.34,
+      "text": "ये सारे resources किसके"
+    },
+    {
+      "start": 102.34,
+      "end": 104.88,
+      "text": "कौन govern कर रहा है operating system"
+    },
+    {
+      "start": 104.88,
+      "end": 107.14,
+      "text": "operating system में कौन है main logical unit"
+    },
+    {
+      "start": 107.14,
+      "end": 108.84,
+      "text": "कौन है जो सारे के सारे"
+    },
+    {
+      "start": 108.84,
+      "end": 110.72,
+      "text": "processes सारे के सारे काम"
+    },
+    {
+      "start": 110.72,
+      "end": 112.98,
+      "text": "करता है वो है kernel"
+    },
+    {
+      "start": 112.98,
+      "end": 116.96,
+      "text": "तो यहाँ पे मुझे system call की help लेनी पड़ती है"
+    },
+    {
+      "start": 116.96,
+      "end": 118.98,
+      "text": "और system call generally क्या है"
+    },
+    {
+      "start": 118.98,
+      "end": 121.22,
+      "text": "कई बार कई operating system ऐसी हैं"
+    },
+    {
+      "start": 121.22,
+      "end": 122.78,
+      "text": "जैसे अगर हम Linux की बात करें"
+    },
+    {
+      "start": 122.78,
+      "end": 125.14,
+      "text": "तो Linux में हम जब C program लिखते हैं"
+    },
+    {
+      "start": 125.14,
+      "end": 127.68,
+      "text": "text editor on करके C program लिखते हैं"
+    },
+    {
+      "start": 127.68,
+      "end": 131.44,
+      "text": "तो वहाँ पे हम direct system call को use कर सकते हैं"
+    },
+    {
+      "start": 131.44,
+      "end": 134.96,
+      "text": "जैसे कि हम वहाँ पे read, write, close, open, fork"
+    },
+    {
+      "start": 134.96,
+      "end": 137.7,
+      "text": "बहुत सारी system calls को हम direct use करते हैं"
+    },
+    {
+      "start": 137.7,
+      "end": 139.8,
+      "text": "और generally जैसे Linux operating system में"
+    },
+    {
+      "start": 139.8,
+      "end": 142.18,
+      "text": "या कोई भी operating system के अगर हम बात करें"
+    },
+    {
+      "start": 142.18,
+      "end": 144.34,
+      "text": "there are hundreds of the system calls"
+    },
+    {
+      "start": 144.34,
+      "end": 146.14,
+      "text": "ऐसी अगर हम windows की बात करें"
+    },
+    {
+      "start": 146.14,
+      "end": 148.26,
+      "text": "वहाँ पे 700 के round system calls है"
+    },
+    {
+      "start": 148.26,
+      "end": 150.74,
+      "text": "लेकिन कई operating system ऐसी हैं"
+    },
+    {
+      "start": 150.74,
+      "end": 152.66,
+      "text": "जिनमें हम direct system call नहीं लिखते"
+    },
+    {
+      "start": 152.66,
+      "end": 154.34,
+      "text": "हम लिखते हैं use करते हैं"
+    },
+    {
+      "start": 154.34,
+      "end": 156.8,
+      "text": "APIs को यह हम use करते हैं"
+    },
+    {
+      "start": 156.8,
+      "end": 157.62,
+      "text": "वहाँ पे क्या होते हैं?"
+    },
+    {
+      "start": 157.68,
+      "end": 159.08,
+      "text": "local libraries होती हैं,"
+    },
+    {
+      "start": 159.12,
+      "end": 161.12,
+      "text": "जैसे हम printf या scanf,"
+    },
+    {
+      "start": 161.46,
+      "end": 164.02,
+      "text": "printf का मतलब है कि कोई value को print करवान है,"
+    },
+    {
+      "start": 164.38,
+      "end": 165.2,
+      "text": "तो हम क्या लिख रहे हैं?"
+    },
+    {
+      "start": 165.28,
+      "end": 165.76,
+      "text": "printf,"
+    },
+    {
+      "start": 166.22,
+      "end": 170.18,
+      "text": "लेकिन वो printf या scanf,"
+    },
+    {
+      "start": 171.04,
+      "end": 172.12,
+      "text": "वो system call नहीं है,"
+    },
+    {
+      "start": 172.54,
+      "end": 173.7,
+      "text": "printf is a function,"
+    },
+    {
+      "start": 174.18,
+      "end": 175.86,
+      "text": "लेकिन वो function क्या कर रहा है?"
+    },
+    {
+      "start": 175.86,
+      "end": 177.9,
+      "text": "वो system call को access कर रहा है,"
+    },
+    {
+      "start": 178.16,
+      "end": 179.56,
+      "text": "तो print का मतलब क्या है?"
+    },
+    {
+      "start": 179.56,
+      "end": 181.84,
+      "text": "राइट ही है, print मतलब एक तरह से"
+    },
+    {
+      "start": 181.84,
+      "end": 183.38,
+      "text": "राइट करना monitor के उपर"
+    },
+    {
+      "start": 183.38,
+      "end": 186.02,
+      "text": "तो चाहे आप direct system call को use करो"
+    },
+    {
+      "start": 186.02,
+      "end": 187.68,
+      "text": "चाहे आप किसी API को"
+    },
+    {
+      "start": 187.68,
+      "end": 189.08,
+      "text": "किसी function को use करो"
+    },
+    {
+      "start": 189.08,
+      "end": 191.9,
+      "text": "लेकिन end में काम किस के थूँ होगा"
+    },
+    {
+      "start": 191.9,
+      "end": 193.48,
+      "text": "system call के थूँ होगा"
+    },
+    {
+      "start": 193.48,
+      "end": 196.04,
+      "text": "because system call invoq करेगा"
+    },
+    {
+      "start": 196.04,
+      "end": 197.6,
+      "text": "kernel को कि ये काम"
+    },
+    {
+      "start": 197.6,
+      "end": 199.86,
+      "text": "perform करना है, तो system call"
+    },
+    {
+      "start": 199.86,
+      "end": 201.04,
+      "text": "जो है, वो generally"
+    },
+    {
+      "start": 201.04,
+      "end": 204.64,
+      "text": "जैसा कि मैंने अभी बताया कि operating system के according vary करता है"
+    },
+    {
+      "start": 204.64,
+      "end": 206.7,
+      "text": "कई ओं में 300 के round system calls है"
+    },
+    {
+      "start": 206.7,
+      "end": 209.56,
+      "text": "window 7 में 700 के round system calls है"
+    },
+    {
+      "start": 209.56,
+      "end": 213.7,
+      "text": "तो यह जो system calls है इनको हम categorize करते हैं"
+    },
+    {
+      "start": 213.7,
+      "end": 216.44,
+      "text": "सबसे पहले हम बात करें file related system calls"
+    },
+    {
+      "start": 216.44,
+      "end": 219.44,
+      "text": "file related system call का मतलब है"
+    },
+    {
+      "start": 219.44,
+      "end": 222.58,
+      "text": "जहांपे हमें अगर किसी भी file को access करना है"
+    },
+    {
+      "start": 222.58,
+      "end": 224.8,
+      "text": "मैं एक simple example से आपको बताता हूँ"
+    },
+    {
+      "start": 224.8,
+      "end": 227.12,
+      "text": "generally होता क्या है"
+    },
+    {
+      "start": 227.12,
+      "end": 229.34,
+      "text": "कि जब हम कोई भी C का program"
+    },
+    {
+      "start": 229.34,
+      "end": 231.12,
+      "text": "लिखते हैं, तो C का program हम"
+    },
+    {
+      "start": 231.12,
+      "end": 233.42,
+      "text": "क्या लिख रहे हैं, किसी ना किसी"
+    },
+    {
+      "start": 233.42,
+      "end": 235.16,
+      "text": "API को, किसी ना किसी application"
+    },
+    {
+      "start": 235.16,
+      "end": 237.52,
+      "text": "को use करके हम उस program को लिखते हैं"
+    },
+    {
+      "start": 237.52,
+      "end": 238.98,
+      "text": "लेकिन जब हम उस program को"
+    },
+    {
+      "start": 238.98,
+      "end": 241.1,
+      "text": "execute करते हैं, तो हम operating system में"
+    },
+    {
+      "start": 241.1,
+      "end": 243.16,
+      "text": "बोलते हैं, कि वो program अब"
+    },
+    {
+      "start": 243.16,
+      "end": 245.0,
+      "text": "process बन गया, मतलब"
+    },
+    {
+      "start": 245.0,
+      "end": 247.78,
+      "text": "जब वो running mode में है तो वो क्या बन गया process"
+    },
+    {
+      "start": 247.78,
+      "end": 249.54,
+      "text": "और running mode का मतलब है"
+    },
+    {
+      "start": 249.54,
+      "end": 251.06,
+      "text": "वो process कहां पे आजेगा"
+    },
+    {
+      "start": 251.06,
+      "end": 252.88,
+      "text": "RAM के अंदर आजेगा"
+    },
+    {
+      "start": 252.88,
+      "end": 254.96,
+      "text": "मतलब वो process अब किस के अंदर आगे"
+    },
+    {
+      "start": 254.96,
+      "end": 257.3,
+      "text": "RAM के अंदर और जो हमारा"
+    },
+    {
+      "start": 257.3,
+      "end": 259.46,
+      "text": "operating system है जो kernel है"
+    },
+    {
+      "start": 259.46,
+      "end": 260.98,
+      "text": "kernel भी कहां पड़ा है"
+    },
+    {
+      "start": 260.98,
+      "end": 263.0,
+      "text": "RAM के अंदर ही पड़ा है"
+    },
+    {
+      "start": 263.0,
+      "end": 264.92,
+      "text": "मैं एक general सा architecture ले रहा हूँ"
+    },
+    {
+      "start": 264.92,
+      "end": 267.38,
+      "text": "कई बर क्या होता है सारा का सारा kernel"
+    },
+    {
+      "start": 267.38,
+      "end": 269.16,
+      "text": "पूरा का पूरा code नहीं पड़ा होता है"
+    },
+    {
+      "start": 269.16,
+      "end": 271.28,
+      "text": "कई बर कुछ part जो है code का पड़ा होता है"
+    },
+    {
+      "start": 271.28,
+      "end": 273.68,
+      "text": "तो हम एक simple से example से बात कर रहे है"
+    },
+    {
+      "start": 273.68,
+      "end": 275.38,
+      "text": "जिसमें हम बोल रहे है कि kernel"
+    },
+    {
+      "start": 275.38,
+      "end": 277.34,
+      "text": "हमारा main memory में है"
+    },
+    {
+      "start": 277.34,
+      "end": 279.16,
+      "text": "और process भी main memory में है"
+    },
+    {
+      "start": 279.16,
+      "end": 281.56,
+      "text": "अब अगर हमें इस process के अंदर"
+    },
+    {
+      "start": 281.56,
+      "end": 282.86,
+      "text": "कोई भी execute करना है"
+    },
+    {
+      "start": 294.92,
+      "end": 297.94,
+      "text": "और उस particular file system को या file को क्या करेगा?"
+    },
+    {
+      "start": 298.4,
+      "end": 299.12,
+      "text": "एकसिस करेगा"
+    },
+    {
+      "start": 299.12,
+      "end": 301.34,
+      "text": "तो यहाँ पे जो एक work है सारा"
+    },
+    {
+      "start": 301.34,
+      "end": 304.02,
+      "text": "यह system call के through ही हो रहे है"
+    },
+    {
+      "start": 304.02,
+      "end": 305.64,
+      "text": "तो अगर हम file की बात करें"
+    },
+    {
+      "start": 305.64,
+      "end": 307.42,
+      "text": "तो file में हम क्या करते हैं?"
+    },
+    {
+      "start": 307.48,
+      "end": 309.44,
+      "text": "let's say मेरे को किसी file को create करना है"
+    },
+    {
+      "start": 309.44,
+      "end": 310.52,
+      "text": "create a file"
+    },
+    {
+      "start": 310.52,
+      "end": 312.38,
+      "text": "let's say I want to open a file"
+    },
+    {
+      "start": 312.38,
+      "end": 314.0,
+      "text": "I want to read a file"
+    },
+    {
+      "start": 314.0,
+      "end": 315.62,
+      "text": "I want to write some file"
+    },
+    {
+      "start": 315.62,
+      "end": 325.26,
+      "text": "तो यहाँ प्याँ तो इस सारे के सारे हम किसके थे कर रहे है फाइल लेटेड सिस्टम कॉल्स"
+    },
+    {
+      "start": 325.26,
+      "end": 335.84,
+      "text": "के थूब इन हस डिवाइज रिलेटेड सिस्टम को उड़ेट के सीधेवल का मतलब है तो यहां पर हम डिवाइस"
+    },
+    {
+      "start": 335.84,
+      "end": 339.6,
+      "text": "इसको जर्नरी क्या बोलना है हाडवेयर्स को एक्सेस करना चाहिए मैं हार्डस्की"
+    },
+    {
+      "start": 339.6,
+      "end": 343.5,
+      "text": "की बात करूँ प्रिंटर को या फिर अगर मैं मोनीटर को एक्सेस करना"
+    },
+    {
+      "start": 343.5,
+      "end": 347.8,
+      "text": "है तो इन सारे डिवाइस को ऑडीवाइस करने के लिए यूजर कभी भी"
+    },
+    {
+      "start": 347.8,
+      "end": 354.04,
+      "text": "direct access नहीं कर सकता उसको privilege लेनी पड़ेगी privilege कौन देगा operating system तो यहां पर"
+    },
+    {
+      "start": 354.04,
+      "end": 359.56,
+      "text": "privilege again system call के through लेंगे जहां हम read कर रहे हैं किसी device को device के ऊपर"
+    },
+    {
+      "start": 359.56,
+      "end": 365.08,
+      "text": "write कर रहे हैं जहां हम उस device की value को repositioning कर रहे हैं यहां हम उसके attributes को"
+    },
+    {
+      "start": 365.08,
+      "end": 367.24,
+      "text": "कर रहे हैं, ऐसी हम यहाँ पर use करते हैं,"
+    },
+    {
+      "start": 367.3,
+      "end": 369.54,
+      "text": "iOS control, input output,"
+    },
+    {
+      "start": 369.62,
+      "end": 371.2,
+      "text": "input output devices को अगर"
+    },
+    {
+      "start": 371.2,
+      "end": 373.52,
+      "text": "control करने के लिए हम यहाँ पर use करते हैं,"
+    },
+    {
+      "start": 373.52,
+      "end": 374.98,
+      "text": "यह file को control करने के,"
+    },
+    {
+      "start": 375.04,
+      "end": 377.66,
+      "text": "although यह header file है,"
+    },
+    {
+      "start": 377.7,
+      "end": 378.6,
+      "text": "वैसे file control,"
+    },
+    {
+      "start": 378.96,
+      "end": 381.26,
+      "text": "लेकिन generally हम use करते हैं कई बार यहाँ पर,"
+    },
+    {
+      "start": 381.8,
+      "end": 382.68,
+      "text": "next हमारे पास है,"
+    },
+    {
+      "start": 382.84,
+      "end": 385.58,
+      "text": "information related, information का मतलब है,"
+    },
+    {
+      "start": 386.1,
+      "end": 387.46,
+      "text": "कि processes के regarding,"
+    },
+    {
+      "start": 387.94,
+      "end": 389.48,
+      "text": "यहाँ किसी devices के regarding,"
+    },
+    {
+      "start": 389.48,
+      "end": 393.02,
+      "text": "कोई भी अगर मुझे attribute की information लेनी है"
+    },
+    {
+      "start": 393.02,
+      "end": 394.9,
+      "text": "वहाँ पे हम use करते है"
+    },
+    {
+      "start": 394.9,
+      "end": 397.08,
+      "text": "information related system call"
+    },
+    {
+      "start": 397.08,
+      "end": 399.88,
+      "text": "जिसमें हम get PID जैसे simple सा example है"
+    },
+    {
+      "start": 399.88,
+      "end": 402.06,
+      "text": "get PID हम कहाँ पे use कर रहे है"
+    },
+    {
+      "start": 402.06,
+      "end": 405.46,
+      "text": "अगर मुझे किसी process की ID का पता लगाना है"
+    },
+    {
+      "start": 405.46,
+      "end": 408.52,
+      "text": "get PPID parent ID का पता लगाने के लिए"
+    },
+    {
+      "start": 408.52,
+      "end": 410.76,
+      "text": "जहाँ पे भी हमें कुछ information चाहिए"
+    },
+    {
+      "start": 410.76,
+      "end": 411.72,
+      "text": "process से related"
+    },
+    {
+      "start": 411.72,
+      "end": 414.18,
+      "text": "जिसको हम general term में बोल देते हैं metadata"
+    },
+    {
+      "start": 414.18,
+      "end": 417.38,
+      "text": "मतलब एक data से related जो metadata है"
+    },
+    {
+      "start": 417.38,
+      "end": 418.64,
+      "text": "data तो क्या है"
+    },
+    {
+      "start": 418.64,
+      "end": 419.88,
+      "text": "let's say कोई file है"
+    },
+    {
+      "start": 419.88,
+      "end": 422.56,
+      "text": "file में let's say कोई भी एक audio file है"
+    },
+    {
+      "start": 422.56,
+      "end": 424.52,
+      "text": "audio file में जो content है"
+    },
+    {
+      "start": 424.52,
+      "end": 425.88,
+      "text": "वो तो है उसका data"
+    },
+    {
+      "start": 425.88,
+      "end": 428.46,
+      "text": "लेकिन उससे related जो data है उसका size"
+    },
+    {
+      "start": 428.46,
+      "end": 429.56,
+      "text": "file का name"
+    },
+    {
+      "start": 429.56,
+      "end": 430.9,
+      "text": "file की permission"
+    },
+    {
+      "start": 430.9,
+      "end": 432.22,
+      "text": "file का extension"
+    },
+    {
+      "start": 432.22,
+      "end": 434.1,
+      "text": "ये सारा क्या होता है attributes"
+    },
+    {
+      "start": 434.1,
+      "end": 440.5,
+      "text": "तो इस तरह का अगर मुझे कोई data access करना है उसके लिए हम use करते है information related system call"
+    },
+    {
+      "start": 440.5,
+      "end": 447.66,
+      "text": "ऐसी हम इसमें like यहाँ पे मैंने लिखा हुआ है system का अगर मुझे time या system की date या system का data मुझे access करना है"
+    },
+    {
+      "start": 447.66,
+      "end": 450.66,
+      "text": "तो उस case में हम use करते है information related"
+    },
+    {
+      "start": 450.66,
+      "end": 456.08,
+      "text": "then process control यह भी बहुत ज़्यादा major जो system call हम use करते है"
+    },
+    {
+      "start": 456.08,
+      "end": 459.12,
+      "text": "जिसमें हम किसी process को अगर load करवाने है"
+    },
+    {
+      "start": 459.12,
+      "end": 460.68,
+      "text": "वही जैसे मैंने भी बताया"
+    },
+    {
+      "start": 460.68,
+      "end": 463.4,
+      "text": "कि generally हम जो programs लिखते हैं"
+    },
+    {
+      "start": 463.4,
+      "end": 465.16,
+      "text": "या programs को save करते हैं"
+    },
+    {
+      "start": 465.16,
+      "end": 466.52,
+      "text": "वो कहाँ पे कर रहे हैं"
+    },
+    {
+      "start": 466.52,
+      "end": 467.5,
+      "text": "secondary memory में"
+    },
+    {
+      "start": 467.5,
+      "end": 468.56,
+      "text": "hard disk में"
+    },
+    {
+      "start": 468.56,
+      "end": 470.72,
+      "text": "क्यों क्योंकि हम permanent save चाहते हैं"
+    },
+    {
+      "start": 470.72,
+      "end": 473.26,
+      "text": "लेकिन जब हमें उनको load करना पड़ता है"
+    },
+    {
+      "start": 473.26,
+      "end": 474.6,
+      "text": "main memory में load करना है"
+    },
+    {
+      "start": 474.6,
+      "end": 475.7,
+      "text": "execute करना है"
+    },
+    {
+      "start": 475.7,
+      "end": 480.36,
+      "text": "उसके लिए हम process control system calls को use करते हैं"
+    },
+    {
+      "start": 480.36,
+      "end": 481.84,
+      "text": "Process को abort करना है"
+    },
+    {
+      "start": 481.84,
+      "end": 485.84,
+      "text": "Fork system call यह बहुत important system call है"
+    },
+    {
+      "start": 485.84,
+      "end": 491.96,
+      "text": "Fork system call का मतलब है कि जैसे हम जो operating system में हम बात करते हैं"
+    },
+    {
+      "start": 491.96,
+      "end": 496.6,
+      "text": "Multiprocessing environment मतलब हम multiple processes को"
+    },
+    {
+      "start": 496.6,
+      "end": 499.28,
+      "text": "या multiple task को एक ही time पे करना चाहते हैं"
+    },
+    {
+      "start": 499.28,
+      "end": 502.18,
+      "text": "उसके लिए हम use करते है multi threading environment"
+    },
+    {
+      "start": 502.18,
+      "end": 504.94,
+      "text": "मतलब हम multiple threads run करते हैं process related"
+    },
+    {
+      "start": 504.94,
+      "end": 507.88,
+      "text": "या फिर हम Fог system call को Uowane"
+    },
+    {
+      "start": 507.88,
+      "end": 511.06,
+      "text": "use कर सकते हैं Fog system call क्या करते है proc Yi"
+    },
+    {
+      "start": 511.06,
+      "end": 515.76,
+      "text": "अपना एक child process Create करते है और वह child"
+    },
+    {
+      "start": 515.76,
+      "end": 518.38,
+      "text": "process अपना काम कर रहे है parent process तरीके से multi processing"
+    },
+    {
+      "start": 518.38,
+      "end": 521.8,
+      "text": "environment यहां पर कर सकते हैं mag system call जो है वो"
+    },
+    {
+      "start": 521.8,
+      "end": 524.86,
+      "text": "भी हम किसे थूँ create करते है प्रोसेस"
+    },
+    {
+      "start": 524.86,
+      "end": 526.42,
+      "text": "control system call वाइट"
+    },
+    {
+      "start": 526.42,
+      "end": 532.66,
+      "text": "date and signal जो है process synchronization के हम use करते है किसी process को wait करवाना है या"
+    },
+    {
+      "start": 532.66,
+      "end": 539.2,
+      "text": "semaphore की values को up करवाना है memory को allocate करना है तो ये सारे funda जो है वो हम इस system"
+    },
+    {
+      "start": 539.2,
+      "end": 544.28,
+      "text": "call के थूँ access करते है then communication communication में हम generally use करते है"
+    },
+    {
+      "start": 544.28,
+      "end": 551.22,
+      "text": "inter process communication inter process communication का मतलब है दो processes आपस में communicate कर"
+    },
+    {
+      "start": 551.22,
+      "end": 555.12,
+      "text": "वो use कर सकते है method या तो pipe एक method हम use करते है"
+    },
+    {
+      "start": 555.12,
+      "end": 558.36,
+      "text": "या shared memory तो यहाँ पे pipe system call है"
+    },
+    {
+      "start": 558.36,
+      "end": 562.88,
+      "text": "SHM get है जो shared memory की value को get करने के लिए हम use करते है"
+    },
+    {
+      "start": 562.88,
+      "end": 565.42,
+      "text": "या फिर अगर मुझे connections को create करना है"
+    },
+    {
+      "start": 565.42,
+      "end": 569.42,
+      "text": "connections को terminate करना है उससे related यहाँ पे system calls है"
+    },
+    {
+      "start": 569.42,
+      "end": 572.28,
+      "text": "तो यह major categorization है system call की"
+    },
+    {
+      "start": 572.28,
+      "end": 574.52,
+      "text": "इसके लावा भी मेरे पार system calls होती है"
+    },
+    {
+      "start": 574.52,
+      "end": 576.88,
+      "text": "let's say protection या security से related है"
+    },
+    {
+      "start": 576.88,
+      "end": 579.98,
+      "text": "जिसमें हम CHMOD privileges को"
+    },
+    {
+      "start": 579.98,
+      "end": 581.74,
+      "text": "अगर मुझे change करना है"
+    },
+    {
+      "start": 581.74,
+      "end": 583.84,
+      "text": "किसी भी file के उपर तो हम CHMOD"
+    },
+    {
+      "start": 583.84,
+      "end": 586.48,
+      "text": "UMASK बहुत सारी privileges है"
+    },
+    {
+      "start": 586.48,
+      "end": 587.62,
+      "text": "बहुत सारी system calls है"
+    },
+    {
+      "start": 587.62,
+      "end": 589.04,
+      "text": "जिनको हम use करते है"
+    },
+    {
+      "start": 589.04,
+      "end": 590.94,
+      "text": "तो आपको यह सारी system calls"
+    },
+    {
+      "start": 590.94,
+      "end": 593.44,
+      "text": "direct याद करने की जुरूरत नहीं है"
+    },
+    {
+      "start": 593.44,
+      "end": 596.52,
+      "text": "लेकिन आपको at least इनका idea clear होना चाहिए"
+    },
+    {
+      "start": 596.52,
+      "end": 598.42,
+      "text": "कि system call हम क्यों use करते है"
+    },
+    {
+      "start": 598.42,
+      "end": 602.46,
+      "text": "और actual main का क्या importance है operating system के अंदर"
+    },
+    {
+      "start": 602.46,
+      "end": 604.92,
+      "text": "so this is all about the system calls"
+    },
+    {
+      "start": 604.92,
+      "end": 605.72,
+      "text": "thank you"
+    }
+  ]
+}
