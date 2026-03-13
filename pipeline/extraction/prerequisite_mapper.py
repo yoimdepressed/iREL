@@ -53,8 +53,9 @@ def find_co_occurring_pairs(segments: list, concepts: list) -> list:
         text_lower = seg["translated"].lower() if "translated" in seg else seg.get("text", "").lower()
         window_text = text_lower
 
-        # also include next 4 segments for context (wider window for educational content)
-        for j in range(1, 5):
+        # include next 10 segments for context — educational videos explain concepts
+        # across larger stretches, so a wider window catches more co-occurrences
+        for j in range(1, 11):
             if i + j < len(segments):
                 next_seg = segments[i + j]
                 next_text = next_seg["translated"].lower() if "translated" in next_seg else next_seg.get("text", "").lower()
@@ -71,7 +72,7 @@ def find_co_occurring_pairs(segments: list, concepts: list) -> list:
                     # get first appearance times
                     time_a = concept_locations.get(concept_a, [(0, 0)])[0][1]
                     time_b = concept_locations.get(concept_b, [(0, 0)])[0][1]
-                    pairs.append((concept_a, concept_b, window_text[:500], time_a, time_b))
+                    pairs.append((concept_a, concept_b, window_text[:800], time_a, time_b))
 
     return pairs
 
@@ -161,7 +162,7 @@ def map_prerequisites(translated_data: dict, concepts: list, config: dict) -> li
                 "confidence": final_score,
                 "nli_score": round(nli_score, 4),
                 "positional_score": pos_score,
-                "evidence": context[:300],
+                "evidence": context[:600],
             })
 
     # sort by confidence

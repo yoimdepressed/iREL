@@ -45,7 +45,7 @@ extraction:
   min_keyword_score: 0.15 # keybert score threshold
 
 prerequisites:
-  nli_weight: 0.7 # weight for NLI score in final confidence
-  positional_weight: 0.3 # weight for positional score
-  min_confidence: 0.3 # edges below this get filtered out
+  nli_weight: 0.6 # weight for NLI score in final confidence
+  positional_weight: 0.4 # weight for positional score
+  min_confidence: 0.25 # edges below this get filtered out
   positional_gap: 60 # seconds gap needed for positional signal
