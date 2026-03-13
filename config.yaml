@@ -49,3 +49,4 @@ prerequisites:
   positional_weight: 0.4 # weight for positional score
   min_confidence: 0.25 # edges below this get filtered out
   positional_gap: 60 # seconds gap needed for positional signal
+  nli_window: 10 # number of segments in co-occurrence window

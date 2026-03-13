@@ -136,36 +136,6 @@ def lemmatize_phrase(phrase: str) -> str:
     return " ".join(t.lemma_.lower() for t in doc)
 
 
-def subsumption_filter(scored_concepts: list) -> list:
-    """
-    Remove single-word concepts that are subsumed by multi-word concepts.
-    Uses both raw tokens and lemmatized forms for matching.
-    Also removes shorter multi-word phrases fully contained in longer ones
-    """
-    # collect all multi-word concepts and their tokens + lemmas
-    multi_word = {c["concept"] for c in scored_concepts if len(c["concept"].split()) >= 2}
-    subsumed_tokens = set()
-    subsumed_lemmas = set()
-    for mw in multi_word:
-        for token in mw.split():
-            subsumed_tokens.add(token)
-            subsumed_lemmas.add(lemmatize_phrase(token))
-
-    filtered = []
-    for c in scored_concepts:
-        concept = c["concept"]
-        words = concept.split()
-        if len(words) == 1:
-            word = words[0]
-            lemma = lemmatize_phrase(word)
-            if word in subsumed_tokens or lemma in subsumed_lemmas:
-                # single word is covered by a multi-word concept
-                continue
-        filtered.append(c)
-
-    return filtered
-
-
 def extract_concepts(text: str, top_n: int = 20, min_score: float = 0.15) -> list:
     """
     Extract key concepts from translated transcript text.

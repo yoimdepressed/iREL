@@ -19,8 +19,8 @@ def transcribe_audio(audio_path: str, model_size: str = "large") -> dict:
     print(f"Transcribing: {audio_path}")
     result = model.transcribe(
         audio_path,
-        task="transcribe",                    # preserve original language — don't auto-translate
-        language=None,                        # auto-detect — needed for code-mixed
+        task="transcribe",                    # preserve original language
+        language=None,                        # auto-detect (for code-mixed)
         condition_on_previous_text=False,     # prevents hallucination loops
         fp16=use_fp16,                        # True on GPU (faster), False on CPU (not supported)
         verbose=True,

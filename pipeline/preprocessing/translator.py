@@ -72,7 +72,7 @@ SYSTEM_PROMPT = (
 def translate_segment(text: str, client, model: str, temperature: float) -> str:
     """Translate a single transcript segment to English using Groq."""
     non_ascii_chars = len(re.findall(r'[^\x00-\x7F]', text))
-    if non_ascii_chars / max(len(text), 1) < 0.1:
+    if non_ascii_chars / max(len(text), 1) < 0.05:
         return text
 
     prompt = (
@@ -81,27 +81,49 @@ def translate_segment(text: str, client, model: str, temperature: float) -> str:
         f"Sentence: {text}"
     )
 
-    response = client.chat.completions.create(
-        model=model,
-        messages=[
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": prompt},
-        ],
-        temperature=temperature,
-        max_tokens=500,
-    )
-    result = response.choices[0].message.content.strip()
+    max_retries = 4
+    for attempt in range(max_retries):
+        try:
+            response = client.chat.completions.create(
+                model=model,
+                messages=[
+                    {"role": "system", "content": SYSTEM_PROMPT},
+                    {"role": "user", "content": prompt},
+                ],
+                temperature=temperature,
+                max_tokens=500,
+            )
+            result = response.choices[0].message.content.strip()
 
-    # Safety check: if LLM returned something way longer than input, it hallucinated — use original
-    if len(result) > len(text) * 2.5:
-        return text
+            # hallucination guard: output shouldn't be more than 1.8x input length and a limit of 30 extra words
+            input_words = len(text.split())
+            output_words = len(result.split())
+            if output_words > max(input_words * 1.8, input_words + 30):
+                return text
 
-    # Safety check: if LLM output still has more non-ASCII than the input, it hallucinated
-    result_non_ascii = len(re.findall(r'[^\x00-\x7F]', result))
-    if result_non_ascii > non_ascii_chars:
-        return text
+            # If LLM output still has more non-ASCII than the input, it hallucinated
+            non_ascii_input = len(re.findall(r'[^\x00-\x7F]', text))
+            non_ascii_output = len(re.findall(r'[^\x00-\x7F]', result))
+            if non_ascii_output > non_ascii_input:
+                return text
 
-    return result
+            return result
+
+        except Exception as e:
+            err_str = str(e)
+            # Explicit handling for Groq 429 rate-limit responses
+            if "429" in err_str or "rate_limit" in err_str.lower() or "rate limit" in err_str.lower():
+                wait = 2 ** attempt * 5  # exponential backoff: 5s, 10s, 20s, 40s
+                print(f"  [RATE LIMIT] Waiting {wait}s before retry (attempt {attempt + 1}/{max_retries})...")
+                time.sleep(wait)
+            else:
+                print(f"  Segment translation failed: {e}, using original text")
+                time.sleep(2)
+                return text
+
+    # All retries exhausted
+    print(f"  [WARN] All {max_retries} retries failed, using original text")
+    return text
 
 
 def translate_transcript(transcript_data: dict, config: dict) -> dict:

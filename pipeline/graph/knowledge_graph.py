@@ -57,20 +57,21 @@ def compute_learning_order(G: nx.DiGraph) -> list:
             return []
 
 
-def save_interactive_graph(G: nx.DiGraph, video_id: str, output_dir: str):
-    """Generate a clean interactive HTML graph using D3.js (no pyvis bloat)."""
+def save_interactive_graph(G: nx.DiGraph, video_id: str, output_dir: str, vis_min_confidence: float = 0.35):
+    """Generate a clean interactive HTML graph using D3.js (no pyvis bloat).
+    Only edges with confidence >= vis_min_confidence are shown, keeping the graph readable.
+    vis_min_confidence is configurable via config.yaml graph.visualization_min_confidence.
+    """
     os.makedirs(output_dir, exist_ok=True)
 
-    # Only keep edges with confidence >= 0.35 to reduce clutter
-    strong_edges = [(u, v, d) for u, v, d in G.edges(data=True) if d.get("confidence", 0) >= 0.35]
+    # Only keep edges above the confidence threshold to reduce visual clutter
+    strong_edges = [(u, v, d) for u, v, d in G.edges(data=True) if d.get("confidence", 0) >= vis_min_confidence]
 
-    # Build a subgraph with only those edges
     SG = nx.DiGraph()
     for u, v, d in strong_edges:
         SG.add_edge(u, v, **d)
-    for n in G.nodes():
-        if n not in SG:
-            SG.add_node(n)
+    # Only include nodes that have at least one strong edge
+    # (isolated nodes with no strong edges are omitted — they clutter the graph without adding info)
 
     nodes_data = []
     for node in SG.nodes():
@@ -307,13 +308,17 @@ const tooltip = document.getElementById('tooltip');
 node.on('mouseover', (e, d) => {{
   const connected = new Set([d.id]);
   edgesData.forEach(ed => {{
-    if (ed.source === d.id || (ed.source.id === d.id)) connected.add(ed.target.id || ed.target);
-    if (ed.target === d.id || (ed.target.id === d.id)) connected.add(ed.source.id || ed.source);
+    // After D3 simulation runs, ed.source and ed.target are mutated from string IDs
+    // to full node objects. Use .id if available, fall back to the value itself.
+    const s = ed.source.id ?? ed.source;
+    const t = ed.target.id ?? ed.target;
+    if (s === d.id) connected.add(t);
+    if (t === d.id) connected.add(s);
   }});
   node.classed('dimmed', n => !connected.has(n.id));
   link.classed('dimmed', l => {{
-    const s = l.source.id || l.source;
-    const t = l.target.id || l.target;
+    const s = l.source.id ?? l.source;
+    const t = l.target.id ?? l.target;
     return s !== d.id && t !== d.id;
   }});
   tooltip.style.display = 'block';

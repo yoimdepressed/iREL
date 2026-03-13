@@ -2,6 +2,7 @@ import os
 import json
 import yaml
 import re
+import numpy as np
 from sentence_transformers import CrossEncoder
 
 
@@ -28,10 +29,10 @@ def split_into_sentences(text: str) -> list:
     return [s.strip() for s in sentences if len(s.strip()) > 10]
 
 
-def find_co_occurring_pairs(segments: list, concepts: list) -> list:
+def find_co_occurring_pairs(segments: list, concepts: list, window: int = 10) -> list:
     """
     Find concept pairs that appear in the same segment or nearby segments.
-    This is our pre-filter — only these pairs get checked by NLI.
+    This is pre-filter, only these pairs get checked by NLI.
     Returns list of (concept_a, concept_b, segment_text, time_a, time_b).
     """
     concept_names = [c["concept"] for c in concepts]
@@ -53,9 +54,8 @@ def find_co_occurring_pairs(segments: list, concepts: list) -> list:
         text_lower = seg["translated"].lower() if "translated" in seg else seg.get("text", "").lower()
         window_text = text_lower
 
-        # include next 10 segments for context — educational videos explain concepts
-        # across larger stretches, so a wider window catches more co-occurrences
-        for j in range(1, 11):
+        # include next `window` segments for context
+        for j in range(1, window + 1):
             if i + j < len(segments):
                 next_seg = segments[i + j]
                 next_text = next_seg["translated"].lower() if "translated" in next_seg else next_seg.get("text", "").lower()
@@ -84,14 +84,30 @@ def compute_nli_score(concept_a: str, concept_b: str, context: str, model) -> fl
     if the context entails this.
     """
     hypothesis = f"To understand {concept_b}, one must first understand {concept_a}."
-    # NLI model returns [contradiction, entailment, neutral] logits
+    # NLI model returns logits in order [contradiction, entailment, neutral]
     scores = model.predict([(context, hypothesis)])[0]
     # Convert raw logits to probabilities via softmax
-    import numpy as np
     exp_scores = np.exp(scores - np.max(scores))  # subtract max for numerical stability
     probs = exp_scores / exp_scores.sum()
     entailment_prob = float(probs[1])  # index 1 = entailment
     return entailment_prob
+
+
+def compute_nli_scores_batched(concept_a: str, concept_b: str, context: str, model) -> tuple:
+    """
+    Score both prerequisite directions in a single batched model call.
+    Returns (score_a_to_b, score_b_to_a) — halves NLI inference calls vs two separate calls.
+    """
+    hyp_a_to_b = f"To understand {concept_b}, one must first understand {concept_a}."
+    hyp_b_to_a = f"To understand {concept_a}, one must first understand {concept_b}."
+    # batch both pairs in one predict call
+    results = model.predict([(context, hyp_a_to_b), (context, hyp_b_to_a)])
+    scores = []
+    for raw in results:
+        exp_s = np.exp(raw - np.max(raw))
+        probs = exp_s / exp_s.sum()
+        scores.append(float(probs[1]))  # index 1 = entailment
+    return scores[0], scores[1]
 
 
 def compute_positional_score(time_a: float, time_b: float, gap_threshold: float = 60) -> float:
@@ -105,7 +121,7 @@ def compute_positional_score(time_a: float, time_b: float, gap_threshold: float 
     if gap <= 0:
         return 0.0
     if gap < gap_threshold:
-        return 0.3  # small gap — moderate signal (still meaningful in educational context)
+        return 0.3  # small gap — moderate signal
     # scale: 60s gap = 0.5, 300s+ gap = 1.0
     score = min(1.0, 0.5 + (gap - gap_threshold) / 480)
     return round(score, 3)
@@ -126,18 +142,18 @@ def map_prerequisites(translated_data: dict, concepts: list, config: dict) -> li
     pos_weight = config["prerequisites"]["positional_weight"]
     min_conf = config["prerequisites"]["min_confidence"]
     gap_threshold = config["prerequisites"]["positional_gap"]
+    nli_window = config["prerequisites"].get("nli_window", 10)
 
     # step 1: co-occurrence filter
-    pairs = find_co_occurring_pairs(segments, concepts)
+    pairs = find_co_occurring_pairs(segments, concepts, window=nli_window)
     print(f"Found {len(pairs)} co-occurring concept pairs to check")
 
     edges = []
     for concept_a, concept_b, context, time_a, time_b in pairs:
-        # step 2: NLI — check both directions
-        # score_a_to_b tests hypothesis: "To understand B, one must first understand A" (A is prereq of B)
-        # score_b_to_a tests hypothesis: "To understand A, one must first understand B" (B is prereq of A)
-        score_a_to_b = compute_nli_score(concept_a, concept_b, context, model)
-        score_b_to_a = compute_nli_score(concept_b, concept_a, context, model)
+        # step 2: NLI — check both directions in a single batched call
+        # score_a_to_b: "To understand B, one must first understand A" (A is prereq of B)
+        # score_b_to_a: "To understand A, one must first understand B" (B is prereq of A)
+        score_a_to_b, score_b_to_a = compute_nli_scores_batched(concept_a, concept_b, context, model)
 
         # pick the direction with higher entailment — the winner becomes the edge "prereq → dependent"
         if score_a_to_b > score_b_to_a:
