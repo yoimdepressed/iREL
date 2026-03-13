@@ -191,13 +191,17 @@ const tooltip = document.getElementById('tooltip');
 node.on('mouseover', (e, d) => {
   const connected = new Set([d.id]);
   edgesData.forEach(ed => {
-    if (ed.source === d.id || (ed.source.id === d.id)) connected.add(ed.target.id || ed.target);
-    if (ed.target === d.id || (ed.target.id === d.id)) connected.add(ed.source.id || ed.source);
+    // After D3 simulation runs, ed.source and ed.target are mutated from string IDs
+    // to full node objects. Use .id if available, fall back to the value itself.
+    const s = ed.source.id ?? ed.source;
+    const t = ed.target.id ?? ed.target;
+    if (s === d.id) connected.add(t);
+    if (t === d.id) connected.add(s);
   });
   node.classed('dimmed', n => !connected.has(n.id));
   link.classed('dimmed', l => {
-    const s = l.source.id || l.source;
-    const t = l.target.id || l.target;
+    const s = l.source.id ?? l.source;
+    const t = l.target.id ?? l.target;
     return s !== d.id && t !== d.id;
   });
   tooltip.style.display = 'block';
