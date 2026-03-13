@@ -238,3 +238,6 @@ For each video:
 | `data/outputs/graphs/{id}_graph.html` | Interactive graph -- open in any browser, no server needed |
 
 **Graph colour coding:** Red = foundational (no prerequisites), Purple = intermediate, Teal = advanced (leaf node). Edge thickness scales with confidence. Hover over any node to highlight its direct connections. Hover over edges to see the NLI evidence quote from the transcript.
+
+## Demonstration VIDEO
+[**Watch the Pipeline Demo on Google Drive**](https://drive.google.com/file/d/1EgrX2Knfw3l8vwxUkSLmcyc-a9DIEtLl/view?usp=sharing)
